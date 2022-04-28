@@ -201,6 +201,7 @@ export class CourseCalendarStore {
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Storyboarding, Paper Prototyping, and Testing',
             slides: 'https://canvas.uw.edu/files/91400789/',
+            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb1d746a-a127-453a-9a57-ae6600d820ba',
         },
         {
             type: 'lecture',
