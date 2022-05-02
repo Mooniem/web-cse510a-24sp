@@ -92,7 +92,11 @@ export const App: React.FunctionComponent = () => {
                                 anchorEl={menuAnchorEl}
                                 anchorOrigin={{
                                     vertical: 'bottom',
-                                    horizontal: 'left',
+                                    horizontal: 'right',
+                                }}
+                                transformOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'right',
                                 }}
                                 keepMounted
                                 open={menuAnchorEl != null}
