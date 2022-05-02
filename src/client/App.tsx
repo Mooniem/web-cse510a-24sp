@@ -3,11 +3,18 @@ import * as React from "react";
 import {
     AppBar,
     Box,
+    Button,
     Container,
+    IconButton,
+    Menu,
+    MenuItem,
     Toolbar
 } from "@mui/material";
 
+import MenuIcon from '@mui/icons-material/Menu';
+
 import {
+    Link as RouterLink,
     Route,
     Routes
 } from "react-router-dom";
@@ -27,17 +34,101 @@ import Assignment3 from "src/content/assignments/assignment3/Assignment3.mdx"
 import Assignment4 from "src/content/assignments/assignment4/Assignment4.mdx"
 
 export const App: React.FunctionComponent = () => {
+
+    const [menuAnchorEl, setMenuAnchorEl] = React.useState<null | HTMLElement>(null);
+
+    const handleOpenMenu = (event: React.MouseEvent<HTMLElement>) => {
+        setMenuAnchorEl(event.currentTarget);
+    };
+
+    const handleCloseMenu = () => {
+        setMenuAnchorEl(null);
+    };
+
     return (
         <React.Fragment>
             <AppBar position="static">
                 <Container>
                     <Toolbar disableGutters>
-                        <Box display="flex" flexDirection="row" width="100%" role="navigation"
-                             aria-label="Primary Navigation Links">
+                        {/* Sizes >= md render navigation with buttons */}
+                        <Box
+                            sx={{
+                                display: { xs: 'none', md: 'flex' },
+                                flexDirection: "row"
+                            }}
+                            width="100%"
+                            role="navigation"
+                            aria-label="Primary"
+                        >
                             <NavButton to="/" match="never">CSE 440 - Introduction to HCI - Spring 2022</NavButton>
                             <Box flexGrow={1}/>
                             <NavButton to="/assignments">Assignments</NavButton>
                             <NavButton to="/calendar">Calendar</NavButton>
+                        </Box>
+                        {/* Sizes < md render navigation with collapsible menu icon */}
+                        <Box
+                            sx={{
+                                display: { xs: 'flex', md: 'none' },
+                                flexDirection: "row"
+                            }}
+                            width="100%"
+                            role="navigation"
+                            aria-label="Primary"
+                        >
+                            <NavButton to="/" match="never">CSE 440 - Spring 2022</NavButton>
+                            <Box flexGrow={1}/>
+                            <IconButton
+                                size="large"
+                                aria-label="Menu"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                onClick={handleOpenMenu}
+                                color="inherit"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Menu
+                                id="menu-appbar"
+                                anchorEl={menuAnchorEl}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                                keepMounted
+                                open={menuAnchorEl != null}
+                                onClose={handleCloseMenu}
+                                sx={{
+                                    // Ensures the menu disappears if display changes while menu is open
+                                    display: { xs: 'block', md: 'none' },
+                                }}
+                            >
+                                <MenuItem
+                                    onClick={handleCloseMenu}
+                                    disableGutters
+                                    sx={{padding: "0"}}
+                                >
+                                    <Button
+                                        component={RouterLink}
+                                        sx={{justifyContent: "left", minHeight: "48px", width: "100%"}}
+                                        to="/assignments"
+                                    >
+                                        Assignments
+                                    </Button>
+                                </MenuItem>
+                                <MenuItem
+                                    onClick={handleCloseMenu}
+                                    disableGutters
+                                    sx={{padding: "0"}}
+                                >
+                                    <Button
+                                        component={RouterLink}
+                                        sx={{justifyContent: "left", minHeight: "48px", width: "100%"}}
+                                        to="/calendar"
+                                    >
+                                        Calendar
+                                    </Button>
+                                </MenuItem>
+                            </Menu>
                         </Box>
                     </Toolbar>
                 </Container>
