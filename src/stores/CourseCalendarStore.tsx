@@ -366,7 +366,7 @@ export class CourseCalendarStore {
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-05-19'),
+            date: DateTime.fromISO('2022-05-20'),
             title: '3d - Usability Testing Review',
         },
         {
