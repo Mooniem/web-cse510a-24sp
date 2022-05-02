@@ -52,9 +52,9 @@ module.exports = {
                 ],
                 exclude: "/node_modules/",
             },
-            // Image resources
+            // Image and File resources
             {
-                test: /\.(jpg|png)$/,
+                test: /\.(jpg|pdf|png)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'assets/[name][ext]'
