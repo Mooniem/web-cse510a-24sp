@@ -208,6 +208,7 @@ export class CourseCalendarStore {
             date: DateTime.fromISO('2022-05-03'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Effective Presentations',
+            slides: 'https://canvas.uw.edu/files/91705969/',
         },
         {
             type: 'lecture',
