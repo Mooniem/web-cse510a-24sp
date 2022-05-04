@@ -209,6 +209,7 @@ export class CourseCalendarStore {
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Effective Presentations',
             slides: 'https://canvas.uw.edu/files/91705969/',
+            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd7a4526-a43a-4e22-a690-ae8b00f782f9',
         },
         {
             type: 'lecture',
@@ -248,6 +249,13 @@ export class CourseCalendarStore {
         },
         {
             type: 'studio',
+            date: DateTime.fromISO('2022-04-28'),
+            timeAndLocation: LECTURE_TIME_AND_LOCATION,
+            title: 'Studio',
+            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7f5351c4-0251-442c-abbb-ae8b00f135e0',
+        },
+        {
+            type: 'studio',
             dates: [
                 DateTime.fromISO('2022-04-01'),
                 DateTime.fromISO('2022-04-08'),
@@ -264,7 +272,6 @@ export class CourseCalendarStore {
         {
             type: 'studio',
             dates: [
-                DateTime.fromISO('2022-04-28'),
                 DateTime.fromISO('2022-05-31'),
                 DateTime.fromISO('2022-06-02'),
             ],
@@ -472,8 +479,6 @@ export class CourseCalendarStore {
                 DateTime.fromISO('2022-05-02'),
                 DateTime.fromISO('2022-05-03'),
                 DateTime.fromISO('2022-05-04'),
-                DateTime.fromISO('2022-05-05'),
-                DateTime.fromISO('2022-05-06'),
                 DateTime.fromISO('2022-05-27'),
             ],
             title: 'Anant Away',
