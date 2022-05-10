@@ -216,6 +216,7 @@ export class CourseCalendarStore {
             date: DateTime.fromISO('2022-05-10'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Inspection',
+            slides: 'https://canvas.uw.edu/files/91968017/',
         },
         {
             type: 'lecture',
