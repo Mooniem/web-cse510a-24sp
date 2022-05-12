@@ -218,6 +218,7 @@ export class CourseCalendarStore {
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Inspection',
             slides: 'https://canvas.uw.edu/files/91968017/',
+            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2169ac31-bf8d-4cb4-a2fe-ae930042d617',
         },
         {
             type: 'lecture',
