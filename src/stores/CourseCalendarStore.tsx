@@ -12,6 +12,7 @@ const SECTION_TIME_AND_LOCATIONS: TimeAndLocation[] = [
     '12:30 - 1:20 | MGH 058',
     '1:30 - 2:20 | MGH 058'
 ]
+const EXAM_REVIEW_TIME_AND_LOCATION: TimeAndLocation = 'Time TBD | Zoom';
 const POSTER_SESSION_TIME_AND_LOCATION: TimeAndLocation = '11:00 - 12:00 | CSE Atrium';
 
 const OFFICE_HOUR_QISHENG_TIME_AND_LOCATION: TimeAndLocation = '11:30 - 12:30 | CSE 3rd Floor Breakout';
@@ -222,7 +223,8 @@ export class CourseCalendarStore {
             type: 'lecture',
             date: DateTime.fromISO('2022-05-12'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Interface Implementation',
+            title: 'Patterns and Interface Implementation',
+            slides: 'https://canvas.uw.edu/files/92049795/',
         },
         {
             type: 'lecture',
@@ -278,6 +280,19 @@ export class CourseCalendarStore {
             ],
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Studio',
+        },
+
+        //
+        // Exam Review Calendar Items
+        //
+        {
+            type: 'studio',
+            dates: [
+                DateTime.fromISO('2022-05-16'),
+            ],
+            timeAndLocation: EXAM_REVIEW_TIME_AND_LOCATION,
+            title: 'Exam Q&A',
+            slides: 'https://canvas.uw.edu/files/92053501/',
         },
 
         //
@@ -375,7 +390,7 @@ export class CourseCalendarStore {
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-05-20'),
+            date: DateTime.fromISO('2022-05-19'),
             title: '3d - Usability Testing Review',
         },
         {
