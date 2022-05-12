@@ -12,6 +12,7 @@ const SECTION_TIME_AND_LOCATIONS: TimeAndLocation[] = [
     '12:30 - 1:20 | MGH 058',
     '1:30 - 2:20 | MGH 058'
 ]
+const EXAM_REVIEW_TIME_AND_LOCATION: TimeAndLocation = 'Time TBD | Zoom';
 const POSTER_SESSION_TIME_AND_LOCATION: TimeAndLocation = '11:00 - 12:00 | CSE Atrium';
 
 const OFFICE_HOUR_QISHENG_TIME_AND_LOCATION: TimeAndLocation = '11:30 - 12:30 | CSE 3rd Floor Breakout';
@@ -279,6 +280,19 @@ export class CourseCalendarStore {
             ],
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Studio',
+        },
+
+        //
+        // Exam Review Calendar Items
+        //
+        {
+            type: 'studio',
+            dates: [
+                DateTime.fromISO('2022-05-16'),
+            ],
+            timeAndLocation: EXAM_REVIEW_TIME_AND_LOCATION,
+            title: 'Exam Q&A',
+            slides: 'https://canvas.uw.edu/files/92053501/',
         },
 
         //
