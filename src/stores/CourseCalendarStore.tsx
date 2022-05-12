@@ -222,7 +222,8 @@ export class CourseCalendarStore {
             type: 'lecture',
             date: DateTime.fromISO('2022-05-12'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Interface Implementation',
+            title: 'Patterns and Interface Implementation',
+            slides: 'https://canvas.uw.edu/files/92049795/',
         },
         {
             type: 'lecture',
