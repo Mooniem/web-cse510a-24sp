@@ -226,6 +226,7 @@ export class CourseCalendarStore {
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Patterns and Interface Implementation',
             slides: 'https://canvas.uw.edu/files/92049795/',
+            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4753b05f-53dc-41dc-b9c0-ae93016b9c49',
         },
         {
             type: 'lecture',
