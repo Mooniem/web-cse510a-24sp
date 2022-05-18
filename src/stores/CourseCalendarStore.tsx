@@ -239,6 +239,7 @@ export class CourseCalendarStore {
             date: DateTime.fromISO('2022-05-19'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Designing for Diverse Needs',
+            slides: 'https://canvas.uw.edu/files/92303593/',
         },
         {
             type: 'lecture',
