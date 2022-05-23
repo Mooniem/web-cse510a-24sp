@@ -240,6 +240,7 @@ export class CourseCalendarStore {
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Designing for Diverse Needs',
             slides: 'https://canvas.uw.edu/files/92303593/',
+            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=78506a13-5404-4aa0-bc0b-ae6600d82f45',
         },
         {
             type: 'lecture',
