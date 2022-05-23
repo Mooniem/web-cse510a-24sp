@@ -491,6 +491,7 @@ export class CourseCalendarStore {
                 DateTime.fromISO('2022-05-04'),
                 DateTime.fromISO('2022-05-05'),
                 DateTime.fromISO('2022-05-06'),
+                DateTime.fromISO('2022-05-31'),
             ],
             title: 'Jesse Away',
         },
