@@ -95,9 +95,6 @@ export class CourseInformationStore {
         'Uploaded 11:59pm ' + formatDateString('2022-05-04') + '.';
     linkCanvasAssignment2p: link = 'https://canvas.uw.edu/courses/1545349/assignments/7322564';
 
-    dueDateAssignment2web: dueDate = null;
-    linkCanvasAssignment2web: link = null;
-
     //
     // Assignment 3
     //
@@ -118,19 +115,22 @@ export class CourseInformationStore {
     dueDateAssignment3p: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-05-25') + '.';
     linkCanvasAssignment3p: link = 'https://canvas.uw.edu/courses/1545349/assignments/7332250';
 
-    dueDateAssignment3web: dueDate = null;
-    linkCanvasAssignment3web: link = null;
-
     //
     // Assignment 4
     //
-    dueDateAssignment4a: dueDate = null;
-    linkCanvasAssignment4a: link = null;
+    dueDateAssignment4web: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-05-30') + '.';
+    linkCanvasAssignment4web: link = null;
 
-    dueDateAssignment4b: dueDate = null;
-    linkCanvasAssignment4b: link = null;
+    dueDateAssignment4web_final: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-05-31') + '.';
+    linkCanvasAssignment4web_final: link = null;
 
-    dueDateAssignment4p: dueDate = null;
+    dueDateAssignment4poster: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-06-01') + '.';
+    linkCanvasAssignment4poster: link = null;
+
+    dueDateAssignment4poster_final: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-06-02') + '.';
+    linkCanvasAssignment4poster_final: link = null;
+
+    dueDateAssignment4poster_session: dueDate = '11:00 - 12:00 ' + formatDateString('2022-06-06') + ' in CSE Atrium.';
 
     //
     // Samples
@@ -157,7 +157,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90572627',
                 '3p': 'https://canvas.uw.edu/files/90572631',
                 '3web': 'https://canvas.uw.edu/files/90572640',
-                '4a': 'https://canvas.uw.edu/files/90572673'
+                '4poster': 'https://canvas.uw.edu/files/90572673'
             }
         },
         {
@@ -180,7 +180,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90573032',
                 '3p': 'https://canvas.uw.edu/files/90573035',
                 '3web': 'https://canvas.uw.edu/files/90573036',
-                '4a': 'https://canvas.uw.edu/files/90573097'
+                '4poster': 'https://canvas.uw.edu/files/90573097'
             }
         },
         {
@@ -203,7 +203,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90573289',
                 '3p': 'https://canvas.uw.edu/files/90573291',
                 '3web': 'https://canvas.uw.edu/files/90573296',
-                '4a': 'https://canvas.uw.edu/files/90573299'
+                '4poster': 'https://canvas.uw.edu/files/90573299'
             }
         },
         {
@@ -227,7 +227,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90573433',
                 '3p': 'https://canvas.uw.edu/files/90573435',
                 '3web': 'https://canvas.uw.edu/files/90573439',
-                '4a': 'https://canvas.uw.edu/files/90573441'
+                '4poster': 'https://canvas.uw.edu/files/90573441'
             }
         },
         {
@@ -250,7 +250,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90573540',
                 '3p': 'https://canvas.uw.edu/files/90573544',
                 '3web': 'https://canvas.uw.edu/files/90573546',
-                '4a': 'https://canvas.uw.edu/files/90573549'
+                '4poster': 'https://canvas.uw.edu/files/90573549'
             }
         },
         {
@@ -273,7 +273,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90578140',
                 '3p': 'https://canvas.uw.edu/files/90578141',
                 '3web': 'https://canvas.uw.edu/files/90578204',
-                '4a': 'https://canvas.uw.edu/files/90578147'
+                '4poster': 'https://canvas.uw.edu/files/90578147'
             }
         },
         {
@@ -318,7 +318,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90578570',
                 '3p': 'https://canvas.uw.edu/files/90578781',
                 '3web': 'https://canvas.uw.edu/files/90578606',
-                '4a': 'https://canvas.uw.edu/files/90578620'
+                '4poster': 'https://canvas.uw.edu/files/90578620'
             }
         },
         {
@@ -341,7 +341,7 @@ export class CourseInformationStore {
                 '3d': 'https://canvas.uw.edu/files/90578872',
                 '3e': 'https://canvas.uw.edu/files/90578873',
                 '3p': 'https://canvas.uw.edu/files/90578874',
-                '4a': 'https://canvas.uw.edu/files/90578909'
+                '4poster': 'https://canvas.uw.edu/files/90578909'
             }
         },
         {
@@ -364,7 +364,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90579321',
                 '3p': 'https://canvas.uw.edu/files/90579323',
                 '3web': 'https://canvas.uw.edu/files/90579325',
-                '4a': 'https://canvas.uw.edu/files/90579326'
+                '4poster': 'https://canvas.uw.edu/files/90579326'
             }
         },
         {
@@ -388,7 +388,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90579372',
                 '3p': 'https://canvas.uw.edu/files/90579377',
                 '3web': 'https://canvas.uw.edu/files/90579389',
-                '4a': 'https://canvas.uw.edu/files/90579394'
+                '4poster': 'https://canvas.uw.edu/files/90579394'
             }
         },
         {
@@ -411,7 +411,7 @@ export class CourseInformationStore {
                 '3e': 'https://canvas.uw.edu/files/90579437',
                 '3p': 'https://canvas.uw.edu/files/90579441',
                 '3web': 'https://canvas.uw.edu/files/90579442',
-                '4a': 'https://canvas.uw.edu/files/90579444'
+                '4poster': 'https://canvas.uw.edu/files/90579444'
             }
         }
     ]
