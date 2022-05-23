@@ -386,11 +386,6 @@ export class CourseCalendarStore {
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-05-30'),
-            title: '2web - Getting the Right Design',
-        },
-        {
-            type: 'assignment',
             date: DateTime.fromISO('2022-05-09'),
             title: '3a - Paper Prototype',
         },
@@ -422,17 +417,22 @@ export class CourseCalendarStore {
         {
             type: 'assignment',
             date: DateTime.fromISO('2022-05-30'),
-            title: '3web - Getting the Design Right',
+            title: '4web - Web Post',
+        },
+        {
+            type: 'assignment',
+            date: DateTime.fromISO('2022-05-31'),
+            title: '4web_final - Web Post',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2022-06-01'),
-            title: '4a - Initial Poster and Pitch',
+            title: '4poster - Poster and Pitch',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-06-03'),
-            title: '4b - Final Poster and Pitch',
+            date: DateTime.fromISO('2022-06-02'),
+            title: '4poster_final - Poster and Pitch',
         },
 
         //
