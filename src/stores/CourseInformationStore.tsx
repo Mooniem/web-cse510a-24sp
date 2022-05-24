@@ -119,16 +119,16 @@ export class CourseInformationStore {
     // Assignment 4
     //
     dueDateAssignment4web: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-05-30') + '.';
-    linkCanvasAssignment4web: link = null;
+    linkCanvasAssignment4web: link = 'https://canvas.uw.edu/courses/1545349/assignments/7332263';
 
     dueDateAssignment4web_final: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-05-31') + '.';
-    linkCanvasAssignment4web_final: link = null;
+    linkCanvasAssignment4web_final: link = 'https://canvas.uw.edu/courses/1545349/assignments/7398746';
 
     dueDateAssignment4poster: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-06-01') + '.';
-    linkCanvasAssignment4poster: link = null;
+    linkCanvasAssignment4poster: link = 'https://canvas.uw.edu/courses/1545349/assignments/7398750';
 
     dueDateAssignment4poster_final: dueDate = 'Uploaded 11:59pm ' + formatDateString('2022-06-02') + '.';
-    linkCanvasAssignment4poster_final: link = null;
+    linkCanvasAssignment4poster_final: link = 'https://canvas.uw.edu/courses/1545349/assignments/7398752';
 
     dueDateAssignment4poster_session: dueDate = '11:00 - 12:00 ' + formatDateString('2022-06-06') + ' in CSE Atrium.';
 
