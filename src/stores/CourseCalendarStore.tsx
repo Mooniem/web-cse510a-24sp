@@ -247,6 +247,7 @@ export class CourseCalendarStore {
             date: DateTime.fromISO('2022-05-24'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'History',
+            slides: 'https://canvas.uw.edu/files/92480229',
         },
 
         //
