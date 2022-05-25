@@ -248,6 +248,7 @@ export class CourseCalendarStore {
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'History',
             slides: 'https://canvas.uw.edu/files/92480229',
+            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=85e919e8-7d61-4cc1-8d15-ae6600d83140'
         },
 
         //
