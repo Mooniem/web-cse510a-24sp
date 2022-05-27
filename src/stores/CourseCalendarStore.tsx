@@ -10,13 +10,18 @@ const SECTION_TIME_AND_LOCATIONS: TimeAndLocation[] = [
     '10:30 - 11:20 | MGH 058',
     '11:30 - 12:20 | MGH 058',
     '12:30 - 1:20 | MGH 058',
-    '1:30 - 2:20 | MGH 058'
+    '1:30 - 2:20 | MGH 058',
+]
+const SECTION_TIME_AND_LOCATIONS_WITHOUT_D: TimeAndLocation[] = [
+    '10:30 - 11:20 | MGH 058',
+    '11:30 - 12:20 | MGH 058',
+    '12:30 - 1:20 | MGH 058',
 ]
 const SECTION_TIME_AND_LOCATIONS_RESEARCH_SYMPOSIUM: TimeAndLocation[] = [
     '10:30 - 11:20 | MGH 058',
     '11:30 - 12:20 | MGH 058',
     '12:30 - 1:20 | DEN 111',
-    '1:30 - 2:20 | DEN 110'
+    '1:30 - 2:20 | DEN 110',
 ]
 const EXAM_REVIEW_TIME_AND_LOCATION: TimeAndLocation = '6:00 - 6:50 | Zoom';
 const POSTER_SESSION_TIME_AND_LOCATION: TimeAndLocation = '11:00 - 12:00 | CSE Atrium';
@@ -278,7 +283,6 @@ export class CourseCalendarStore {
                 DateTime.fromISO('2022-04-22'),
                 DateTime.fromISO('2022-04-29'),
                 DateTime.fromISO('2022-05-13'),
-                DateTime.fromISO('2022-06-03'),
             ],
             timeAndLocations: SECTION_TIME_AND_LOCATIONS,
             title: 'Studio',
@@ -542,7 +546,7 @@ export class CourseCalendarStore {
             type: 'event',
             title: 'Presentations',
             date: DateTime.fromISO('2022-05-06'),
-            timeAndLocations: SECTION_TIME_AND_LOCATIONS,
+            timeAndLocations: SECTION_TIME_AND_LOCATIONS_WITHOUT_D,
         },
         {
             type: 'event',
@@ -554,7 +558,7 @@ export class CourseCalendarStore {
             type: 'event',
             title: 'Presentations',
             date: DateTime.fromISO('2022-05-27'),
-            timeAndLocations: SECTION_TIME_AND_LOCATIONS,
+            timeAndLocations: SECTION_TIME_AND_LOCATIONS_WITHOUT_D,
         },
         {
             type: 'event',
