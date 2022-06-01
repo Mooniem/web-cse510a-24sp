@@ -62,6 +62,7 @@ export const App: React.FunctionComponent = () => {
                         >
                             <NavButton to="/" match="never">CSE 440 - Introduction to HCI - Spring 2022</NavButton>
                             <Box flexGrow={1}/>
+                            <NavButton to="/projects">Projects</NavButton>
                             <NavButton to="/assignments">Assignments</NavButton>
                             <NavButton to="/calendar">Calendar</NavButton>
                         </Box>
@@ -106,6 +107,19 @@ export const App: React.FunctionComponent = () => {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
+                                <MenuItem
+                                    onClick={handleCloseMenu}
+                                    disableGutters
+                                    sx={{padding: "0"}}
+                                >
+                                    <Button
+                                        component={RouterLink}
+                                        sx={{justifyContent: "left", minHeight: "48px", width: "100%"}}
+                                        to="/projects"
+                                    >
+                                        Projects
+                                    </Button>
+                                </MenuItem>
                                 <MenuItem
                                     onClick={handleCloseMenu}
                                     disableGutters
