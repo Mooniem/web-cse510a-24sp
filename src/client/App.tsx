@@ -25,6 +25,7 @@ import {NavButton} from "src/common/NavButton";
 import Assignments from "src/pages/Assignments.mdx";
 import Calendar from "src/pages/Calendar.mdx";
 import Home from "src/pages/Home.mdx";
+import Projects from "src/pages/Projects.mdx";
 
 import AssignmentsOverviewWrapper from "src/content/assignments/OverviewWrapper.mdx"
 import Assignment0 from "src/content/assignments/assignment0/Assignment0.mdx"
@@ -155,6 +156,7 @@ export const App: React.FunctionComponent = () => {
                 <DefaultLayout>
                     <Routes>
                         <Route path="/" element={<Home/>} />
+                        <Route path="/projects" element={<Projects/>} />
                         <Route path="/assignments" element={<Assignments/>}>
                             <Route path="" element={<AssignmentsOverviewWrapper/>} />
                             <Route path="assignment0" element={<Assignment0/>} />
