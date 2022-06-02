@@ -25,6 +25,12 @@ import task1Step3Image1 from "./assets/post/stop.png";
 import task1Step3Image2 from "./assets/post/dont_understand.png";
 import task1Step3Image3 from "./assets/post/ask_question.png";
 import task1Step3Image4 from "./assets/post/submitted_question.png";
+import task1Step3Image5 from "./assets/post/view_clark.png";
+
+import task1Step4Image1 from "./assets/post/end_recording.png";
+import task1Step4Image2 from "./assets/post/end_presentation.png";
+
+import task2Step2Image1 from "./assets/post/view_recordings.png";
 
 # Clark - Presenting Made Easier
 
@@ -247,6 +253,12 @@ export const task1Step3Images = [
         rows: 1,
         cols: 1,
     },
+    {
+        img: task1Step3Image5,
+        title: 'Alt',
+        rows: 1,
+        cols: 4,
+    },
 ];
 
 <ImageList cols={4}>
@@ -267,13 +279,49 @@ export const task1Step3Images = [
 
 The presenter ends the recording and saves it with a particular name (with a character limit) (img 1). The screens for each audience member that joined displays a thank you page (img 2).
 
+export const task1Step4Images = [
+    {
+        img: task1Step4Image1,
+        title: 'Alt',
+        rows: 1,
+        cols: 2,
+    },
+    {
+        img: task1Step4Image2,
+        title: 'Alt',
+        rows: 1,
+        cols: 1,
+    },
+];
 
+<ImageList cols={3}>
+    {task1Step4Images.map((item) => (
+        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
+            <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+            />
+        </ImageListItem>
+    ))}
+</ImageList>
 ### Task 2: Accessing the interest / confusion level of the audience after the presentation
 
-Step 1: The presenter logs in/sign up through the app.
+#### Step 1:
 
-Step 2: The presenter heads to the recordings tab and selects the recording they wish to view (img 1), and uses the slider to find where the audience asked the most questions and where a large portion of the audience understands or doesn’t understand the content (img 2).
+The presenter logs in/sign up through the app.
 
+#### Step 2:
+
+The presenter heads to the recordings tab and selects the recording they wish to view (img 1), and uses the slider to find where the audience asked the most questions and where a large portion of the audience understands or doesn’t understand the content (img 2).
+
+<img
+    src={task2Step2Image1}
+    alt="alt"
+    width="100%"
+    loading="lazy"
+/>
 
 
 
