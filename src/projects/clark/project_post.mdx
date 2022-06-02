@@ -15,6 +15,17 @@ import image6 from "./assets/post/PaperPrototype6.jpg";
 import task1Step1Image1 from "./assets/post/splash.png";
 import task1Step1Image2 from "./assets/post/login.png";
 
+import task1Step2Image1 from "./assets/post/present.png";
+import task1Step2Image2 from "./assets/post/welcome.png";
+import task1Step2Image3 from "./assets/post/viewpreview.png";
+import task1Step2Image4 from "./assets/post/edit_clark.png";
+
+import task1Step3Image1 from "./assets/post/stop.png";
+// TODO: I understand image missing.
+import task1Step3Image2 from "./assets/post/dont_understand.png";
+import task1Step3Image3 from "./assets/post/ask_question.png";
+import task1Step3Image4 from "./assets/post/submitted_question.png";
+
 # Clark - Presenting Made Easier
 
 ## Problem and Design Overview
@@ -132,22 +143,26 @@ Some critical aspects of our designs are in our audience UI and presenter app. T
 ### Task 1: Getting feedback during the presentation
 
 
+
+
+#### Step 1:
+The presenter logs in/sign up through the app.
+
 export const task1Step1Images = [
     {
         img: task1Step1Image1,
-        title: 'Paper Prototype 1',
+        title: 'task1Step1Image1',
         rows: 1,
         cols: 1,
     },
     {
         img: task1Step1Image2,
-        title: 'Paper Prototype 2',
+        title: 'task1Step1Image2',
         rows: 1,
         cols: 1,
     },
 ];
 
-#### Step 1: The presenter logs in/sign up through the app.
 <ImageList>
     {task1Step1Images.map((item) => (
         <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
@@ -161,12 +176,96 @@ export const task1Step1Images = [
     ))}
 </ImageList>
 
-Step 2: The presenter shares a QR code (img 1) with the audience so they can access the presentation feedback platform (img 2) on their phone. The presenter clicks Test Audio/Video to access a preview (img 3). The presenter clicks on Edit Clark to add/remove widgets from Clark (img 4, img 5). The presenter clicks Start to start presentation and recording.
-Step 3: Once presentation starts, the presenter app shows Stop button to stop presentation (img 1). The audience platform allows submissions for questions (img 2, img 4). Upon submitting a question, a check mark indicates the question submitted successfully (img 5). The question shows up on Clark (img 8). The audience also has the option to look at other questions that have been submitted and upvote the ones they agree with (img 6, img 7). To express general confusion not tied to a question, the audience also has a toggle to indicate confusion (img 2, img 3).
+#### Step 2:
+The presenter shares a QR code (img 1) with the audience so they can access the presentation feedback platform (img 2) on their phone. The presenter clicks Test Audio/Video to access a preview (img 3). The presenter clicks on Edit Clark to add/remove widgets from Clark (img 4, img 5). The presenter clicks Start to start presentation and recording.
+
+export const task1Step2Images = [
+    {
+        img: task1Step2Image1,
+        title: 'Alt',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: task1Step2Image2,
+        title: 'Alt',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: task1Step2Image3,
+        title: 'Alt',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: task1Step2Image4,
+        title: 'Alt',
+        rows: 1,
+        cols: 3,
+    },
+];
+
+<ImageList cols={3}>
+    {task1Step2Images.map((item) => (
+        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
+            <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+            />
+        </ImageListItem>
+    ))}
+</ImageList>
+
+#### Step 3:
+Once presentation starts, the presenter app shows Stop button to stop presentation (img 1). The audience platform allows submissions for questions (img 2, img 4). Upon submitting a question, a check mark indicates the question submitted successfully (img 5). The question shows up on Clark (img 8). The audience also has the option to look at other questions that have been submitted and upvote the ones they agree with (img 6, img 7). To express general confusion not tied to a question, the audience also has a toggle to indicate confusion (img 2, img 3).
+
+export const task1Step3Images = [
+    {
+        img: task1Step3Image1,
+        title: 'Alt',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: task1Step3Image2,
+        title: 'Alt',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: task1Step3Image3,
+        title: 'Alt',
+        rows: 1,
+        cols: 2,
+    },
+    {
+        img: task1Step3Image4,
+        title: 'Alt',
+        rows: 1,
+        cols: 1,
+    },
+];
+
+<ImageList cols={4}>
+    {task1Step3Images.map((item) => (
+        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
+            <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+            />
+        </ImageListItem>
+    ))}
+</ImageList>
 
 
+#### Step 4:
 
-Step 4: The presenter ends the recording and saves it with a particular name (with a character limit) (img 1). The screens for each audience member that joined displays a thank you page (img 2).
+The presenter ends the recording and saves it with a particular name (with a character limit) (img 1). The screens for each audience member that joined displays a thank you page (img 2).
 
 
 ### Task 2: Accessing the interest / confusion level of the audience after the presentation
