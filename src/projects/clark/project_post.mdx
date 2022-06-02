@@ -1,12 +1,19 @@
 import { Box } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import Stack from '@mui/material/Stack';
 
 
 import image1 from "./assets/post/PaperPrototype1.jpg";
 import image2 from "./assets/post/PaperPrototype2.jpg";
 import image3 from "./assets/post/PaperPrototype3.jpg";
 import image4 from "./assets/post/PaperPrototype4.jpg";
+import image5 from "./assets/post/PaperPrototype5.jpg";
+import image6 from "./assets/post/PaperPrototype6.jpg";
+
+import task1Step1Image1 from "./assets/post/splash.png";
+import task1Step1Image2 from "./assets/post/login.png";
 
 # Clark - Presenting Made Easier
 
@@ -72,27 +79,87 @@ export const paperPrototypeItems = [
 </ImageList>
 
 
-
-
-
-
-
-
 ### Improving Edit Clark Option
-One area that was fleshed out thoroughly during usability testing was our option to edit Clark’s display screen. For instance in initial tests, it was not clear to a participant that they could edit Clark’s screen by going to settings and appearances, or when they got there what to do. Because the presenter’s ability to customize Clark to best suit their needs is important to us, we added an additional button on the home screen that directly goes to the edit clark screen. We also added text instructing the participant to move widgets to the representation of Clark’s screen. Some participants wanted a higher level of customization to be able to drag individual components to specific locations, while others did not mind the default layout of Clark, so we also included the option of presets.
+<Grid container spacing={2}>
+    <Grid item xs={6} md={8}>
+        One area that was fleshed out thoroughly during usability testing was our option to edit Clark’s display screen. For instance in initial tests, it was not clear to a participant that they could edit Clark’s screen by going to settings and appearances, or when they got there what to do. Because the presenter’s ability to customize Clark to best suit their needs is important to us, we added an additional button on the home screen that directly goes to the edit clark screen. We also added text instructing the participant to move widgets to the representation of Clark’s screen. Some participants wanted a higher level of customization to be able to drag individual components to specific locations, while others did not mind the default layout of Clark, so we also included the option of presets.
+    </Grid>
+    <Grid item xs={6} md={4}>
+        <img
+            src={`${image4}?auto=format`}
+            width="100%"
+            alt="Paper Prototype 4"
+            loading="lazy"
+        />
+    </Grid>
+</Grid>
 
 ### Improving Audience Feedback
-Initially, audience members are able to do two things: indicate understanding, and ask questions. While the audience interface is intended to be simple, we received a lot of feedback regarding the function that allowed audience members to ask questions throughout the presentation. Many participants felt that there ought to be a way for them to view questions asked by other audience members, as well as vote on the ones they felt were particularly good questions. This insight emerged when we prompted participants to ask a question, at which point, many of them wondered if a similar question had already been asked. Some direct quotes are “I wonder if anyone else is confused about this” and “Is there a way to see if someone has already asked this question?”. We iterated upon this design by adding a panel to allow audience members to view and vote on questions:
+<Grid container spacing={2}>
+    <Grid item xs={6} md={8}>
+        Initially, audience members are able to do two things: indicate understanding, and ask questions. While the audience interface is intended to be simple, we received a lot of feedback regarding the function that allowed audience members to ask questions throughout the presentation. Many participants felt that there ought to be a way for them to view questions asked by other audience members, as well as vote on the ones they felt were particularly good questions. This insight emerged when we prompted participants to ask a question, at which point, many of them wondered if a similar question had already been asked. Some direct quotes are “I wonder if anyone else is confused about this” and “Is there a way to see if someone has already asked this question?”. We iterated upon this design by adding a panel to allow audience members to view and vote on questions:
+    </Grid>
+    <Grid item xs={6} md={4}>
+        <img
+            src={`${image5}?auto=format`}
+            width="100%"
+            alt="Paper Prototype 5"
+            loading="lazy"
+        />
+    </Grid>
+</Grid>
+
 
 ### Improving Accessibility
-As we worked on our paper prototype, we referenced commonly used apps and interfaces. In addition to things like changing text size, we found that iPhones also offered the option to “differentiate without color”. One team member also pointed out that our prototype assumes that the user reads English. Because we wanted this to be accessible to people who spoke other languages, we also included the option to change the language the presenter’s app was in. 
+<Grid container spacing={2}>
+    <Grid item xs={6} md={8}>
+        As we worked on our paper prototype, we referenced commonly used apps and interfaces. In addition to things like changing text size, we found that iPhones also offered the option to “differentiate without color”. One team member also pointed out that our prototype assumes that the user reads English. Because we wanted this to be accessible to people who spoke other languages, we also included the option to change the language the presenter’s app was in.
+    </Grid>
+    <Grid item xs={6} md={4}>
+        <img
+            src={`${image6}?auto=format`}
+            width="100%"
+            alt="Paper Prototype 6"
+            loading="lazy"
+        />
+    </Grid>
+</Grid>
+
 
 ## Resulting Design
 Some critical aspects of our designs are in our audience UI and presenter app. The presenter’s goal is to record and save a presentation, and look back at the recording and interest levels. We implemented a QR code and unique url for the presenter to give to the audience to sign in to the feedback platform. For the audience, they can submit questions and indicate interest with a toggle. In the recording, the presenter can see timestamps of how the interest levels progressed, as well as the time questions come in.
 
 ### Task 1: Getting feedback during the presentation
 
-Step 1: The presenter logs in/sign up through the app.
+
+export const task1Step1Images = [
+    {
+        img: task1Step1Image1,
+        title: 'Paper Prototype 1',
+        rows: 1,
+        cols: 1,
+    },
+    {
+        img: task1Step1Image2,
+        title: 'Paper Prototype 2',
+        rows: 1,
+        cols: 1,
+    },
+];
+
+#### Step 1: The presenter logs in/sign up through the app.
+<ImageList>
+    {task1Step1Images.map((item) => (
+        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
+            <img
+                src={`${item.img}`}
+                srcSet={`${item.img}`}
+                alt={item.title}
+                loading="lazy"
+            />
+        </ImageListItem>
+    ))}
+</ImageList>
 
 Step 2: The presenter shares a QR code (img 1) with the audience so they can access the presentation feedback platform (img 2) on their phone. The presenter clicks Test Audio/Video to access a preview (img 3). The presenter clicks on Edit Clark to add/remove widgets from Clark (img 4, img 5). The presenter clicks Start to start presentation and recording.
 Step 3: Once presentation starts, the presenter app shows Stop button to stop presentation (img 1). The audience platform allows submissions for questions (img 2, img 4). Upon submitting a question, a check mark indicates the question submitted successfully (img 5). The question shows up on Clark (img 8). The audience also has the option to look at other questions that have been submitted and upvote the ones they agree with (img 6, img 7). To express general confusion not tied to a question, the audience also has a toggle to indicate confusion (img 2, img 3).
