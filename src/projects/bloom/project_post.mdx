@@ -1,6 +1,9 @@
 import {
+    Box,
     Grid,
 } from '@mui/material';
+
+import TeamMemberCard from "src/components/TeamMemberCard";
 
 import image1 from "./assets/post/problem_design_overview.png";
 import image2 from "./assets/post/storyboard.jpg";
@@ -18,6 +21,29 @@ import image10 from "./assets/post/progress_sketch.png";
 import image11 from "./assets/post/progress.png";
 
 import image12 from "./assets/post/5_home_screen.png";
+
+import image13 from "./assets/post/5_signin1.png";
+import image14 from "./assets/post/5_signin2.png";
+
+import image15 from "./assets/post/5_tutorial.png";
+
+import image16 from "./assets/post/5_rateknowledge_specifics.png";
+
+import image17 from "./assets/post/5_tutorials.png";
+
+import image18 from "./assets/post/5_task1_learn.png";
+import image19 from "./assets/post/5_lesson.png";
+import image20 from "./assets/post/5_lesson_video.png";
+import image21 from "./assets/post/5_quiz.png";
+
+import image22 from "./assets/post/5_task2_takeaction.png";
+import image23 from "./assets/post/5_progress.png";
+import image24 from "./assets/post/5_merch.png";
+
+import pathPhotoRuslan from "./assets/team/ruslan.png";
+import pathPhotoJolie from "./assets/team/jolie.png";
+import pathPhotoDonitaa from "./assets/team/donitaa.png";
+import pathPhotoSonika from "./assets/team/sonika.png";
 
 # Bloom - Where the future of your investment education lies
 
@@ -196,5 +222,170 @@ Our resulting design is as follows in the sequence of images below. Essentially,
     </Grid>
     <Grid item>
         This is the welcome screen that the user sees as soon as they open the Bloom app
+    </Grid>
+</Grid>
+
+<Grid
+    container
+    direction="row"
+    justifyContent="center"
+    alignItems="center"
+>
+    <Grid item xs={12} md={6}>
+        <img
+            src={image13}
+        />
+    </Grid>
+    <Grid item xs={12} md={6}>
+        <img
+            src={image14}
+        />
+    </Grid>
+    <Grid item>
+        This is the log in/sign up screen the user sees next depending on whether they want to sign in or sign up.
+    </Grid>
+</Grid>
+
+<Grid
+    container
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+>
+    <Grid item>
+        <img
+            src={image15}
+        />
+    </Grid>
+    <Grid item>
+        This is the next screen the user sees if they want to sign up to give the users a quick summary of what the Bloom app is.
+    </Grid>
+</Grid>
+
+<Grid
+    container
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+>
+    <Grid item>
+        <img
+            src={image16}
+        />
+    </Grid>
+    <Grid item>
+        They are then taken to a mini questionnaire where they are asked additional questions so that a specific plan is tailored for them.
+    </Grid>
+</Grid>
+
+<Grid
+    container
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+>
+    <Grid item>
+        <img
+            src={image17}
+        />
+    </Grid>
+    <Grid item>
+        This is the home page where users will be able to see the stocks and crypto lessons
+    </Grid>
+</Grid>
+
+### Task 1: Learn
+
+<Grid
+    container
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+>
+    <Grid item>
+        <img
+            src={image18}
+        />
+    </Grid>
+    <Grid item>
+        Users are directed to the main screen where they can pick lessons to start.
+    </Grid>
+    <Grid item>
+        <img
+            src={image19}
+        />
+    </Grid>
+    <Grid item>
+        After picking a lesson, they are redirected to an information page that breaks down the concepts. There’s a pop-up to provide definitions for all financial literacy related terms that the user might not know.
+    </Grid>
+    <Grid item>
+        <img
+            src={image20}
+        />
+    </Grid>
+    <Grid item>
+        They are then guided to watch a video. Here they can interact with other users and have a discussion.
+    </Grid>
+    <Grid item>
+        <img
+            src={image21}
+        />
+    </Grid>
+    <Grid item>
+        Next, they can take a quiz to see how well they’ve understood the material. The quiz is designed to test their knowledge of the lesson and users can view their results after taking it.  They also earn bloom seeds as a reward.
+    </Grid>
+</Grid>
+
+### Task 2: Take Action
+
+<Grid
+    container
+    direction="column"
+    justifyContent="center"
+    alignItems="center"
+>
+    <Grid item>
+        <img
+            src={image22}
+        />
+    </Grid>
+    <Grid item>
+        Users can follow step by step guides to get started on their financial literacy journey. They also earn bloom seeds as an incentive for completing the tasks.
+    </Grid>
+    <Grid item>
+        <img
+            src={image23}
+        />
+    </Grid>
+    <Grid item>
+        We added a progress screen so that users can track progress. It allows you to view past (completed) lessons, and see any future lessons. It also allows you to filter by Stocks and Crypto progress.
+    </Grid>
+    <Grid item>
+        <img
+            src={image24}
+        />
+    </Grid>
+    <Grid item>
+        Users can use their bloom seeds earned throughout their time on this app to purchase merch as a reward.
+    </Grid>
+</Grid>
+
+## Team Members
+
+<Grid container spacing={4}>
+    <Grid item>
+        <TeamMemberCard name="Ruslan Bekniyazov" photo={pathPhotoRuslan} />
+    </Grid>
+
+    <Grid item>
+        <TeamMemberCard name="Jolie Ip" photo={pathPhotoJolie} />
+    </Grid>
+
+    <Grid item>
+        <TeamMemberCard name="Donitaa Julius" photo={pathPhotoDonitaa}  />
+    </Grid>
+
+    <Grid item>
+        <TeamMemberCard name="Sonika Tayade" photo={pathPhotoSonika}/>
     </Grid>
 </Grid>

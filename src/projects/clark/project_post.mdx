@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
+import TeamMemberCard from "src/components/TeamMemberCard";
 
 import image1 from "./assets/post/PaperPrototype1.jpg";
 import image2 from "./assets/post/PaperPrototype2.jpg";
@@ -27,8 +28,15 @@ import task1Step3Image5 from "./assets/post/view_clark.png";
 
 import task1Step4Image1 from "./assets/post/end_recording.png";
 import task1Step4Image2 from "./assets/post/end_presentation.png";
-
 import task2Step2Image1 from "./assets/post/view_recordings.png";
+
+
+import pathPhotoAnna from "./assets/team/anna.jpg";
+import pathPhotoDonavan from "./assets/team/donavan.jpg";
+import pathPhotoJesse from "./assets/team/jesse.jpg";
+import pathPhotoJudy from "./assets/team/judy.jpg";
+import pathPhotoYunwei from "./assets/team/yunwei.jpg";
+
 
 # Clark - Presenting Made Easier
 
@@ -321,7 +329,27 @@ The presenter heads to the recordings tab and selects the recording they wish to
     loading="lazy"
 />
 
+## Team Members
 
+<Grid container spacing={4}>
+    <Grid item>
+        <TeamMemberCard name="Anna Shih" photo={pathPhotoAnna} />
+    </Grid>
 
+    <Grid item>
+        <TeamMemberCard name="Donavan See" photo={pathPhotoDonavan} />
+    </Grid>
+
+    <Grid item>
+        <TeamMemberCard name="Jesse Hu" photo={pathPhotoJesse}  />
+    </Grid>
+
+    <Grid item>
+        <TeamMemberCard name="Judy Pham" photo={pathPhotoJudy}/>
+    </Grid>
+    <Grid item>
+        <TeamMemberCard name="Yunwei Liang" photo={pathPhotoYunwei}/>
+    </Grid>
+</Grid>
 
 
