@@ -20,7 +20,6 @@ export const TeamMemberCard: FunctionComponent<TeamMemberProps> = (props) => {
                     { props.name }
                     <img
                         src={props.photo}
-                        height="150"
                         width="150"
                         alt={"Photo of " + props.name }
                     />
