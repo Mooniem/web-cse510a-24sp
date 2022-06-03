@@ -2,7 +2,7 @@ import {
     Grid,
 } from '@mui/material';
 
-import TeamMemberCard from "src/components/TeamMemberCard";
+import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/image26.png";
 import image2 from "./assets/post/image9.png";
@@ -34,6 +34,27 @@ import pathPhotoRahul from "./assets/team/rahul.jpg";
 import pathPhotoTerry from "./assets/team/terry.jpg";
 
 # Closr - Bringing couples together in new ways
+
+## Team Members
+
+<TeamMemberGallery members={[
+    {
+        name: "Emi Yoshikawa",
+        photo: pathPhotoEmi,
+    },
+    {
+        name: "Rahul Misal",
+        photo: pathPhotoRahul,
+    },
+    {
+        name: "Joanie Foley",
+        photo: pathPhotoJoanie,
+    },
+    {
+        name: "Terry Yifan Shen",
+        photo: pathPhotoTerry,
+    },
+]} />
 
 ## Problem and Design Overview
 
@@ -467,25 +488,5 @@ When a user selects a category, 3 options appear: the first item from the bucket
             src={image23}
             width="100%"
         />
-    </Grid>
-</Grid>
-
-## Team Members
-
-<Grid container spacing={4}>
-    <Grid item>
-        <TeamMemberCard name="Emi Yoshikawa" photo={pathPhotoEmi} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Rahul Misal" photo={pathPhotoJoanie} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Joanie Foley" photo={pathPhotoRahul}  />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Terry Yifan Shen" photo={pathPhotoTerry}/>
     </Grid>
 </Grid>

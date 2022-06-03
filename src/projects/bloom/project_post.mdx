@@ -2,7 +2,7 @@ import {
     Grid,
 } from '@mui/material';
 
-import TeamMemberCard from "src/components/TeamMemberCard";
+import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/problem_design_overview.png";
 import image2 from "./assets/post/storyboard.jpg";
@@ -35,6 +35,27 @@ import pathPhotoDonitaa from "./assets/team/donitaa.png";
 import pathPhotoSonika from "./assets/team/sonika.png";
 
 # Bloom - Where the future of your investment education lies
+
+## Team Members
+
+<TeamMemberGallery members={[
+    {
+        name: "Ruslan Bekniyazov",
+        photo: pathPhotoRuslan,
+    },
+    {
+        name: "Jolie Ip",
+        photo: pathPhotoJolie,
+    },
+    {
+        name: "Donitaa Julius",
+        photo: pathPhotoDonitaa,
+    },
+    {
+        name: "Sonika Tayade",
+        photo: pathPhotoSonika,
+    },
+]} />
 
 ## Problem and Design Overview
 
@@ -356,25 +377,5 @@ Our resulting design is as follows in the sequence of images below. Essentially,
     </Grid>
     <Grid item>
         Users can use their bloom seeds earned throughout their time on this app to purchase merch as a reward.
-    </Grid>
-</Grid>
-
-## Team Members
-
-<Grid container spacing={4}>
-    <Grid item>
-        <TeamMemberCard name="Ruslan Bekniyazov" photo={pathPhotoRuslan} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Jolie Ip" photo={pathPhotoJolie} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Donitaa Julius" photo={pathPhotoDonitaa}  />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Sonika Tayade" photo={pathPhotoSonika}/>
     </Grid>
 </Grid>

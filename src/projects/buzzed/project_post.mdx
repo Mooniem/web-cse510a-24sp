@@ -4,7 +4,7 @@ import {
     ImageListItem,
 } from '@mui/material';
 
-import TeamMemberCard from "src/components/TeamMemberCard";
+import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/Project_overview.png";
 import image2 from "./assets/post/Screen Shot 2022-05-31 at 10.41.42 PM.png";
@@ -41,6 +41,27 @@ import pathPhotoKristine from "./assets/team/kristine.png";
 import pathPhotoSilence from "./assets/team/silence.png";
 
 # Buzzed - Moderate and support your own drinking experience.
+
+## Team Members
+
+<TeamMemberGallery members={[
+    {
+        name: "Anna Shi",
+        photo: pathPhotoAnna,
+    },
+    {
+        name: "Judy Tian",
+        photo: pathPhotoJudy,
+    },
+    {
+        name: "Kristine Dao",
+        photo: pathPhotoKristine,
+    },
+    {
+        name: "Silence Yang",
+        photo: pathPhotoSilence,
+    },
+]} />
 
 ## Problem and Design Overview
 
@@ -334,25 +355,5 @@ People are able to interact the Buzzed app on their smartwatch. They will need t
     <Grid item xs={6} md={9}>
         <h4>Drinking Tips</h4>
         People are also able to see tips on how they might be able to reach their drinking goals and moderate their alcohol consumption next time.
-    </Grid>
-</Grid>
-
-## Team Members
-
-<Grid container spacing={4}>
-    <Grid item>
-        <TeamMemberCard name="Anna Shi" photo={pathPhotoAnna} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Judy Tian" photo={pathPhotoJudy} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Kristine Dao" photo={pathPhotoKristine}  />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Silence Yang" photo={pathPhotoSilence}/>
     </Grid>
 </Grid>

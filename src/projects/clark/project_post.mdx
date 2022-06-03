@@ -4,7 +4,7 @@ import {
     ImageListItem,
 } from '@mui/material';
 
-import TeamMemberCard from "src/components/TeamMemberCard";
+import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/PaperPrototype1.jpg";
 import image2 from "./assets/post/PaperPrototype2.jpg";
@@ -41,6 +41,31 @@ import pathPhotoYunwei from "./assets/team/yunwei.jpg";
 
 
 # Clark - Presenting Made Easier
+
+## Team Members
+
+<TeamMemberGallery members={[
+    {
+        name: "Anna Shih",
+        photo: pathPhotoAnna,
+    },
+    {
+        name: "Donavan See",
+        photo: pathPhotoDonavan,
+    },
+    {
+        name: "Jesse Hu",
+        photo: pathPhotoJesse,
+    },
+    {
+        name: "Judy Pham",
+        photo: pathPhotoJudy,
+    },
+    {
+        name: "Yunwei Liang",
+        photo: pathPhotoYunwei,
+    },
+]} />
 
 ## Problem and Design Overview
 
@@ -330,28 +355,3 @@ The presenter heads to the recordings tab and selects the recording they wish to
     width="100%"
     loading="lazy"
 />
-
-## Team Members
-
-<Grid container spacing={4}>
-    <Grid item>
-        <TeamMemberCard name="Anna Shih" photo={pathPhotoAnna} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Donavan See" photo={pathPhotoDonavan} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Jesse Hu" photo={pathPhotoJesse}  />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Judy Pham" photo={pathPhotoJudy}/>
-    </Grid>
-    <Grid item>
-        <TeamMemberCard name="Yunwei Liang" photo={pathPhotoYunwei}/>
-    </Grid>
-</Grid>
-
-
