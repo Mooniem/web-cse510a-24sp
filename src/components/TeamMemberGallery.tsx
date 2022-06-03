@@ -22,7 +22,9 @@ export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (pro
         <React.Fragment>
             <Grid container spacing={4}>
                 {
-                    props.members.map(
+                    props.members
+                        .sort((a, b) => a.name.localeCompare(b.name))
+                        .map(
                         teamMemberProps => (
                             <Grid
                                 item
