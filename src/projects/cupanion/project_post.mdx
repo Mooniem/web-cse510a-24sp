@@ -38,23 +38,24 @@ import pathPhotoRamya from "./assets/team/ramya.jpg";
 
 ## Team Members
 
-<Grid container spacing={4}>
-    <Grid item>
-        <TeamMemberCard name="Anna Goncharenko" photo={pathPhotoAnna} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Armin Magness" photo={pathPhotoArmin} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Melissa Lin" photo={pathPhotoMelissa}  />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Ramya Challa" photo={pathPhotoRamya}/>
-    </Grid>
-</Grid>
+<TeamMemberGallery members={[
+    {
+        name: "Anna Goncharenko",
+        photo: pathPhotoAnna,
+    },
+    {
+        name: "Armin Magness",
+        photo: pathPhotoArmin,
+    },
+    {
+        name: "Melissa Lin",
+        photo: pathPhotoMelissa,
+    },
+    {
+        name: "Ramya Challa",
+        photo: pathPhotoRamya,
+    },
+]} />
 
 ## Problem and Design Overview
 

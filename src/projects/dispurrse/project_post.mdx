@@ -5,7 +5,7 @@ import {
     ImageListItemBar,
 } from '@mui/material';
 
-import TeamMemberCard from "src/components/TeamMemberCard";
+import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/paper_prototype.png";
 import image2 from "./assets/post/digital_overview.png";
@@ -31,24 +31,24 @@ import pathPhotoKyle from "./assets/team/kyle.png";
 
 ## Team Members
 
-<Grid container spacing={4}>
-    <Grid item>
-        <TeamMemberCard name="Bryce Nguyen" photo={pathPhotoBryce} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Eric Ly" photo={pathPhotoEric} />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Han Nguyen" photo={pathPhotoHan}  />
-    </Grid>
-
-    <Grid item>
-        <TeamMemberCard name="Kyle Dao" photo={pathPhotoKyle}/>
-    </Grid>
-</Grid>
-
+<TeamMemberGallery members={[
+    {
+        name: "Bryce Nguyen",
+        photo: pathPhotoBryce,
+    },
+    {
+        name: "Eric Ly",
+        photo: pathPhotoEric,
+    },
+    {
+        name: "Han Nguyen",
+        photo: pathPhotoHan,
+    },
+    {
+        name: "Kyle Dao",
+        photo: pathPhotoKyle,
+    },
+]} />
 
 ## Problem and Design Overview
 
