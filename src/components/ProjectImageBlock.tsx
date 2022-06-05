@@ -4,6 +4,7 @@ import ProjectImagesBlock from "src/components/ProjectImagesBlock";
 
 interface ProjectImage {
     src: string;
+    caption?: string;
 }
 
 interface ProjectImageBlockProps {

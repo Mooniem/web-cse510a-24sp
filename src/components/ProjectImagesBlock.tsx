@@ -9,6 +9,7 @@ import {
 
 interface ProjectImage {
     src: string;
+    caption?: string;
 }
 
 interface ProjectImagesBlockProps {
@@ -40,15 +41,37 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (p
                                         flexDirection: "row",
                                         justifyContent: "center",
                                     }}>
-                                        <Paper sx={{margin: 2, padding: 1}}>
-                                            <img
-                                                src={projectImage.src}
-                                                style={{
-                                                    maxHeight: (props.maxHeight === undefined) ? "400px" : props.maxHeight,
-                                                    maxWidth: "100%"
-                                                }}
-                                            />
-                                        </Paper>
+                                        <Box sx={{
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            justifyContent: "start",
+                                        }}>
+                                            <Paper sx={{margin: 2, padding: 1}}>
+                                                <img
+                                                    src={projectImage.src}
+                                                    style={{
+                                                        maxHeight: (props.maxHeight === undefined) ? "400px" : props.maxHeight,
+                                                        maxWidth: "100%"
+                                                    }}
+                                                />
+                                            </Paper>
+                                            {
+                                                projectImage.caption != undefined &&
+                                                <React.Fragment>
+                                                    <Box sx={{
+                                                        display: "flex",
+                                                        flexDirection: "row",
+                                                        justifyContent: "center",
+                                                        marginTop: 1,
+                                                        marginBottom: 4,
+                                                    }}>
+                                                        <Typography fontStyle="oblique">
+                                                            { projectImage.caption }
+                                                        </Typography>
+                                                    </Box>
+                                                </React.Fragment>
+                                            }
+                                        </Box>
                                     </Box>
                                 )
                             )
