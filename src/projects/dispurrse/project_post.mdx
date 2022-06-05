@@ -5,6 +5,9 @@ import {
     ImageListItemBar,
 } from '@mui/material';
 
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/paper_prototype.png";
@@ -27,7 +30,9 @@ import pathPhotoEric from "./assets/team/eric.png";
 import pathPhotoHan from "./assets/team/han.jpg";
 import pathPhotoKyle from "./assets/team/kyle.png";
 
-# Dispurrse - the purrfect cat helper
+# Dispurrse
+
+<ProjectSubtitle>the purrfect cat helper</ProjectSubtitle>
 
 ## Team Members
 
@@ -57,6 +62,7 @@ Owners of multiple cats often struggle to maintain a healthy lifestyle for their
 To tie this all together, all these components will be operated through a mobile application. In this application, you can create profiles for each of your cats and assign them feeding schedules along with keeping track of information pertaining to that cat such as how much they have been eating, waste output, and their weight over time. It is this same information that you can email to a veterinarian when you begin to feel concerned about their health.
 
 ## Design Research Process and Key Insights
+
 ### Design Research Process Overview
 
 To get a better understanding of the issues that cat owners and caretakers face and their daily routines, we engaged in design research. We initially sought out people who own multiple cats and have busy schedules. One of our first participants was a UW student who owned 2 cats and we conducted a semi-structured interview with them with the goal of understanding the distinct set of challenges that come with owning multiple cats and being a student at the same time. We then pivoted our design research away from casual cat owners, to those who care for many cats professionally. We sent questionnaires to numerous cat cafes based in Washington, to get a perspective of the care for cats that interact with many people every day. The questionnaire consisted of questions regarding the current forms of tracking the cat cafe uses, and their daily routines in caring for the cats. Overall, we targeted two contrasting types of participants to get a broader picture of the design problem and possibly take inspiration from the professional cat caretakers that could be applied to the ordinary cat owner.
@@ -75,22 +81,12 @@ When comparing the daily routines of professional cat caretakers and ordinary ca
 
 ## Iterative Design Process and Key Insights
 
-### Paper Prototype
-
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignItems="center"
+<ProjectImageBlock
+    image={{src: image1}}
+    width={8}
 >
-    <Grid item>
-        <img
-            src={image1}
-            alt=""
-            width="100%"
-        />
-    </Grid>
-</Grid>
+### Paper Prototype
+</ProjectImageBlock>
 
 ### Iterative Design Process Overview
 
@@ -111,125 +107,85 @@ While transitioning from the paper prototype to the digital mockup, we realized 
 
 ## Resulting Design
 
-### Digital Mockup: Overview
-
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignItems="center"
+<ProjectImageBlock
+    image={{src: image2}}
+    width={8}
 >
-    <Grid item>
-        <img
-            src={image2}
-            alt=""
-            width="100%"
-        />
-    </Grid>
-</Grid>
+### Digital Mockup: Overview
+</ProjectImageBlock>
 
 ### Task 1: Feeding Multiple Cats
 
-export const task1Images = [
-    {
-        img: task1Image1,
-        title: 'Select the “My Cats” tab',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Image2,
-        title: 'Tap the “Add” button',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Image3,
-        title: 'Input your cat\'s information',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Image4,
-        title: 'Tap the “Add Meal” button',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Image5,
-        title: 'Customize meal settings',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Image6,
-        title: 'Connect to a feeder',
-        rows: 1,
-        cols: 1,
-    },
-];
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1Image1,
+            caption: "Select the “My Cats” tab.",
+        },
+        {
+            src: task1Image2,
+            caption: "Tap the “Add” button.",
+        },
+        {
+            src: task1Image3,
+            caption: "Input your cat's information.",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>
 
-<ImageList cols={3}>
-    {task1Images.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
-            <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-            />
-            <ImageListItemBar
-                title={item.title}
-                position="below"
-
-            />
-        </ImageListItem>
-    ))}
-</ImageList>
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1Image4,
+            caption: "Tap the “Add Meal” button.",
+        },
+        {
+            src: task1Image5,
+            caption: "Customize meal settings.",
+        },
+        {
+            src: task1Image6,
+            caption: "Connect to a feeder.",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>
 
 ### Task 2: Sharing wellness information with a vet
 
-export const task2Images = [
-    {
-        img: task2Image1,
-        title: 'Select the “My Cats” tab',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task2Image2,
-        title: 'Tap “Share with vet”',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task2Image3,
-        title: 'Add a personalized message',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task2Image4,
-        title: 'Confirmed!',
-        rows: 1,
-        cols: 1,
-    },
-];
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2Image1,
+            caption: "Select the “My Cats” tab.",
+        },
+        {
+            src: task2Image2,
+            caption: "Tap “Share with vet”.",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>
 
-<ImageList cols={3}>
-    {task2Images.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
-            <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-            />
-            <ImageListItemBar
-                title={item.title}
-                position="below"
-
-            />
-        </ImageListItem>
-    ))}
-</ImageList>
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2Image3,
+            caption: "Add a personalized message.",
+        },
+        {
+            src: task2Image4,
+            caption: "Confirmed!",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>
