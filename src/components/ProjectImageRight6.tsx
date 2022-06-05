@@ -27,7 +27,7 @@ export const ProjectImageRight6: FunctionComponent<ProjectImageRight6Props> = (p
                         <Paper sx={{margin: 2, padding: 1}}>
                             <img
                                 src={props.imageSrc}
-                                style={{maxWidth: "100%"}}
+                                style={{maxHeight: "400px", maxWidth: "100%"}}
                             />
                         </Paper>
                     </Box>
