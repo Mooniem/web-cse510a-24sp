@@ -16,11 +16,11 @@ export const ProjectImageRight8: FunctionComponent<ProjectImageRight8Props> = (p
                 <Grid item md={4} sx={{marginTop: -2}}>
                     { props.children }
                 </Grid>
-                <Grid item md={8} sx={{marginTop: -2}}>
+                <Grid item md={8} sx={{marginTop: -2}} container justifyContent="center">
                     <Paper sx={{margin: 2, padding: 1}}>
                         <img
                             src={props.imageSrc}
-                            width="100%"
+                            style={{maxWidth: "100%"}}
                         />
                     </Paper>
                 </Grid>
