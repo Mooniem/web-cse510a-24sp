@@ -1,6 +1,5 @@
-import ProjectImageRight4 from "src/components/ProjectImageRight4";
-import ProjectImageRight6 from "src/components/ProjectImageRight6";
-import ProjectImageRight8 from "src/components/ProjectImageRight8";
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
 import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
@@ -61,9 +60,9 @@ import pathPhotoSonika from "./assets/team/sonika.png";
 
 ## Problem and Design Overview
 
-<ProjectImageRight4 imageSrc={image1}>
+<ProjectImageBlock image={{src: image1}} width={4}>
 Bloom is an investment education app that equips you with the personalized knowledge and tools to make the most informed investment decisions when it comes to stocks and crypto. Educational tracks help you get started or continue where you left off on your journey of learning about investing. Personalized tasks help you use your newfound knowledge by taking action: be it as simple as creating an investment account, or as complicated as analyzing a chart to identify crucial patterns. The focus of our design was to present information in the most beginner-friendly way, trying to stick to simplicity and try to make the interface as intuitive for the users as we can. Our design tries to incentivize learning in various ways: learning streaks, progress tracking, and an in-app currency awards for completing lessons and tasks which could be used to purchase merchandise. The target demographic of Bloom are students  in college. Students often lack the investment knowledge and resort to putting off investment education until later in life. However, allowing the students to make mistakes and learn early when their financial decisions are perhaps not as impactful as the financial decisions they will make later in life allows them to succeed later in life and also increase their time in the stock and crypto markets.
-</ProjectImageRight4>
+</ProjectImageBlock>
 
 ## Design Research Process and Key Insights
 
@@ -75,9 +74,9 @@ The six participants for our design research were all college students, but were
 
 #### Lack of Substantial Information
 
-<ProjectImageRight6 imageSrc={image2}>
+<ProjectImageBlock image={{src: image2}} width={6}>
 Every single one of our participants shared that they had the desire to become more financially literate. They were curious about investing, taxes,and cryptocurrency. When asked about how participants obtained financial information about these topics, they mentioned diverse sources, such as from friends and family, YouTube videos, Reddit and other social media, as well as a multitude of websites. However, several participants shared that this information was often overwhelming and confusing. The overload of information left them confused and still unsure where to begin. One of our participants said that they would enjoy “educational material that starts from ground zero”. Similarly, another participant said that she wanted to become an expert in investing. Another participant stated that while they felt confident in small-scale financial decisions, they were hesitant to invest because they did not have sufficient information. This insight tells us that participants could benefit from a centralized hub of information that is simple and inclusive for anyone regardless of their prior experience with personal finance. We felt that a mobile app is an easy way for any college student to learn in a way that is always accessible and cheap. As such, we decided to iterate on our mobile app design. Below, our storyboard for our design emphasized this insight of having insufficient information.
-</ProjectImageRight6>
+</ProjectImageBlock>
 
 #### Balancing Personalization and Privacy
 
@@ -85,15 +84,15 @@ Multiple participants indicated that if there was some way to learn and guide th
 
 #### Providing Other Pathways
 
-<ProjectImageRight6 imageSrc={image3}>
+<ProjectImageBlock image={{src: image3}} width={6}>
 Multiple participants told us that they planned to save their money they were going to make in their summer internships and jobs. Because our focus is to teach college students about other actions they can take with their money (invest into stocks, crypto, etc), we wanted our mobile app to help users understand how else they can use their money. Multiple tasks were created from this insight: Understanding the Risks and Rewards of Cryptocurrency, and Investment Advice. When we were creating the design sketches for our app, we ensured that the learning tracks would prioritize tutorials on getting started with new concepts and taking action rather than simply learning these concepts simply theoretically. This can be demonstrated by screen 3 of our our initial app sketches below:
 
 While we made the separation between tutorials and actually taking action later on, this insight made it clear we wanted to focus on having our app motivate users to learn about new concepts in personal finance and actually use these lessons to take action.
-</ProjectImageRight6>
+</ProjectImageBlock>
 
 ### Iterative Design Process and Key Insights
 
-<ProjectImageRight6 imageSrc={image4}>
+<ProjectImageBlock image={{src: image4}} width={6}>
 Our iterative design process focused on three main tasks:
 * Signing up and personalizing the content based on your knowledge of investing in stock and crypto markets
 * Going through personalized educational tracks
@@ -102,7 +101,7 @@ Our iterative design process focused on three main tasks:
 We started off with a rough paper prototype of our idea. We then iterated over our paper prototype as the design research methods we used revealed insights to make our design better. We conducted inspection based methods, usability testing and heuristic evaluations before finalizing the paper prototype and transferring it over to a digital mockup.
 
 These design research methods revealed three key insights in our design iteration.
-</ProjectImageRight6>
+</ProjectImageBlock>
 
 #### Make Information Easy to Read
 
@@ -112,89 +111,106 @@ During our usability tests, we received feedback that stated *our sign up proces
 * We split the sign up questionnaire into 3 screens instead of trying to fit everything into a scrollable screen.
 * We also included a mini click through tutorial to explain why we needed the information.
 
-<ProjectImageRight8 imageSrc={image5}>
+<ProjectImageBlock image={{src: image5}} width={8}>
 Mini Tutorial:
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image6}>
+<ProjectImagesBlock
+    images={[
+        {src: image6},
+        {src: image7},
+    ]}
+    direction="row"
+    width={8}
+>
 Our main screen:
-</ProjectImageRight8>
-
-<ProjectImageRight8 imageSrc={image7}>
-</ProjectImageRight8>
+</ProjectImagesBlock>
 
 #### Eliminate assumptions and increase inclusivity
 
-<ProjectImageRight8 imageSrc={image8}>
+<ProjectImagesBlock
+    images={[
+        {src: image8},
+        {src: image9},
+    ]}
+    direction="row"
+    width={8}
+>
 Usability testing also revealed that users might not understand certain financial terms we used in our design such as “brokerage” and “risk tolerance”. Since our app is designed for college students at the start of their journey, we changed the wording of our designs to use simpler terms. For instance, we changed brokerage to investment account.
-</ProjectImageRight8>
-
-<ProjectImageRight8 imageSrc={image9}>
-</ProjectImageRight8>
+</ProjectImagesBlock>
 
 #### Implement User progress and result tracking
 
-<ProjectImageRight8 imageSrc={image10}>
+<ProjectImagesBlock
+    images={[
+        {src: image10},
+        {src: image11},
+    ]}
+    direction="row"
+    width={8}
+>
 Participants indicated that it would be beneficial to see the lessons and tasks they have completed. During usability tests, they inquired about accessing their previous results but realized there was no way to do so because our initial prototype had no way to view progress, and we then iterated to create a way to view progress. However, we got further feedback that our progress tracker was not very intuitive and that a graph representation would be beneficial and easier to understand, thus we created a graph representation.
-</ProjectImageRight8>
-
-<ProjectImageRight8 imageSrc={image11}>
-</ProjectImageRight8>
+</ProjectImagesBlock>
 
 ## Resulting Design
+
 Our resulting design is as follows in the sequence of images below. Essentially, we wanted a clean design that was easy to follow. The first task is that the user learns about stocks or crypto through lessons and videos. The second task is them taking action. For example, one of the tasks they could do is create an investment account and then later, choose to apply their knowledge in the real stock and/or crypto market. They also can earn “bloom seeds”, our in-app cryptocurrency that they can later use to buy Bloom merchandise.
 
-<ProjectImageRight8 imageSrc={image12}>
-This is the welcome screen that the user sees as soon as they open the Bloom app
-</ProjectImageRight8>
+<ProjectImageBlock image={{src: image12}} width={8}>
+This is the welcome screen that the user sees as soon as they open the Bloom app.
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image13}>
+<ProjectImagesBlock
+    images={[
+        {src: image13},
+        {src: image14},
+    ]}
+    direction="row"
+    width={8}
+>
 This is the log in/sign up screen the user sees next depending on whether they want to sign in or sign up.
-</ProjectImageRight8>
+</ProjectImagesBlock>
 
-<ProjectImageRight8 imageSrc={image14}>
-</ProjectImageRight8>
-
-<ProjectImageRight8 imageSrc={image15}>
+<ProjectImageBlock image={{src: image15}} width={8}>
 This is the next screen the user sees if they want to sign up to give the users a quick summary of what the Bloom app is.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image16}>
+<ProjectImageBlock image={{src: image16}} width={8}>
 They are then taken to a mini questionnaire where they are asked additional questions so that a specific plan is tailored for them.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image17}>
+<ProjectImageBlock image={{src: image17}} width={8}>
 This is the home page where users will be able to see the stocks and crypto lessons.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Task 1: Learn
 
-<ProjectImageRight8 imageSrc={image18}>
+<ProjectImageBlock image={{src: image18}} width={8}>
 Users are directed to the main screen where they can pick lessons to start.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image19}>
+<ProjectImageBlock image={{src: image19}} width={8}>
 After picking a lesson, they are redirected to an information page that breaks down the concepts. There’s a pop-up to provide definitions for all financial literacy related terms that the user might not know.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image20}>
+<ProjectImageBlock image={{src: image20}} width={8}>
 They are then guided to watch a video. Here they can interact with other users and have a discussion.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image21}>
+<ProjectImageBlock image={{src: image21}} width={8}>
 Next, they can take a quiz to see how well they’ve understood the material. The quiz is designed to test their knowledge of the lesson and users can view their results after taking it.  They also earn bloom seeds as a reward.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Task 2: Take Action
 
-<ProjectImageRight8 imageSrc={image22}>
+<ProjectImageBlock image={{src: image22}} width={8}>
 Users can follow step by step guides to get started on their financial literacy journey. They also earn bloom seeds as an incentive for completing the tasks.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image23}>
+<ProjectImageBlock image={{src: image23}} width={8}>
 We added a progress screen so that users can track progress. It allows you to view past (completed) lessons, and see any future lessons. It also allows you to filter by Stocks and Crypto progress.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image24}>
+<ProjectImageBlock image={{src: image24}} width={8}>
 Users can use their bloom seeds earned throughout their time on this app to purchase merch as a reward.
-</ProjectImageRight8>
+</ProjectImageBlock>
