@@ -1,7 +1,6 @@
-import {
-    Grid,
-} from '@mui/material';
-
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/1.png";
@@ -34,7 +33,9 @@ import pathPhotoArmin from "./assets/team/armin.jpg";
 import pathPhotoMelissa from "./assets/team/melissa.jpg";
 import pathPhotoRamya from "./assets/team/ramya.jpg";
 
-# Cupanion - Your Drink Tracking Companion
+# Cup-anion
+
+<ProjectSubtitle>Your Drink Tracking Companion</ProjectSubtitle>
 
 ## Team Members
 
@@ -74,336 +75,145 @@ At the beginning of the research process, we thought we would want to conduct ob
 A common theme that emerged from our design research was that participants had different reasons for wanting to track their beverage consumption. Some wanted to drink more water. Others wanted to be more aware of their caffeine and added sugar consumption. One participant pointed out that the labels on store bought drinks were hard to read, making it hard to find artificial ingredients that they were staying away from. Based on this, versatility became an important part of our design. We wanted the container to be able to detect not just water, but various types of drinks and substances.
 
 #### People want to meet goals to improve health.
-All participants expressed a common struggle of not being able to remember to reach their goals. Drinking wasn’t something they thought consciously about doing and so they would forget. Hence, goal-setting became another key part of our design. More specifically, we wanted to be able to encourage people to meet goals in a way that was not overly disruptive to their routine. For instance, in the sketch below, the cup begins to glow a different color to remind the user to drink.
 
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignItems="center"
+<ProjectImageBlock
+    image={{src: image1}}
+    caption="The cup starts to glow a different color, which subtly reminds the user to drink more water."
+    width={8}
 >
-    <Grid item>
-        <img
-            src={image1}
-            alt="The cup starts to glow a different color, which subtly reminds the user to drink more water"
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The cup starts to glow a different color, which subtly reminds the user to drink more water
-    </Grid>
-</Grid>
-
+All participants expressed a common struggle of not being able to remember to reach their goals. Drinking wasn’t something they thought consciously about doing and so they would forget. Hence, goal-setting became another key part of our design. More specifically, we wanted to be able to encourage people to meet goals in a way that was not overly disruptive to their routine. For instance, in the sketch below, the cup begins to glow a different color to remind the user to drink.
+</ProjectImageBlock>
 
 #### People want a design that is easy to use without messing with their routine.
 Our participants all wanted something that is easy to use because they are too busy to self-track. To help avoid the extra work, we wanted a design that can be used easily, without too many extra tools, and that works for all types of drinks. While not explicitly mentioned by our interviewees, we noticed that many of them drank the same things every day: water, coffee, energy drinks. Taking this into account, we realized that it wasn’t necessary to fit every situation, but rather the typical ones and allow for “edge cases” where they could manually tell us what they drank.
 
 ## Iterative Design Process and Key Insights
+
 ### The Process
 We started out by paper prototyping a cup and an app with the design and insights that came out of the above research. We focused on the goal of passively encouraging people to meet their drinking goals through elements of design on the cup, and the goal of measuring any beverage’s volume and contents through interface with the cup and app. We employed a process of a heuristic evaluation and three independent usability tests.
-### The Results
-#### The cup was unintuitive to use without a tutorial
-In our initial heuristic evaluation it was revealed to us that the cup and app inherently did not have affordances for the functionality we were promoting. In our heuristic evaluation, it was brought up that there were a lot of buttons/lights and correlations with the app that were unexplained. In our initial design, we had just the main home screen:
 
-<Grid
-    container
+### The Results
+
+#### The cup was unintuitive to use without a tutorial
+
+<ProjectImagesBlock
+    images={[
+        {src: image2},
+        {src: image3},
+    ]}
+    caption="The relation between the rings and lights on the cup and the buttons with the app is unclear."
     direction="row"
-    justifyContent="center"
-    alignItems="center"
+    width={8}
 >
-    <Grid item xs={12} md={6}>
-        <img
-            src={image2}
-            alt="The relation between the rings and lights on the cup and the buttons with the app is unclear"
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={6}>
-        <img
-            src={image3}
-            alt="The relation between the rings and lights on the cup and the buttons with the app is unclear"
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The relation between the rings and lights on the cup and the buttons with the app is unclear
-    </Grid>
-</Grid>
+In our initial heuristic evaluation it was revealed to us that the cup and app inherently did not have affordances for the functionality we were promoting. In our heuristic evaluation, it was brought up that there were a lot of buttons/lights and correlations with the app that were unexplained. In our initial design, we had just the main home screen.
 
 But this confused participants since they thought that our design was just a simple tracking up and didn’t understand the correlation and interface with the cup.
+</ProjectImagesBlock>
 
-This issue persisted throughout the usability tests which gave us a lot of potential explanations to include in the tutorial. The iterative design of the tutorial was fickle but important to us because we had the desire to keep user time on the app minimal, but at the same time, to do so meant that the user needed to have a better understanding of the cup. We ended up adding a short and simple tutorial of the cup that launches when the app is opened for the first time which is shown below:
-
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignItems="center"
+<ProjectImageBlock
+    image={{src: image4}}
+    caption="A brief walkthrough of of the cup and app functionality."
+    width={8}
 >
-    <Grid item>
-        <img
-            src={image4}
-            alt="A brief walkthrough of of the cup and app functionality"
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        A brief walkthrough of of the cup and app functionality
-    </Grid>
-</Grid>
-
-
+This issue persisted throughout the usability tests which gave us a lot of potential explanations to include in the tutorial. The iterative design of the tutorial was fickle but important to us because we had the desire to keep user time on the app minimal, but at the same time, to do so meant that the user needed to have a better understanding of the cup. We ended up adding a short and simple tutorial of the cup that launches when the app is opened for the first time which is shown below.
+</ProjectImageBlock>
 
 #### Participants want a non-intrusive alert system to nudge them towards goals.
+
+<ProjectImagesBlock
+    images={[
+        {src: image5},
+        {src: image6},
+        {src: image7},
+    ]}
+    caption="As the participant drinks too much sugar, the sugar ring (bottommost) starts to glow red."
+    direction="row"
+    width={8}
+>
 Our initial prototype utilized three rings of light around the bottom of the cup, where the color of the light indicates how far from the goal the user is. In the image below, the third goal is not being met, so the light is glowing red.
+</ProjectImagesBlock>
 
-<Grid
-    container
+<ProjectImagesBlock
+    images={[
+        {src: image8},
+        {src: image9},
+        {src: image10},
+    ]}
+    caption="The ring associated with a specific goal starts to glow in accordance to the reminders set by the participant in the app."
     direction="row"
-    justifyContent="center"
-    alignItems="center"
+    width={8}
 >
-    <Grid item xs={12} md={4}>
-        <img
-            src={image5}
-            alt="As the participant drinks too much sugar, the sugar ring (bottommost) starts to glow red"
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image6}
-            alt="As the participant drinks too much sugar, the sugar ring (bottommost) starts to glow red"
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image7}
-            alt="As the participant drinks too much sugar, the sugar ring (bottommost) starts to glow red"
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        As the participant drinks too much sugar, the sugar ring (bottommost) starts to glow red
-    </Grid>
-</Grid>
-
-
 Another key insight that we found through our usability testing was that participants found the consistent lighting to show goal status distracting and told us that they would prefer the default light for the goal status to be off, and only come on as a nudge when the user was straying from their goals. They also revealed that they would want some customization towards what colors that nudge could be so as to avoid difficulties with seeing colors, or finding some colors more or less distracting that what they would like. To address this we implemented their advice, giving default off lights on the base of the cup with an option to select color of the light when setting the goals.
-
-<Grid
-    container
-    direction="row"
-    justifyContent="center"
-    alignItems="center"
->
-    <Grid item xs={12} md={4}>
-        <img
-            src={image8}
-            alt="The ring associated with a specific goal starts to glow in accordance to the reminders set by the participant in the app"
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image9}
-            alt="The ring associated with a specific goal starts to glow in accordance to the reminders set by the participant in the app"
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image10}
-            alt="The ring associated with a specific goal starts to glow in accordance to the reminders set by the participant in the app"
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The ring associated with a specific goal starts to glow in accordance to the reminders set by the participant in the app
-    </Grid>
-</Grid>
+</ProjectImagesBlock>
 
 #### Participants want a way on the cup to see daily progress
-The final key takeaway from our iterative design process was that some participants wanted to be able to view their daily progress on the cup itself, feeling that it would be less distracting than having to pick up their phone and look at their data through the app. Again, the iteration of this design element was trying to strike a balance between the simplicity of the design, and the control granted to participants.  In the end we added a second set of lights that would indicate participants daily progress (seen around the logo).
 
-<Grid
-    container
+<ProjectImagesBlock
+    images={[
+        {src: image11},
+        {src: image12},
+        {src: image13},
+    ]}
+    caption="The progress ring starts to fill as the participant gets closer to their goal."
     direction="row"
-    justifyContent="center"
-    alignItems="center"
+    width={8}
 >
-    <Grid item xs={12} md={4}>
-        <img
-            src={image11}
-            alt="The progress ring starts to fill as the participant gets closer to their goal"
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image12}
-            alt="The progress ring starts to fill as the participant gets closer to their goal"
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image13}
-            alt="The progress ring starts to fill as the participant gets closer to their goal"
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The progress ring starts to fill as the participant gets closer to their goal
-    </Grid>
-</Grid>
+The final key takeaway from our iterative design process was that some participants wanted to be able to view their daily progress on the cup itself, feeling that it would be less distracting than having to pick up their phone and look at their data through the app. Again, the iteration of this design element was trying to strike a balance between the simplicity of the design, and the control granted to participants.  In the end we added a second set of lights that would indicate participants daily progress (seen around the logo).
+</ProjectImagesBlock>
 
 ## Resulting Design
 
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignItems="center"
+<ProjectImageBlock
+    image={{src: image14}}
+    caption="The final mockup of Cup-anion."
+    width={8}
 >
-    <Grid item>
-        <img
-            src={image14}
-            alt="The final mockup of Cup-anion"
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The final mockup of Cup-anion
-    </Grid>
-</Grid>
-
-
-
 The final design of the Cup-anion Cup contains three rings around the base, and three rings around the logo. The bottom rings light up to nudge a user about their goal, and the top rings start empty, then fill in as the user gets closer to their daily goal to indicate progress.
+</ProjectImageBlock>
 
+<ProjectImagesBlock
+    images={[
+        {src: image22},
+        {src: image23},
+        {src: image24},
+    ]}
+    caption="The user is able to set a goal with their desired amounts, frequency of reminders, and color association."
+    direction="row"
+    width={8}
+>
 Say we have a hypothetical new user of our design. They have already gone through the tutorial and are ready to set a goal in our app. They can go to the settings tab as stated in the tutorial and easily set a water drinking goal. When setting the goal, the user has the power to change the frequency of reminders, the amount to be tracked, and the color to set that ring to. Once the goal is set, they’re ready to start drinking!
+</ProjectImagesBlock>
 
-<Grid
-    container
-    direction="row"
-    justifyContent="center"
-    alignItems="center"
+<ProjectImageBlock
+    image={{src: image15}}
+    caption="The user is reminded to drink more water after some time, and the progress ring fills accordingly."
+    width={8}
 >
-    <Grid item xs={12} md={4}>
-        <img
-            src={image22}
-            alt="The user is able to set a goal with their desired amounts, frequency of reminders, and color association."
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image23}
-            alt="The user is able to set a goal with their desired amounts, frequency of reminders, and color association."
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image24}
-            alt="The user is able to set a goal with their desired amounts, frequency of reminders, and color association."
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The user is able to set a goal with their desired amounts, frequency of reminders, and color association.
-    </Grid>
-</Grid>
-
-
 As the storyboard shows below, a user starts their day off with the top progress ring at zero. As the day goes on, their water ring starts to glow, nudging them to drink some water. The user sees this and drinks some water, causing the top progress ring to fill up a bit.
+</ProjectImageBlock>
 
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignItems="center"
+<ProjectImagesBlock
+    images={[
+        {src: image16},
+        {src: image17},
+        {src: image18},
+    ]}
+    caption="The user can look at their statistics for any time period since they started using Cup-anion."
+    direction="row"
+    width={8}
 >
-    <Grid item>
-        <img
-            src={image15}
-            alt="The user is reminded to drink more water after some time, and the progress ring fills accordingly."
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The user is reminded to drink more water after some time, and the progress ring fills accordingly.
-    </Grid>
-</Grid>
-
-
 Then say this user is now curious about how much sugar they’ve consumed in the past day. As shown in the series of images below, they can see that their sugar consumption seems to peak at four specific times as recorded by the cup. Seeing the yearly stats is also easy, by just clicking on the year button at the top. Now empowered with these statistics, the user can make changes to their diet/drinking habits accordingly.
+</ProjectImagesBlock>
 
-<Grid
-    container
+<ProjectImagesBlock
+    images={[
+        {src: image19},
+        {src: image20},
+        {src: image21},
+    ]}
+    caption="The user can search for a drink they did not use Cup-anion for in our database and add it to their drinks consumed in the app."
     direction="row"
-    justifyContent="center"
-    alignItems="center"
+    width={8}
 >
-    <Grid item xs={12} md={4}>
-        <img
-            src={image16}
-            alt="The user can look at their statistics for any time period since they started using Cup-anion."
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image17}
-            alt="The user can look at their statistics for any time period since they started using Cup-anion."
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image18}
-            alt="The user can look at their statistics for any time period since they started using Cup-anion."
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The user can look at their statistics for any time period since they started using Cup-anion.
-    </Grid>
-</Grid>
-
-
 Now looking at the statistics, the user forgot that they drank a Starbucks latte which wasn’t poured into the cup. By pressing the search button, they can manually log a drink that they had outside of their Cup-anion.
-
-<Grid
-    container
-    direction="row"
-    justifyContent="center"
-    alignItems="center"
->
-    <Grid item xs={12} md={4}>
-        <img
-            src={image19}
-            alt="The user can search for a drink they did not use Cup-anion for in our database and add it to their drinks consumed in the app."
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image20}
-            alt="The user can search for a drink they did not use Cup-anion for in our database and add it to their drinks consumed in the app."
-            width="100%"
-        />
-    </Grid>
-    <Grid item xs={12} md={4}>
-        <img
-            src={image21}
-            alt="The user can search for a drink they did not use Cup-anion for in our database and add it to their drinks consumed in the app."
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        The user can search for a drink they did not use Cup-anion for in our database and add it to their drinks consumed in the app.
-    </Grid>
-</Grid>
+</ProjectImagesBlock>
