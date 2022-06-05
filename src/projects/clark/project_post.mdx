@@ -1,9 +1,5 @@
-import {
-    Grid,
-    ImageList,
-    ImageListItem,
-} from '@mui/material';
-
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
 import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
@@ -90,271 +86,113 @@ One insight from our interviews that we hadn’t focused on previously was the s
 
 ## Iterative Design Process and Key Insights
 
+<ProjectImagesBlock
+    images={[
+        {src: image1},
+        {src: image2},
+        {src: image3},
+    ]}
+    direction="column"
+    width={6}
+>
+
 Our iterative design process was heavily centered around usability testing in order to identify areas of our paper prototype that functioned properly, and likewise areas that were difficult or unusable. The goal here was to capitalize on favorable design choices while making adjustments to weaker areas to slowly bring Clark towards a design that presenters could find beneficial. In order for this to happen, we needed our participants to have a smooth and seamless experience with our paper prototype. On our side of the usability testing process, this was achieved via 5 key roles: the Presenter Operator (Clark + App), the Audience Operator (Audience UI), a Facilitator, and two Notetakers.
 
 Our design focus was ensuring that presenters could easily interact with the Clark app and use it to give effective presentations whilst connecting with their audience. Thus, the tasks given to the presenters were to prepare for a presentation, give a presentation, and view the recording of a previous presentation. Additionally, we tasked the audience with interacting via their side of the Clark interface because we wanted to make sure that audience members were able to meaningfully communicate their content understanding to the presenter.
 
 Through high repetition of usability testing and prototype adjustments, we were able to flush out a solid paper prototype.
-
-export const paperPrototypeItems = [
-    {
-        img: image1,
-        title: 'Paper Prototype 1',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: image2,
-        title: 'Paper Prototype 2',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: image3,
-        title: 'Paper Prototype 3',
-        rows: 2,
-        cols: 2,
-    },
-];
-
-
-<ImageList>
-    {paperPrototypeItems.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
-            <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-            />
-        </ImageListItem>
-    ))}
-</ImageList>
-
+</ProjectImagesBlock>
 
 ### Improving Edit Clark Option
-<Grid container spacing={2}>
-    <Grid item xs={6} md={8}>
-        One area that was fleshed out thoroughly during usability testing was our option to edit Clark’s display screen. For instance in initial tests, it was not clear to a participant that they could edit Clark’s screen by going to settings and appearances, or when they got there what to do. Because the presenter’s ability to customize Clark to best suit their needs is important to us, we added an additional button on the home screen that directly goes to the edit clark screen. We also added text instructing the participant to move widgets to the representation of Clark’s screen. Some participants wanted a higher level of customization to be able to drag individual components to specific locations, while others did not mind the default layout of Clark, so we also included the option of presets.
-    </Grid>
-    <Grid item xs={6} md={4}>
-        <img
-            src={`${image4}?auto=format`}
-            width="100%"
-            alt="Paper Prototype 4"
-            loading="lazy"
-        />
-    </Grid>
-</Grid>
+
+<ProjectImageBlock image={{src: image4}} width={4}>
+One area that was fleshed out thoroughly during usability testing was our option to edit Clark’s display screen. For instance in initial tests, it was not clear to a participant that they could edit Clark’s screen by going to settings and appearances, or when they got there what to do. Because the presenter’s ability to customize Clark to best suit their needs is important to us, we added an additional button on the home screen that directly goes to the edit clark screen. We also added text instructing the participant to move widgets to the representation of Clark’s screen. Some participants wanted a higher level of customization to be able to drag individual components to specific locations, while others did not mind the default layout of Clark, so we also included the option of presets.
+</ProjectImageBlock>
 
 ### Improving Audience Feedback
-<Grid container spacing={2}>
-    <Grid item xs={6} md={8}>
-        Initially, audience members are able to do two things: indicate understanding, and ask questions. While the audience interface is intended to be simple, we received a lot of feedback regarding the function that allowed audience members to ask questions throughout the presentation. Many participants felt that there ought to be a way for them to view questions asked by other audience members, as well as vote on the ones they felt were particularly good questions. This insight emerged when we prompted participants to ask a question, at which point, many of them wondered if a similar question had already been asked. Some direct quotes are “I wonder if anyone else is confused about this” and “Is there a way to see if someone has already asked this question?”. We iterated upon this design by adding a panel to allow audience members to view and vote on questions:
-    </Grid>
-    <Grid item xs={6} md={4}>
-        <img
-            src={`${image5}?auto=format`}
-            width="100%"
-            alt="Paper Prototype 5"
-            loading="lazy"
-        />
-    </Grid>
-</Grid>
 
+<ProjectImageBlock image={{src: image5}} width={4}>
+Initially, audience members are able to do two things: indicate understanding, and ask questions. While the audience interface is intended to be simple, we received a lot of feedback regarding the function that allowed audience members to ask questions throughout the presentation. Many participants felt that there ought to be a way for them to view questions asked by other audience members, as well as vote on the ones they felt were particularly good questions. This insight emerged when we prompted participants to ask a question, at which point, many of them wondered if a similar question had already been asked. Some direct quotes are “I wonder if anyone else is confused about this” and “Is there a way to see if someone has already asked this question?”. We iterated upon this design by adding a panel to allow audience members to view and vote on questions:
+</ProjectImageBlock>
 
 ### Improving Accessibility
-<Grid container spacing={2}>
-    <Grid item xs={6} md={8}>
-        As we worked on our paper prototype, we referenced commonly used apps and interfaces. In addition to things like changing text size, we found that iPhones also offered the option to “differentiate without color”. One team member also pointed out that our prototype assumes that the user reads English. Because we wanted this to be accessible to people who spoke other languages, we also included the option to change the language the presenter’s app was in.
-    </Grid>
-    <Grid item xs={6} md={4}>
-        <img
-            src={`${image6}?auto=format`}
-            width="100%"
-            alt="Paper Prototype 6"
-            loading="lazy"
-        />
-    </Grid>
-</Grid>
 
+<ProjectImageBlock image={{src: image6}} width={4}>
+As we worked on our paper prototype, we referenced commonly used apps and interfaces. In addition to things like changing text size, we found that iPhones also offered the option to “differentiate without color”. One team member also pointed out that our prototype assumes that the user reads English. Because we wanted this to be accessible to people who spoke other languages, we also included the option to change the language the presenter’s app was in.
+</ProjectImageBlock>
 
 ## Resulting Design
 Some critical aspects of our designs are in our audience UI and presenter app. The presenter’s goal is to record and save a presentation, and look back at the recording and interest levels. We implemented a QR code and unique url for the presenter to give to the audience to sign in to the feedback platform. For the audience, they can submit questions and indicate interest with a toggle. In the recording, the presenter can see timestamps of how the interest levels progressed, as well as the time questions come in.
 
 ### Task 1: Getting feedback during the presentation
 
-
-
-
+<ProjectImagesBlock
+    images={[
+        {src: task1Step1Image1},
+        {src: task1Step1Image2},
+    ]}
+    direction="row"
+    width={8}
+>
 #### Step 1:
+
 The presenter logs in/sign up through the app.
+</ProjectImagesBlock>
 
-export const task1Step1Images = [
-    {
-        img: task1Step1Image1,
-        title: 'task1Step1Image1',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Step1Image2,
-        title: 'task1Step1Image2',
-        rows: 1,
-        cols: 1,
-    },
-];
-
-<ImageList>
-    {task1Step1Images.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
-            <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-            />
-        </ImageListItem>
-    ))}
-</ImageList>
-
+<ProjectImagesBlock
+    images={[
+        {src: task1Step2Image1},
+        {src: task1Step2Image2},
+        {src: task1Step2Image3},
+        {src: task1Step2Image4},
+    ]}
+    direction="row"
+    width={8}
+>
 #### Step 2:
+
 The presenter shares a QR code (img 1) with the audience so they can access the presentation feedback platform (img 2) on their phone. The presenter clicks Test Audio/Video to access a preview (img 3). The presenter clicks on Edit Clark to add/remove widgets from Clark (img 4, img 5). The presenter clicks Start to start presentation and recording.
+</ProjectImagesBlock>
 
-export const task1Step2Images = [
-    {
-        img: task1Step2Image1,
-        title: 'Alt',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Step2Image2,
-        title: 'Alt',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Step2Image3,
-        title: 'Alt',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Step2Image4,
-        title: 'Alt',
-        rows: 1,
-        cols: 3,
-    },
-];
-
-<ImageList cols={3}>
-    {task1Step2Images.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
-            <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-            />
-        </ImageListItem>
-    ))}
-</ImageList>
-
+<ProjectImagesBlock
+    images={[
+        {src: task1Step3Image1},
+        {src: task1Step3Image2},
+        {src: task1Step3Image3},
+        {src: task1Step3Image4},
+        {src: task1Step3Image5},
+    ]}
+    direction="column"
+    width={8}
+>
 #### Step 3:
+
 Once presentation starts, the presenter app shows Stop button to stop presentation (img 1). The audience platform allows submissions for questions (img 2, img 4). Upon submitting a question, a check mark indicates the question submitted successfully (img 5). The question shows up on Clark (img 8). The audience also has the option to look at other questions that have been submitted and upvote the ones they agree with (img 6, img 7). To express general confusion not tied to a question, the audience also has a toggle to indicate confusion (img 2, img 3).
+</ProjectImagesBlock>
 
-export const task1Step3Images = [
-    {
-        img: task1Step3Image1,
-        title: 'Alt',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Step3Image2,
-        title: 'Alt',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Step3Image3,
-        title: 'Alt',
-        rows: 1,
-        cols: 2,
-    },
-    {
-        img: task1Step3Image4,
-        title: 'Alt',
-        rows: 1,
-        cols: 1,
-    },
-    {
-        img: task1Step3Image5,
-        title: 'Alt',
-        rows: 1,
-        cols: 4,
-    },
-];
-
-<ImageList cols={4}>
-    {task1Step3Images.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
-            <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-            />
-        </ImageListItem>
-    ))}
-</ImageList>
-
-
+<ProjectImagesBlock
+    images={[
+        {src: task1Step4Image1},
+        {src: task1Step4Image2},
+    ]}
+    direction="row"
+    width={8}
+>
 #### Step 4:
 
 The presenter ends the recording and saves it with a particular name (with a character limit) (img 1). The screens for each audience member that joined displays a thank you page (img 2).
+</ProjectImagesBlock>
 
-export const task1Step4Images = [
-    {
-        img: task1Step4Image1,
-        title: 'Alt',
-        rows: 1,
-        cols: 2,
-    },
-    {
-        img: task1Step4Image2,
-        title: 'Alt',
-        rows: 1,
-        cols: 1,
-    },
-];
-
-<ImageList cols={3}>
-    {task1Step4Images.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols} rows={item.rows}>
-            <img
-                src={`${item.img}`}
-                srcSet={`${item.img}`}
-                alt={item.title}
-                loading="lazy"
-            />
-        </ImageListItem>
-    ))}
-</ImageList>
 ### Task 2: Accessing the interest / confusion level of the audience after the presentation
 
 #### Step 1:
 
 The presenter logs in/sign up through the app.
 
+<ProjectImageBlock image={{src: task2Step2Image1}} width={8}>
 #### Step 2:
 
 The presenter heads to the recordings tab and selects the recording they wish to view (img 1), and uses the slider to find where the audience asked the most questions and where a large portion of the audience understands or doesn’t understand the content (img 2).
 
-<img
-    src={task2Step2Image1}
-    alt="alt"
-    width="100%"
-    loading="lazy"
-/>
+One area that was fleshed out thoroughly during usability testing was our option to edit Clark’s display screen. For instance in initial tests, it was not clear to a participant that they could edit Clark’s screen by going to settings and appearances, or when they got there what to do. Because the presenter’s ability to customize Clark to best suit their needs is important to us, we added an additional button on the home screen that directly goes to the edit clark screen. We also added text instructing the participant to move widgets to the representation of Clark’s screen. Some participants wanted a higher level of customization to be able to drag individual components to specific locations, while others did not mind the default layout of Clark, so we also included the option of presets.
+</ProjectImageBlock>
