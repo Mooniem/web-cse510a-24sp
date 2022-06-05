@@ -14,7 +14,7 @@ interface ProjectImage {
 interface ProjectImagesBlockProps {
     images: ProjectImage[];
     direction: "row" | "column";
-    width: 4 | 6 | 8 | 12;
+    width: 4 | 6 | 8;
 }
 
 export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (props) => {

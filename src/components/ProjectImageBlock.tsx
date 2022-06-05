@@ -8,7 +8,7 @@ interface ProjectImage {
 
 interface ProjectImageBlockProps {
     image: ProjectImage;
-    width: 4 | 6 | 8 | 12;
+    width: 4 | 6 | 8;
 }
 
 export const ProjectImageBlock: React.FunctionComponent<ProjectImageBlockProps> = (props) => {
