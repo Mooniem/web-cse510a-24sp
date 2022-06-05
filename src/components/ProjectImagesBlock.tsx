@@ -36,11 +36,14 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (p
                         {
                             props.images.map(
                                 projectImage => (
-                                    <Box sx={{
-                                        display: "flex",
-                                        flexDirection: "row",
-                                        justifyContent: "center",
-                                    }}>
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            flexDirection: "row",
+                                            justifyContent: "center",
+                                        }}
+                                        key={projectImage.src}
+                                    >
                                         <Box sx={{
                                             display: "flex",
                                             flexDirection: "column",

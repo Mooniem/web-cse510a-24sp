@@ -8,14 +8,14 @@ import {
 export const ProjectSubtitle: React.FunctionComponent = (props) => {
     return (
         <React.Fragment>
-            <Typography fontSize="1.2rem" fontStyle="oblique">
-                <Box sx={{
-                    marginBottom: 3,
-                    marginTop: -2,
-                }}>
+            <Box sx={{
+                marginBottom: 3,
+                marginTop: -2,
+            }}>
+                <Typography fontSize="1.2rem" fontStyle="oblique">
                     { props.children }
-                </Box>
-            </Typography>
+                </Typography>
+            </Box>
         </React.Fragment>
     );
 }
