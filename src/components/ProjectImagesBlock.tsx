@@ -46,7 +46,11 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (p
                                             flexDirection: "column",
                                             justifyContent: "start",
                                         }}>
-                                            <Paper sx={{margin: 2, padding: 1}}>
+                                            <Paper sx={{
+                                                marginX: 1,
+                                                marginY: 2,
+                                                padding: 1
+                                            }}>
                                                 <img
                                                     src={projectImage.src}
                                                     style={{

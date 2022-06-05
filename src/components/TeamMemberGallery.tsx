@@ -20,7 +20,7 @@ interface TeamMemberGalleryProps {
 export const TeamMemberGallery: FunctionComponent<TeamMemberGalleryProps> = (props) => {
     return (
         <React.Fragment>
-            <Grid container spacing={4}>
+            <Grid container spacing={1}>
                 {
                     props.members
                         .sort((a, b) => a.name.localeCompare(b.name))
