@@ -15,6 +15,7 @@ interface ProjectImagesBlockProps {
     images: ProjectImage[];
     direction: "row" | "column";
     width: 4 | 6 | 8;
+    maxHeight?: string;
 }
 
 export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (props) => {
@@ -41,7 +42,10 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (p
                                         <Paper sx={{margin: 2, padding: 1}}>
                                             <img
                                                 src={projectImage.src}
-                                                style={{maxHeight: "400px", maxWidth: "100%"}}
+                                                style={{
+                                                    maxHeight: (props.maxHeight === undefined) ? "400px" : props.maxHeight,
+                                                    maxWidth: "100%"
+                                                }}
                                             />
                                         </Paper>
                                     </Box>
