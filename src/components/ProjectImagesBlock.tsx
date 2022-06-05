@@ -4,7 +4,7 @@ import { FunctionComponent } from 'react';
 import {
     Box,
     Grid,
-    Paper,
+    Paper, Typography,
 } from '@mui/material';
 
 interface ProjectImage {
@@ -13,6 +13,7 @@ interface ProjectImage {
 
 interface ProjectImagesBlockProps {
     images: ProjectImage[];
+    caption?: string;
     direction: "row" | "column";
     width: 4 | 6 | 8;
     maxHeight?: string;
@@ -53,6 +54,22 @@ export const ProjectImagesBlock: FunctionComponent<ProjectImagesBlockProps> = (p
                             )
                         }
                     </Box>
+                    {
+                        props.caption != undefined &&
+                        <React.Fragment>
+                                <Box sx={{
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    justifyContent: "center",
+                                    marginTop: 1,
+                                    marginBottom: 4,
+                                }}>
+                                    <Typography fontStyle="oblique">
+                                        { props.caption }
+                                    </Typography>
+                                </Box>
+                        </React.Fragment>
+                    }
                 </Grid>
             </Grid>
         </React.Fragment>
