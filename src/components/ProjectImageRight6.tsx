@@ -2,21 +2,22 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 
 import {
-    Grid, Paper,
+    Paper,
+    Grid,
 } from '@mui/material';
 
-interface ProjectImageRight4Props {
+interface ProjectImageRight6Props {
     imageSrc: string;
 }
 
-export const ProjectImageRight4: FunctionComponent<ProjectImageRight4Props> = (props) => {
+export const ProjectImageRight6: FunctionComponent<ProjectImageRight6Props> = (props) => {
     return (
         <React.Fragment>
             <Grid container spacing={4}>
-                <Grid item md={8} sx={{marginTop: -2}}>
+                <Grid item md={6} sx={{marginTop: -2}}>
                     { props.children }
                 </Grid>
-                <Grid item md={4} sx={{marginTop: -2}}>
+                <Grid item md={6} sx={{marginTop: -2}}>
                     <Paper sx={{margin: 2, padding: 1}}>
                         <img
                             src={props.imageSrc}
@@ -29,4 +30,4 @@ export const ProjectImageRight4: FunctionComponent<ProjectImageRight4Props> = (p
     );
 }
 
-export default ProjectImageRight4;
+export default ProjectImageRight6;
