@@ -1,6 +1,5 @@
-import ProjectImageRight4 from "src/components/ProjectImageRight4";
-import ProjectImageRight6 from "src/components/ProjectImageRight6";
-import ProjectImageRight8 from "src/components/ProjectImageRight8";
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
 import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
@@ -58,13 +57,13 @@ import pathPhotoTerry from "./assets/team/terry.jpg";
 
 ## Problem and Design Overview
 
-<ProjectImageRight4 imageSrc={image1}>
+<ProjectImageBlock image={{src: image1}} width={4}>
 Currently, the inability to communicate is pointed out as the most common reason why marriages and relationships end (65%) [[1]](https://www.huffpost.com/entry/divorce-causes-_n_4304466).
 Along with this, many couples don’t know how to improve their communication or relationships as “54 percent of Gen Z singles ‘regret following their friends' dating advice because they felt like they made the wrong decision in the end” [[2]](https://www.yahoo.com/video/friends-bad-relationship-advice-science-220125096.html#:~:text=According%20to%20new%20data%20from,wrong%20decision%20in%20the%20end.%22).
 This lack of open communication and improvement in relationships often leads to a partner feeling frustrated or disconnected, ultimately leading to seperation.
 
 Perhaps if relationships had a tool to track their and their partner’s needs, the different activities they engaged in together, and how they spent their time, communication could open up and relationships could improve. Many services have set out to improve relationships and interactions; however, many of these focus on the tracking and problem, and give no solution or advice. Closr encourages positive behavior and includes fun, easy, and quick ways for partners to actively engage in their relationship. They can easily find time to spend together by having the app merge their calendars and find times they are both free. Couples can keep track of their desires and goals in their “bucket-list” (pictured above left), where they can easily add these events to the calendar or find a time to do them , find new activities, and actively engage in their relationship. Finally, the app suggests new things for partners to do based off of their bucket-list.
-</ProjectImageRight4>
+</ProjectImageBlock>
 
 ## Design Research Process
 
@@ -101,59 +100,59 @@ We focused our iterative design process around accomplishing two main tasks:
 ### Process
 We began with an initial paper-prototype based off of our design research:
 
-<ProjectImageRight6 imageSrc={image4}>
+<ProjectImageBlock image={{src: image4}} width={6}>
 ### Set-Up
-</ProjectImageRight6>
+</ProjectImageBlock>
 
-<ProjectImageRight6 imageSrc={image5}>
+<ProjectImageBlock image={{src: image5}} width={6}>
 ### Overall
-</ProjectImageRight6>
+</ProjectImageBlock>
 
-<ProjectImageRight6 imageSrc={image6}>
+<ProjectImageBlock image={{src: image6}} width={6}>
 We then conducted heuristic evaluations with our peers to help identify simple usability errors and common issues within our design (seen under “Minor Revisions” below).
 
 Finally, we conducted usability tests with participants within our target audience. The usability tests included giving participants a paper prototype and tasks to finish, such as setting up the app.
 
 Then we asked them to talk out loud as they completed specific tasks such as setting-up their profile and syncing with their partner, finding a new time to hang out with their partner, finding a new activity to do with their partner, and adding something to the bucket-list.
-</ProjectImageRight6>
+</ProjectImageBlock>
 
 ## Iterative Design Process Key Insights
 
 ### Simplifying Scheduling
 
-<ProjectImageRight8 imageSrc={image7}>
+<ProjectImageBlock image={{src: image7}} width={8}>
 Participants were confused that there were two different tabs that had similar appearances but different functionality.  We originally had a profile tab where your personal schedule was stored and a separate tab for finding time where both partners are available.  This caused issues during our testing, as it was unclear what the differences were since both tabs had a calendar-like appearance.  Thus, participants gravitated towards the calendar button when prompted to visit their personal calendar, despite it being located under the profile icon.  To resolve this, we combined them into a single, “home screen” tab where a user could see their own schedule as well as choose an option to find time to spend with their partner.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Removing Relationship Assumptions
 
-<ProjectImageRight8 imageSrc={image8}>
+<ProjectImageBlock image={{src: image8}} width={8}>
 In an effort to be more inclusive, we ultimately decided to include a tab during the setup process that allows users to select different categories of activities that they would like to have suggested to them.  Originally, we had thought of some broad categories that we thought might be applicable to all types of people, such as food, movies, and outdoor activities.  However, we recognize that making these assumptions limits who can use our technology because some users with disabilities might not want to receive recommendations for activities that aren't suitable for them. Thus, we decided to add in a screen during the setup process to select categories that would be enjoyable to them so that the suggestions would be valuable.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Improving Functionality
 
-<ProjectImageRight8 imageSrc={image9}>
+<ProjectImageBlock image={{src: image9}} width={8}>
 Many users were confused by our original “messaging” system that alerted users of app notifications. They were confused if these were written by their partner or if sent automatically by the app. Thus, we changed them to look like notifications one may receive on their phone from other apps. This makes it clearer that this is not a messaging tool and just an alert that users can interact with if desired.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image10}>
+<ProjectImageBlock image={{src: image10}} width={8}>
 Users were also confused by the functionality of the bucket-list. They understood its purpose, but were disappointed that they could not directly add those specific desired activities to their calendar. To improve this, we added the calendar button under items in the bucket-list so users could find a time or enter a date for the desired activity. This made the bucket-list an active component in our design that users could engage with, rather than something passive.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Simple Insights/Revisions
 
-<ProjectImageRight8 imageSrc={image11}>
+<ProjectImageBlock image={{src: image11}} width={8}>
 In our initial design, we forgot to include back buttons and alert the user of what was happening. This often left users getting stuck and confused. Thus, we added back-buttons and a progress bar in the set-up.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image12}>
+<ProjectImageBlock image={{src: image12}} width={8}>
 We also added intermediate screens during the “Find A Time” to improve clarity of what was happening.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image13}>
+<ProjectImageBlock image={{src: image13}} width={8}>
 Additionally, many users found our icons and buttons to not be intuitive. To improve this, we made our icons more clear and consistent with other tools they may have interacted with before.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ## Resulting Design
 
@@ -161,52 +160,52 @@ Additionally, many users found our icons and buttons to not be intuitive. To imp
 
 ### Set-Up
 
-<ProjectImageRight8 imageSrc={image14}>
+<ProjectImageBlock image={{src: image14}} width={8}>
 Partners can set up their profile and their calendar, then can sync with their partner or invite them. They also choose their favorite categories of activities to do with their partner, which will be used later on in the app.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Home
-<ProjectImageRight8 imageSrc={image15}>
+<ProjectImageBlock image={{src: image15}} width={8}>
 When the app opens, the home screen is displayed. There, the user can see any new updates they may have received about scheduling or items added to the bucket list. They can interact with these updates using the buttons on the far right of the updates. Also, users can see their calendar on this page and click a date to see their schedule. They can also add events directly using the yellow “+” button, explained below.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Finding Time to Spend Together
-<ProjectImageRight8 imageSrc={image16}>
+<ProjectImageBlock image={{src: image16}} width={8}>
 To help couples find time to spend together, individuals have the option to add an event they already know the date/time of, or use the “Find A Time” function / button.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image17}>
+<ProjectImageBlock image={{src: image17}} width={8}>
 The “Find a Time” function then asks between what dates the user would like to find a time, and optional other customizations like the time of day or length.
 
 The app then merges the partners’ calendars and finds times when they are both available.  Once they have found one they like, they can send a request to their partner.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image18}>
+<ProjectImageBlock image={{src: image18}} width={8}>
 Below is what it looks like to receive a request. The user can tap on the request and then approve or deny it. If approved, the other partner is notified of the approval (this looks like the top update on the home page) and the event is officially added to the calendar. If the request is denied, the partner is notified and the user is prompted to suggest another time which they can do by finding a new time or simply entering one (“I know when”).
-</ProjectImageRight8>
+</ProjectImageBlock>
 
 ### Find and Do New Activities Based on Interests
 
-<ProjectImageRight8 imageSrc={image1}>
+<ProjectImageBlock image={{src: image1}} width={8}>
 First, couples can keep track of new activities they want to try in their bucket-list. Below, we see a filled out bucket list and who added each item.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image19}>
+<ProjectImageBlock image={{src: image19}} width={8}>
 To add new items, as a user just needs to click the “+” in the top right.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image20}>
+<ProjectImageBlock image={{src: image20}} width={8}>
 Users can also directly add items on their bucket-list to the calendar by selecting the calendar button. Then, they can find a time to do this or enter a time they already know.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image21}>
+<ProjectImageBlock image={{src: image21}} width={8}>
 Finally, the bucket-list allows users to view completed activities so couples can reflect and become inspired by past activities.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image22}>
+<ProjectImageBlock image={{src: image22}} width={8}>
 The bucket-list is also linked to the “find new'' tab that suggests new activities. Couples start by choosing their top 5 activities that they like to  do together; these are the “categories” that will appear in their “find new” tab, which they can always adjust in the settings.
-</ProjectImageRight8>
+</ProjectImageBlock>
 
-<ProjectImageRight8 imageSrc={image23}>
+<ProjectImageBlock image={{src: image23}} width={8}>
 When a user selects a category, 3 options appear: the first item from the bucket-list, the second item based off the bucket-list, and the third item random. If there are no items within that category from the bucket-list, all three are random. The user can refresh until they are satisfied. Then, users can click on an item to view more details, and if they find something they like they can add it to their bucket list.
-</ProjectImageRight8>
+</ProjectImageBlock>
