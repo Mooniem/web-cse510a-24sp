@@ -2,7 +2,9 @@ import * as React from 'react';
 import { FunctionComponent } from 'react';
 
 import {
-    Grid, Paper,
+    Box,
+    Grid,
+    Paper,
 } from '@mui/material';
 
 interface ProjectImageRight4Props {
@@ -16,13 +18,19 @@ export const ProjectImageRight4: FunctionComponent<ProjectImageRight4Props> = (p
                 <Grid item md={8} sx={{marginTop: -2}}>
                     { props.children }
                 </Grid>
-                <Grid item md={4} sx={{marginTop: -2}} container justifyContent="center">
-                    <Paper sx={{margin: 2, padding: 1}}>
-                        <img
-                            src={props.imageSrc}
-                            style={{maxWidth: "100%"}}
-                        />
-                    </Paper>
+                <Grid item md={4} sx={{marginTop: -2}}>
+                    <Box sx={{
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                    }}>
+                        <Paper sx={{margin: 2, padding: 1}}>
+                            <img
+                                src={props.imageSrc}
+                                style={{maxWidth: "100%"}}
+                            />
+                        </Paper>
+                    </Box>
                 </Grid>
             </Grid>
         </React.Fragment>
