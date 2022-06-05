@@ -1,7 +1,6 @@
-import {
-    Grid,
-} from '@mui/material';
-
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/Paper_prototype.png";
@@ -54,6 +53,7 @@ Our interview questions started out with broad questions about their familiarity
 * Thoughts on the potential design of a resource to help them prepare
 
 ### 3 Key Insights
+
 #### Consistency is difficult with interview prep
 
 After conducting our three interviews, we noticed a theme that motivation is an issue due to external factors interfering with their ability to sit down and work through problems. All of our participants noted that they would ideally want to have started preparing sooner than they have in the past. We also learned through the interviews they often prepared for interviews in bursts, meaning they would only start when they had a technical interview coming up. Despite wanting to practice consistently, they would find difficulty committing time due to outside factors.
@@ -69,21 +69,9 @@ Initially, we did not have a favorite design we wanted to pick as all three of o
 
 ## Iterative Design Process and Key Insights
 
+<ProjectImageBlock image={{src: image1}} width={8}>
 The design focus for the iterative design was on two main tasks: Learning On-The-Go and learning guided by self-tracking. We began our prototyping process through an expansion of ideas and a reduction of refined ideas to choose from. We separated our design into two coupled parts: the web app aspect and the mobile app aspect, each part having its own task that it covered.
-
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignContent="center"
->
-    <Grid item>
-        <img
-            src={image1}
-            width="100%"
-        />
-    </Grid>
-</Grid>
+</ProjectImageBlock>
 
 ## Testing Process
 
@@ -108,34 +96,10 @@ Our initial design of the scheduler was not very consistent with other calendars
 
 ## Resulting Design
 
+<ProjectImageBlock image={{src: image2}} width={8}>
 Download the mobile app to learn and reinforce knowledge on the go. Navigate to the practice tab to choose specific topics to practice. Or, quick-start a recommended problem by using the “try it” button on the homepage. Note that you can swipe through each MCQ problem description and code before answering. After answering the question, submit your self-confidence on the problem. Problems done are tracked in the progress bar on the home screen which can be used to go back and review past problems.
+</ProjectImageBlock>
 
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignContent="center"
->
-    <Grid item>
-        <img
-            src={image2}
-            width="100%"
-        />
-    </Grid>
-</Grid>
-
+<ProjectImageBlock image={{src: image3}} width={8}>
 The web app focused on complementing the mobile aspect with full interview preparation problems and progress tracking. You can navigate to the problems menu to start working on a problem and submit a confidence rating when you’re done. Navigating back home you can see your progress has been updated. And under the scheduler, you can add lessons to your calendar.
-
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignContent="center"
->
-    <Grid item>
-        <img
-            src={image3}
-            width="100%"
-        />
-    </Grid>
-</Grid>
+</ProjectImageBlock>
