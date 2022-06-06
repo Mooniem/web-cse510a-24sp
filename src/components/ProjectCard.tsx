@@ -19,7 +19,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = (props) => {
     return (
         <Card>
             <CardContent>
-                <GeneratedLink href={"/projects/" + props.path} linkType="external">
+                <GeneratedLink href={"/projects/" + props.path}>
                     <Stack>
                         { props.name }
                         <img
