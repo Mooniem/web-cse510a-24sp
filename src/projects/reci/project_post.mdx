@@ -49,17 +49,18 @@ import pathPhotoJocie from "./assets/team/jocie_thomson.png";
     },
 ]} />
 
-<ProjectImageBlock image={{src: image1}} caption="Our app, Reci, aims to reduce food waste by aiding people in making use of the food they already have at home before they spoil." width={12}>
-</ProjectImageBlock>
-
 ## Problem and Design Overview
+
+<ProjectImageBlock image={{src: image1}} caption="Our app, Reci, aims to reduce food waste by aiding people in making use of the food they already have at home before they spoil." width={6}>
 ### Problem
-According to the Food and Agriculture Organization of the United Nations, food waste is responsible for about 3.3 gigatons of annual greenhouse gas emissions (Lott, 2013). Food waste is a huge environmental problem that affects the entire world, and thus, it may seem like an issue that is out of reach for the average person to fix. However, change can begin in small steps. For instance, the average American household wastes one-third of the food they acquire (Penn State, 2020). By finding ways to reduce food waste at home, individual households can lower their carbon footprint and have less of a negative impact on the environment.
+According to the Food and Agriculture Organization of the United Nations, food waste is responsible for about 3.3 gigatons of annual greenhouse gas emissions [(Lott, 2013)](https://blogs.scientificamerican.com/plugged-in/un-says-that-if-food-waste-was-a-country-ite28099d-be-the-3-global-greenhouse-gas-emitter/#:~:text=In%20their%20report%20%22Food%20wastage,in%20annual%20carbon%20dioxide%20emissions). Food waste is a huge environmental problem that affects the entire world, and thus, it may seem like an issue that is out of reach for the average person to fix. However, change can begin in small steps. For instance, the average American household wastes one-third of the food they acquire [(Penn State, 2020)](https://www.sciencedaily.com/releases/2020/01/200123095853.htm). By finding ways to reduce food waste at home, individual households can lower their carbon footprint and have less of a negative impact on the environment.
 
 ### Design Overview
 Our solution was to develop a tool that monitors the food bought, reminds people to use their food before it goes bad, and provides recipe ideas with the soon-to-be-expired ingredients to minimize food waste.
+</ProjectImageBlock>
 
 ## Design Research Process and Key Insights
+
 ### Design Research Process
 We decided to conduct a diary study and survey to investigate why people throw away food. For the diary, we asked five participants to take photos of the food they threw away and write down why they threw away each item. This allowed us to physically see the type of food thrown away and the reasoning behind it, without having participants try to recall it. For the survey, we asked 28 participants questions about their dining and food waste habits which helped us understand the most common reasons food gets wasted since we were able to get a large sample.
 
@@ -72,14 +73,12 @@ Key Insights:
 
 ## Iterative Design Process and Key Insights
 
-<ProjectImageBlock image={{src: image2}} caption="Overview of final paper prototype pieces." width={12}>
-    For our usability testing, we asked users to complete two tasks with our paper prototype: (1) finding a recipe that uses food that is going bad soon and (2) adding foods they bought into the app. We conducted 4 rounds of testing with 4 different participants who are living away from home, adjusting the design with our new findings after each round. When modifying our paper prototype and reflecting on the results of the usability tests, we also evaluated which heuristics were violated.
+<ProjectImageBlock image={{src: image2}} caption="Overview of final paper prototype pieces." width={6}>
+For our usability testing, we asked users to complete two tasks with our paper prototype: (1) finding a recipe that uses food that is going bad soon and (2) adding foods they bought into the app. We conducted 4 rounds of testing with 4 different participants who are living away from home, adjusting the design with our new findings after each round. When modifying our paper prototype and reflecting on the results of the usability tests, we also evaluated which heuristics were violated.
 </ProjectImageBlock>
 
 
 ### Key Insights
-
-1. Users were unsure if they successfully removed their groceries from the “My Food” section. One of the main features of the app is keeping track of groceries. If the user is not able to successfully delete their food from the app, then the app does not serve its purpose. To clarify the deleting process, we added a confirmation pop-up after the user hit the “Done” button so that the user has feedback that their food was successfully deleted. Originally, we only had Figure 1 and once the user hit the “Done” button, it went back to the recipe page. After feedback, we decided to add a pop-up to confirm that the food has been successfully deleted from the food list (Figure 2). In addition, the user has more freedom on this screen as they can either go back to their original recipe, look for more recipes, or share their recipe with others online.
 
 <ProjectImagesBlock
     images={[
@@ -93,11 +92,11 @@ Key Insights:
         },
     ]}
     direction="row"
-    width={12}
+    width={6}
 >
+1. Users were unsure if they successfully removed their groceries from the “My Food” section. One of the main features of the app is keeping track of groceries. If the user is not able to successfully delete their food from the app, then the app does not serve its purpose. To clarify the deleting process, we added a confirmation pop-up after the user hit the “Done” button so that the user has feedback that their food was successfully deleted. Originally, we only had Figure 1 and once the user hit the “Done” button, it went back to the recipe page. After feedback, we decided to add a pop-up to confirm that the food has been successfully deleted from the food list (Figure 2). In addition, the user has more freedom on this screen as they can either go back to their original recipe, look for more recipes, or share their recipe with others online.
 </ProjectImagesBlock>
 
-2. Measurement units and quantities on the receipt confused users. In our first design, the users can insert the quantities of food manually or scan the receipt to input them (Figure 3). However, one of our participants reported that the unit measurement system was confusing as they were not able to change the unit for different types of foods. In addition, the participant suggested removing the quantities because it is difficult to accurately keep track of the quantities in the future. As a result, we took out the quantities and unit measurements. We replaced them with delete symbol buttons (Figure 4) for the users to delete the food if wrongly scanned.
 
 <ProjectImagesBlock
     images={[
@@ -111,11 +110,10 @@ Key Insights:
         },
     ]}
     direction="row"
-    width={12}
+    width={6}
 >
+2. Measurement units and quantities on the receipt confused users. In our first design, the users can insert the quantities of food manually or scan the receipt to input them (Figure 3). However, one of our participants reported that the unit measurement system was confusing as they were not able to change the unit for different types of foods. In addition, the participant suggested removing the quantities because it is difficult to accurately keep track of the quantities in the future. As a result, we took out the quantities and unit measurements. We replaced them with delete symbol buttons (Figure 4) for the users to delete the food if wrongly scanned.
 </ProjectImagesBlock>
-
-3. Misleading wordings of buttons prevented users from completing tasks as intended. In our original prototype, we had a navigation button titled “Groceries”, which would navigate the user to a page that displays their whole inventory of fresh foods, as well as a navigation button that would open up a camera scanner to add new foods named “Receipt Scanner” (Figure 5). However, when we asked one of our usability testing participants to complete the task of adding new foods into the app, they struggled and tried to add while in “Groceries”. When asked, the participant said that the wording choice of “Groceries” made them think of a section for newly purchased items, rather than seeing foods they already owned, and that association made them disregard the “Receipt Scanner” button. Thus, we changed the wording of the buttons from “Groceries” to “My Food” (Figure 6).
 
 <ProjectImagesBlock
     images={[
@@ -129,15 +127,15 @@ Key Insights:
         },
     ]}
     direction="row"
-    width={12}
+    width={6}
 >
+3. Misleading wordings of buttons prevented users from completing tasks as intended. In our original prototype, we had a navigation button titled “Groceries”, which would navigate the user to a page that displays their whole inventory of fresh foods, as well as a navigation button that would open up a camera scanner to add new foods named “Receipt Scanner” (Figure 5). However, when we asked one of our usability testing participants to complete the task of adding new foods into the app, they struggled and tried to add while in “Groceries”. When asked, the participant said that the wording choice of “Groceries” made them think of a section for newly purchased items, rather than seeing foods they already owned, and that association made them disregard the “Receipt Scanner” button. Thus, we changed the wording of the buttons from “Groceries” to “My Food” (Figure 6).
 </ProjectImagesBlock>
 
 ## Resulting Design
 
+<ProjectImageBlock image={{src: image9}} width={8}>
 In terms of our final design, the two tasks that we chose to focus on were to (1) remind people to use their groceries, and (2) utilize the food that is already in the fridge with personalized recipes.
-
-<ProjectImageBlock image={{src: image9}} width={12}>
 </ProjectImageBlock>
 
 
@@ -153,9 +151,9 @@ In terms of our final design, the two tasks that we chose to focus on were to (1
         },
     ]}
     direction="row"
-    width={12}
+    width={8}
 >
-    Task 1 addresses the first main reason for individual food waste from our research insights: People forget to use the groceries they have in time. With our reminder feature, we showed how the user can be reminded to use their groceries through the user first inputting the groceries with a receipt scanner, then confirming those ingredients in the confirmation page, and then being reminded through a series of notifications from the app on when to use their groceries. This app will estimate the time it takes for certain groceries to expire when stored normally (for example: it might take spinach an average of five days to expire, so Reci will recommend that the user use their spinach within five days of buying it).
+Task 1 addresses the first main reason for individual food waste from our research insights: People forget to use the groceries they have in time. With our reminder feature, we showed how the user can be reminded to use their groceries through the user first inputting the groceries with a receipt scanner, then confirming those ingredients in the confirmation page, and then being reminded through a series of notifications from the app on when to use their groceries. This app will estimate the time it takes for certain groceries to expire when stored normally (for example: it might take spinach an average of five days to expire, so Reci will recommend that the user use their spinach within five days of buying it).
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
@@ -169,12 +167,11 @@ In terms of our final design, the two tasks that we chose to focus on were to (1
             caption: "Figure 8",
         },
     ]}
+    caption="Figure 5-8: Users scan their groceries receipt, and they will be able to see the scanned items before confirming. They will receive reminders from the app for the food that expires soon. They will be able to see the food that needs to be used soon on the homepage."
     direction="row"
-    width={12}
+    width={8}
 >
 </ProjectImagesBlock>
-
-Figure 5-8: Users scan their groceries receipt, and they will be able to see the scanned items before confirming. They will receive reminders from the app for the food that expires soon. They will be able to see the food that needs to be used soon on the homepage.
 
 <ProjectImagesBlock
     images={[
@@ -192,9 +189,9 @@ Figure 5-8: Users scan their groceries receipt, and they will be able to see the
         },
     ]}
     direction="row"
-    width={12}
+    width={8}
 >
-    Task 2 addresses the first main reason for individual food waste from our research insights: people do not know what to do with large produce quantities in time. It focuses on utilizing the food with personalized recipes, which Reci does through recommending recipes to the user based on the food they select that they want to use. The user is prompted with foods that they should use based on which foods will expire the soonest, and then will be able to select which foods they want to use. From there, recipes will be recommended that have those said foods in them. The user can select which recipe they want to use to get rid of their food, and then proceed to easily remove them from their list of foods saved in the app.
+Task 2 addresses the first main reason for individual food waste from our research insights: people do not know what to do with large produce quantities in time. It focuses on utilizing the food with personalized recipes, which Reci does through recommending recipes to the user based on the food they select that they want to use. The user is prompted with foods that they should use based on which foods will expire the soonest, and then will be able to select which foods they want to use. From there, recipes will be recommended that have those said foods in them. The user can select which recipe they want to use to get rid of their food, and then proceed to easily remove them from their list of foods saved in the app.
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
@@ -208,18 +205,8 @@ Figure 5-8: Users scan their groceries receipt, and they will be able to see the
             caption: "Figure 13",
         },
     ]}
+    caption="Figure 9-13: The users are able to choose the ingredients they want and a list of recipes will be recommended based on what they select. It will then ask the users which food will be finished after the recipe and a confirmation will pop out after they selected the food."
     direction="row"
-    width={12}
+    width={8}
 >
 </ProjectImagesBlock>
-
-Figure 9-13: The users are able to choose the ingredients they want and a list of recipes will be recommended based on what they select. It will then ask the users which food will be finished after the recipe and a confirmation will pop out after they selected the food.
-
-
-## Works Cited
-
-Lott, Melissa. (2013, September 13). UN says that if food waste was a country, it’d be the #3 global greenhouse gas emitter. Scientific American. https://blogs.scientificamerican.com/plugged-in/un-says-that-if-food-waste-was-a-country-ite28099d-be-the-3-global-greenhouse-gas-emitter/#:~:text=In%20their%20report%20%22Food%20wastage,in%20annual%20carbon%20dioxide%20emissions.
-
-Penn State. (2020, January 23). US households waste nearly a third of the food they acquire. ScienceDaily. Retrieved April 5, 2022 from https://www.sciencedaily.com/releases/2020/01/200123095853.htm
-
-
