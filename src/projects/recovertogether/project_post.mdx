@@ -1,7 +1,6 @@
-import {
-    Grid,
-} from '@mui/material';
-
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
 import image1 from "./assets/post/initial_desktop_prototype.png";
@@ -17,7 +16,9 @@ import pathDaniel from "./assets/team/daniel_watts.png";
 import pathPhotoDeepak from "./assets/team/deepak_bokka.jpg";
 import pathPhotoJared from "./assets/team/jared_lim.jpg";
 
-# RecoverTogether: Recovery Done Right
+# RecoverTogether
+
+<ProjectSubtitle>Recovery Done Right</ProjectSubtitle>
 
 <TeamMemberGallery members={[
     {
@@ -62,28 +63,13 @@ We first did paper prototyping for the two faces of the application. For the pat
 
 After our first prototypes were complete, we tested our design with three heuristic analyses and three usability tests. The heuristic analyses were conducted with CSE 440 peers during class. The testers interacted with our design and identified any usability issues that they found based on Nielsen’s heuristics. The usability tests were conducted by a 19-year-old male who had gone through a minor surgery in the past, a 21-year-old male UW student in class, and a 38-year-old female who has had hearing impairments. For each of the tests, our group members rotated between the roles of the facilitator, observer, computer, and notetaker. The testers were given realistic, hypothetical scenarios related to the three priority tasks of our design, which involved viewing appointment notes and completing assigned tasks from the provider, and then had to accomplish the tasks in our prototype. They narrated their thought processes as they were stepping through our design, which helped us identify areas of confusion and dead ends that we needed to repair.
 
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignContent="center"
->
-    <Grid item>
-        <img
-            src={image1}
-            width="100%"
-        />
-    </Grid>
-    <Grid item>
-        Patient Application Paper Prototype
-    </Grid>
-    <Grid item>
-        <img
-            src={image2}
-            width="100%"
-        />
-    </Grid>
-</Grid>
+<ProjectImageBlock image={{src: image1}} width={8}>
+Provider Application Paper Prototype
+</ProjectImageBlock>
+
+<ProjectImageBlock image={{src: image2}} width={8}>
+Patient Application Paper Prototype
+</ProjectImageBlock>
 
 ### Key Insights
 
@@ -94,68 +80,29 @@ When we conducted our heuristic analysis, we counted the number of instances a c
 In addition to lacking features, another key insight that we found was that buttons lacked clarity, which made the user experience difficult. In particular, many of the icons on the desktop application lacked labels, which made them confusing for the other party in the heuristic analysis. This was also an issue in the mobile application. For example, on the desktop application, the icons on the left, such as profile, patient notes, and the calendar lacked labels and only had icons. On the mobile application, we had similar issues with the task bar at the bottom. When we moved forward with our design, we kept this into account, adding frequent labels to make each interaction both seamless and accessible for the user. Furthermore, we spent a significant amount of time reworking the notes feature. Our participants sometimes struggled with understanding how to use the feature on the tasks screen and its greater importance in the app. Therefore, we redesigned it into a ‘check-in’ questions feature where the provider can add check-in questions which can help the patient to reflect on their recovery progress at particular intervals of time.
 
 ## Resulting Design
+
 ### Provider viewing patient notes
 
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignContent="center"
->
-    <Grid item>
-        <img
-            src={image3}
+<ProjectImageBlock image={{src: image3}} width={8}>
+This interaction indicates one of our key tasks, which is where a provider can send appointment notes to a particular patient.
+</ProjectImageBlock>
 
-        />
-    </Grid>
-    <Grid item>
-        This interaction indicates one of our key tasks, which is where a provider can send appointment notes to a particular patient. Furthermore, the provider has added a rehab task, notes, and a demonstrational video relating to the rehab task for their patient, Levi Errol.
-    </Grid>
-    <Grid item>
-        <img
-            src={image4}
-        />
-    </Grid>
-    <Grid item>
-        Patient can confirm and send the notes to the provider.
-    </Grid>
-    <Grid item>
-        <img
-            src={image5}
-        />
-    </Grid>
-</Grid>
+<ProjectImageBlock image={{src: image4}} width={8}>
+Furthermore, the provider has added a rehab task, notes, and a demonstrational video relating to the rehab task for their patient, Levi Errol.
+</ProjectImageBlock>
+
+<ProjectImageBlock image={{src: image5}} width={8}>
+Patient can confirm and send the notes to the provider.
+</ProjectImageBlock>
 
 ### Patient receiving the notes (patient side of task 1)
 
+<ProjectImageBlock image={{src: image6}} width={8}>
 Patient views notes sent from provider. Patients can view tasks, notes, and check-in questions.
-
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignContent="center"
->
-    <Grid item>
-        <img
-            src={image6}
-        />
-    </Grid>
-</Grid>
+</ProjectImageBlock>
 
 ### Patient completing and tracking the rehab plan provided by the provider (task 2)
 
+<ProjectImageBlock image={{src: image7}} width={8}>
 Patient answers tracking questions related to the tasks provided. Patient/user views calendar to see completed tasks, upcoming tasks, and track their progress.
-
-<Grid
-    container
-    direction="column"
-    justifyContent="center"
-    alignContent="center"
->
-    <Grid item>
-        <img
-            src={image7}
-        />
-    </Grid>
-</Grid>
+</ProjectImageBlock>
