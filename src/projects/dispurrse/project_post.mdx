@@ -1,0 +1,184 @@
+import ProjectImageBlock from "src/components/ProjectImageBlock";
+import ProjectImagesBlock from "src/components/ProjectImagesBlock";
+import ProjectSubtitle from "src/components/ProjectSubtitle";
+import TeamMemberGallery from "src/components/TeamMemberGallery";
+
+import image1 from "./assets/post/paper_prototype.png";
+import image2 from "./assets/post/digital_overview.png";
+
+import task1Image1 from "./assets/post/home.png";
+import task1Image2 from "./assets/post/my_cats.png";
+import task1Image3 from "./assets/post/new_cat_profile.png";
+import task1Image4 from "./assets/post/feeder.png";
+import task1Image5 from "./assets/post/add_meal.png";
+import task1Image6 from "./assets/post/add_devices.png";
+
+import task2Image1 from "./assets/post/home.png";
+import task2Image2 from "./assets/post/my_cats.png";
+import task2Image3 from "./assets/post/share.png";
+import task2Image4 from "./assets/post/share_confirmation.png";
+
+import pathPhotoBryce from "./assets/team/bryce.jpg";
+import pathPhotoEric from "./assets/team/eric.png";
+import pathPhotoHan from "./assets/team/han.jpg";
+import pathPhotoKyle from "./assets/team/kyle.png";
+
+# Dispurrse
+
+<ProjectSubtitle>the purrfect cat helper</ProjectSubtitle>
+
+## Team Members
+
+<TeamMemberGallery members={[
+    {
+        name: "Bryce Nguyen",
+        photo: pathPhotoBryce,
+    },
+    {
+        name: "Eric Ly",
+        photo: pathPhotoEric,
+    },
+    {
+        name: "Han Nguyen",
+        photo: pathPhotoHan,
+    },
+    {
+        name: "Kyle Dao",
+        photo: pathPhotoKyle,
+    },
+]} />
+
+## Problem and Design Overview
+
+Owners of multiple cats often struggle to maintain a healthy lifestyle for their pets. Oftentimes, cats are overfed which leads to countless health problems. Along with this, these same health problems are difficult to share with a veterinarian due to lack of specificity. Our design solves both of these solutions. By combining an automatic feeder and a smart litter box that weighs your cat, we are able to automate the feeding process for multiple cats and keep track of a cat’s weight along with relevant health information. Along with these two devices, there will also be RFID tags that are attachable to a cat’s collar that will allow the device to distinguish pets apart from each other.
+
+To tie this all together, all these components will be operated through a mobile application. In this application, you can create profiles for each of your cats and assign them feeding schedules along with keeping track of information pertaining to that cat such as how much they have been eating, waste output, and their weight over time. It is this same information that you can email to a veterinarian when you begin to feel concerned about their health.
+
+## Design Research Process and Key Insights
+
+### Design Research Process Overview
+
+To get a better understanding of the issues that cat owners and caretakers face and their daily routines, we engaged in design research. We initially sought out people who own multiple cats and have busy schedules. One of our first participants was a UW student who owned 2 cats and we conducted a semi-structured interview with them with the goal of understanding the distinct set of challenges that come with owning multiple cats and being a student at the same time. We then pivoted our design research away from casual cat owners, to those who care for many cats professionally. We sent questionnaires to numerous cat cafes based in Washington, to get a perspective of the care for cats that interact with many people every day. The questionnaire consisted of questions regarding the current forms of tracking the cat cafe uses, and their daily routines in caring for the cats. Overall, we targeted two contrasting types of participants to get a broader picture of the design problem and possibly take inspiration from the professional cat caretakers that could be applied to the ordinary cat owner.
+
+### Reducing Time Commitment
+
+When conducting our first interview with our participant who co-owned 2 cats living in shared housing, we learned that as a busy student who is often away from home, they sometimes forget to feed their cats in the morning before they leave. They also buy bulk cat food and treats from Costco for convenience and are not aware of how much food their cats are being fed. This leads to a sometimes irregular feeding schedule for their cats based around the owner’s busy schedule.
+
+### Promoting Collaboration
+
+A common theme across our participants is that caring for cats can be a collaborative effort. For our ordinary cat owner who is a student living in shared housing, it was important that she could rely on her roommates to care for her cats when she is not home. For example, if she forgets to leave out food in the morning before going to classes, she messages a roommate to do it for her when she finally does remember. However, she noted that miscommunication can often lead to feeding her cats twice that day. With cat cafes, there are dozens of cats managed by several caretakers. Therefore, the collaborative effort is a task we need to account for in our design. Our design should promote clear communication and coordination between caretakers of cats.
+
+### Providing proactive cat care
+
+When comparing the daily routines of professional cat caretakers and ordinary cat owners, there was a noticeable difference between the standard of cat care provided. Our professional cat caretakers practice proactive cat care by actively tracking and monitoring their cats' conditions (weight, waste output, energy levels, etc) along with scheduling regular wellness checkups with a veterinarian. Furthermore, when they notice a change in their cats’ conditions, they act promptly and take them to the veterinarian to prevent serious health issues from developing. Meanwhile, our ordinary cat owner does not track their cats’ conditions and is not proactive as they should be with their cats’ health. This insight tells us that our design should help people strive for proactive cat care by assisting them with data collection and encouraging consistent communication with a veterinarian.
+
+## Iterative Design Process and Key Insights
+
+<ProjectImageBlock
+    image={{src: image1}}
+    width={8}
+>
+### Paper Prototype
+</ProjectImageBlock>
+
+### Iterative Design Process Overview
+
+In order to rapidly improve our design beginning with our initial prototype all the way up to the digital mockup, we used both heuristic evaluation and usability testing. In our usability tests, we prescribed the participant tasks to complete while one of our members acted as the computer. Minimal help was provided. Our first usability test was conducted with one of the parents of our members. They were chosen because they do not have a solid understanding of technology and design. We conducted our second usability test with a UW CSE undergraduate student who has prior experience owning multiple cats. Our third and final usability test was with another undergraduate student at UW who currently owns two cats and is knowledgeable about design concepts. We engaged these participants to ensure that users with multiple cats can properly use our design.
+
+### Improving Visibility and Clarity of Features
+
+A common issue that emerged during usability testing was that there was confusion on what certain buttons actually did.When sending data to the vet, the share button was either hard to find, or didn’t know that it was a share button to begin with due to not being familiar with the symbol. So, we added text to explicitly say share info. Additionally, it also wasn’t clear on how to actually add a meal in the feeder tab. Consequently, we changed the “+” button to also explicitly say “Add meal” to indicate the explicit function of the button.
+
+### Reducing Redundancy
+
+In our original paper prototype, the home screen originally displayed a summary of weight and waste output with a calendar. Right before transitioning to a digital mockup, we came to the realization that this screen contained redundant information that could already be accessed in each cat’s profile. So, we transitioned the home screen to act as an activity and notification center, where one can view who most recently used the feeder or litter box. The need for this was evident in our usability testing, because participants were confused about how to identify which cat was using the litter box or feeder.
+
+### Improving Customizability
+
+While transitioning from the paper prototype to the digital mockup, we realized that in its current state, sharing data with the vet was not very useful for neither the user nor the vet. In the paper prototype, the data just got sent with no context whatsoever, which means the vet would likely have no idea what to do with the information and wouldn’t be able to actually help the user. To address this issue in the digital mockup, we added the ability to write a customized and personalized message that will be sent along with the data. This would allow the user to provide additional context as well as any questions, concerns, and observations that they might have about their cat.
+
+
+## Resulting Design
+
+<ProjectImageBlock
+    image={{src: image2}}
+    width={8}
+>
+### Digital Mockup: Overview
+</ProjectImageBlock>
+
+### Task 1: Feeding Multiple Cats
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1Image1,
+            caption: "Select the “My Cats” tab.",
+        },
+        {
+            src: task1Image2,
+            caption: "Tap the “Add” button.",
+        },
+        {
+            src: task1Image3,
+            caption: "Input your cat's information.",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task1Image4,
+            caption: "Tap the “Add Meal” button.",
+        },
+        {
+            src: task1Image5,
+            caption: "Customize meal settings.",
+        },
+        {
+            src: task1Image6,
+            caption: "Connect to a feeder.",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>
+
+### Task 2: Sharing wellness information with a vet
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2Image1,
+            caption: "Select the “My Cats” tab.",
+        },
+        {
+            src: task2Image2,
+            caption: "Tap “Share with vet”.",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>
+
+<ProjectImagesBlock
+    images={[
+        {
+            src: task2Image3,
+            caption: "Add a personalized message.",
+        },
+        {
+            src: task2Image4,
+            caption: "Confirmed!",
+        },
+    ]}
+    direction="row"
+    width={8}
+>
+</ProjectImagesBlock>

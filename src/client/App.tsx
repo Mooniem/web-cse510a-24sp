@@ -25,6 +25,23 @@ import {NavButton} from "src/common/NavButton";
 import Assignments from "src/pages/Assignments.mdx";
 import Calendar from "src/pages/Calendar.mdx";
 import Home from "src/pages/Home.mdx";
+import Projects from "src/pages/Projects.mdx";
+
+import ProjectBloom from "src/projects/bloom/project_post.mdx";
+import ProjectBuzzed from "src/projects/buzzed/project_post.mdx";
+import ProjectClark from "src/projects/clark/project_post.mdx";
+import ProjectClosr from "src/projects/closr/project_post.mdx";
+import ProjectCupanion from "src/projects/cupanion/project_post.mdx";
+import ProjectDispurrse from "src/projects/dispurrse/project_post.mdx";
+import ProjectEasyList from "src/projects/easylist/project_post.mdx";
+import ProjectFoClass from "src/projects/foclass/project_post.mdx";
+import ProjectQuik from "src/projects/quik/project_post.mdx";
+import ProjectReci from "src/projects/reci/project_post.mdx";
+import ProjectRecoverTogether from "src/projects/recovertogether/project_post.mdx";
+import ProjectSousChef from "src/projects/souschef/project_post.mdx";
+import ProjectSprout from "src/projects/sprout/project_post.mdx";
+import ProjectStackBased from "src/projects/stackbased/project_post.mdx";
+import ProjectWasteWizard from "src/projects/wastewizard/project_post.mdx";
 
 import AssignmentsOverviewWrapper from "src/content/assignments/OverviewWrapper.mdx"
 import Assignment0 from "src/content/assignments/assignment0/Assignment0.mdx"
@@ -62,6 +79,7 @@ export const App: React.FunctionComponent = () => {
                         >
                             <NavButton to="/" match="never">CSE 440 - Introduction to HCI - Spring 2022</NavButton>
                             <Box flexGrow={1}/>
+                            <NavButton to="/projects">Projects</NavButton>
                             <NavButton to="/assignments">Assignments</NavButton>
                             <NavButton to="/calendar">Calendar</NavButton>
                         </Box>
@@ -114,6 +132,19 @@ export const App: React.FunctionComponent = () => {
                                     <Button
                                         component={RouterLink}
                                         sx={{justifyContent: "left", minHeight: "48px", width: "100%"}}
+                                        to="/projects"
+                                    >
+                                        Projects
+                                    </Button>
+                                </MenuItem>
+                                <MenuItem
+                                    onClick={handleCloseMenu}
+                                    disableGutters
+                                    sx={{padding: "0"}}
+                                >
+                                    <Button
+                                        component={RouterLink}
+                                        sx={{justifyContent: "left", minHeight: "48px", width: "100%"}}
                                         to="/assignments"
                                     >
                                         Assignments
@@ -141,6 +172,22 @@ export const App: React.FunctionComponent = () => {
                 <DefaultLayout>
                     <Routes>
                         <Route path="/" element={<Home/>} />
+                        <Route path="/projects" element={<Projects/>} />
+                        <Route path="/projects/bloom" element={<ProjectBloom/>} />
+                        <Route path="/projects/buzzed" element={<ProjectBuzzed/>} />
+                        <Route path="/projects/clark" element={<ProjectClark/>} />
+                        <Route path="/projects/closr" element={<ProjectClosr/>} />
+                        <Route path="/projects/cupanion" element={<ProjectCupanion/>} />
+                        <Route path="/projects/dispurrse" element={<ProjectDispurrse/>} />
+                        <Route path="/projects/easylist" element={<ProjectEasyList/>} />
+                        <Route path="/projects/foclass" element={<ProjectFoClass/>} />
+                        <Route path="/projects/quik" element={<ProjectQuik/>} />
+                        <Route path="/projects/reci" element={<ProjectReci/>} />
+                        <Route path="/projects/recovertogether" element={<ProjectRecoverTogether/>} />
+                        <Route path="/projects/souschef" element={<ProjectSousChef/>} />
+                        <Route path="/projects/sprout" element={<ProjectSprout/>} />
+                        <Route path="/projects/stackbased" element={<ProjectStackBased/>} />
+                        <Route path="/projects/wastewizard" element={<ProjectWasteWizard/>} />
                         <Route path="/assignments" element={<Assignments/>}>
                             <Route path="" element={<AssignmentsOverviewWrapper/>} />
                             <Route path="assignment0" element={<Assignment0/>} />

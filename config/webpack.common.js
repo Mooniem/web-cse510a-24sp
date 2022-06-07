@@ -52,12 +52,21 @@ module.exports = {
                 ],
                 exclude: "/node_modules/",
             },
-            // Image and File resources
+            // Image and File resources from the site
             {
                 test: /\.(jpg|pdf|png|pptx)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/[name][ext]'
+                    filename: 'assets/site/[name][ext]'
+                },
+                exclude: "/projects/",
+            },
+            // Image and File resources from projects
+            {
+                test: /\.(jpg|pdf|png|pptx)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/projects/[path]/[name][ext]'
                 },
             },
         ],
