@@ -60,14 +60,14 @@ import pathPhotoRamya from "./assets/team/ramya.jpg";
 
 ## Problem and Design Overview
 
-The average American adult consumes roughly 3 times the recommended amount of sugar in a day, with the leading source of added sugar being from beverages. Similarly, many people struggle to drink a sufficient amount of water each day. Unfortunately, it is very difficult to be mindful of what and how much you drink, as drinking happens throughout the day and is almost a subconscious act. It is far too much work to self-track every single thing you drink each day.
+The average American adult consumes roughly three times the recommended amount of sugar in a day, with the leading source of added sugar being beverages. Many people struggle to drink a sufficient amount of water each day. Unfortunately, it is difficult to be mindful of what and how much you drink, as drinking is almost a subconscious act occuring throughout the day. It is far too much work to self-track every single sip of each drink every day.
 
-Our design consists of a cup paired with a smartphone app that helps people meet their drinking goals. The cup component automatically detects and logs the quantity of different substances in drinks, requiring no additional work for people. People can view their drinking data and set specific goals through the app.
+Our design consists of a cup paired with a smartphone app that helps people meet their drinking goals. The cup component automatically detects and logs the quantity of different substances in drinks, requiring no additional work to track. People can set specific goals and view their drinking data through the app.
 
 ## Design Research Process and Key Insights
 ### The Process
 
-At the beginning of the research process, we thought we would want to conduct observations and drinking diaries in order to discover what kinds of things people tend to drink and in what container. However, we realized that it would be much more insightful to conduct structured interviews to hear stories about people’s drinking habits that one wouldn’t observe from the outside, such as weekday vs. weekend habits, patterns throughout the day, and any previous attempts to track drinking. We chose to conduct structured interviews with people who were actively looking to track their drinking for various health-related reasons including IBS or sensitivity to caffeine. We acknowledged that there are several motivations to track drinking, but we chose to interview those with health related motivations because those people would have more to gain from our potential designs than the average person. To avoid placing our own bias, we wrote a specific interview script with open ended questions about our interviewees drinking habits and desire for tracking. After conducting one interview, we included a question on how they would like reminders, as we learned that was a key feature that we initially missed in our first set of questions.
+At the beginning of the research process, we thought we would want to conduct observations and drinking diaries in order to discover what kinds of things people tend to drink and in what container. However, we realized that it would be much more insightful to conduct structured interviews to hear stories about people’s drinking habits that one wouldn’t observe from the outside, such as weekday vs. weekend habits, patterns throughout the day, and any previous attempts to track drinking. We chose to conduct structured interviews with people who were actively looking to track their drinking for various health-related reasons including IBS or sensitivity to caffeine. We acknowledged that there are several motivations to track drinking, but we chose to interview those with health related motivations because those people would have more to gain from our potential designs than the average person. To avoid placing our own bias, we wrote a specific interview script with open ended questions about our interviewees' drinking habits and desires to track them. After conducting one interview, we included an additional question on how they would like reminders, as we learned that was a key feature that we initially missed in our first set of questions.
 
 ### The Results
 
@@ -78,10 +78,10 @@ A common theme that emerged from our design research was that participants had d
 
 <ProjectImageBlock
     image={{src: image1}}
-    caption="The cup starts to glow a different color, which subtly reminds the user to drink more water."
+    caption="The cup starts to glow a different color, which subtly reminds the participant to drink more water."
     width={8}
 >
-All participants expressed a common struggle of not being able to remember to reach their goals. Drinking wasn’t something they thought consciously about doing and so they would forget. Hence, goal-setting became another key part of our design. More specifically, we wanted to be able to encourage people to meet goals in a way that was not overly disruptive to their routine. For instance, in the sketch below, the cup begins to glow a different color to remind the user to drink.
+All participants expressed a common struggle of not being able to remember to reach their goals. Drinking wasn’t something they thought consciously about doing and so they would forget. Hence, goal-setting became another key part of our design. More specifically, we wanted to be able to encourage people to meet goals in a way that was not overly disruptive to their routine. For instance, in the sketch below, the cup begins to glow a different color to remind the participant to drink.
 </ProjectImageBlock>
 
 #### People want a design that is easy to use without messing with their routine.
@@ -105,7 +105,7 @@ We started out by paper prototyping a cup and an app with the design and insight
     direction="row"
     width={8}
 >
-In our initial heuristic evaluation it was revealed to us that the cup and app inherently did not have affordances for the functionality we were promoting. In our heuristic evaluation, it was brought up that there were a lot of buttons/lights and correlations with the app that were unexplained. In our initial design, we had just the main home screen.
+Our initial heuristic evaluation revealed that the cup and app inherently did not have affordances for the functionality we were promoting. In our heuristic evaluation, it was brought up that there were a lot of buttons/lights and correlations with the app that were unexplained. In our initial design, we had just the main home screen.
 
 But this confused participants since they thought that our design was just a simple tracking up and didn’t understand the correlation and interface with the cup.
 </ProjectImagesBlock>
@@ -115,7 +115,7 @@ But this confused participants since they thought that our design was just a sim
     caption="A brief walkthrough of of the cup and app functionality."
     width={8}
 >
-This issue persisted throughout the usability tests which gave us a lot of potential explanations to include in the tutorial. The iterative design of the tutorial was fickle but important to us because we had the desire to keep user time on the app minimal, but at the same time, to do so meant that the user needed to have a better understanding of the cup. We ended up adding a short and simple tutorial of the cup that launches when the app is opened for the first time which is shown below.
+This issue persisted throughout the usability tests which gave us a lot of potential explanations to include in the tutorial. The iterative design of the tutorial was fickle but important to us because we had the desire to keep time on the app minimal, but at the same time, to do so meant that the person needed to have a better understanding of the cup. We ended up adding a short and simple tutorial of the cup that launches when the app is opened for the first time which is shown below.
 </ProjectImageBlock>
 
 #### Participants want a non-intrusive alert system to nudge them towards goals.
@@ -130,7 +130,7 @@ This issue persisted throughout the usability tests which gave us a lot of poten
     direction="row"
     width={8}
 >
-Our initial prototype utilized three rings of light around the bottom of the cup, where the color of the light indicates how far from the goal the user is. In the image below, the third goal is not being met, so the light is glowing red.
+Our initial prototype utilized three rings of light around the bottom of the cup, where the color of the light indicates how far from the goal the participant is. In the image below, the third goal is not being met, so the light is glowing red.
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
@@ -143,7 +143,7 @@ Our initial prototype utilized three rings of light around the bottom of the cup
     direction="row"
     width={8}
 >
-Another key insight that we found through our usability testing was that participants found the consistent lighting to show goal status distracting and told us that they would prefer the default light for the goal status to be off, and only come on as a nudge when the user was straying from their goals. They also revealed that they would want some customization towards what colors that nudge could be so as to avoid difficulties with seeing colors, or finding some colors more or less distracting that what they would like. To address this we implemented their advice, giving default off lights on the base of the cup with an option to select color of the light when setting the goals.
+Participants found the consistent lighting to show goal status distracting and told us that they would prefer the default light for the goal status to be off, and only come on as a nudge when the participant was straying from their goals. They also revealed that they would want some customization towards what colors that nudge could be so as to avoid difficulties with seeing colors, or finding some colors more or less distracting that what they would like. To address this we implemented their advice, giving default off lights on the base of the cup with an option to select color of the light when setting the goals.
 </ProjectImagesBlock>
 
 #### Participants want a way on the cup to see daily progress
@@ -158,7 +158,7 @@ Another key insight that we found through our usability testing was that partici
     direction="row"
     width={8}
 >
-The final key takeaway from our iterative design process was that some participants wanted to be able to view their daily progress on the cup itself, feeling that it would be less distracting than having to pick up their phone and look at their data through the app. Again, the iteration of this design element was trying to strike a balance between the simplicity of the design, and the control granted to participants.  In the end we added a second set of lights that would indicate participants daily progress (seen around the logo).
+Some participants wanted to be able to view their daily progress on the cup itself, feeling that it would be less distracting than having to pick up their phone and look at their data through the app. Again, the iteration of this design element was trying to strike a balance between the simplicity of the design, and the control granted to participants.  In the end we added a second set of lights that would indicate participants daily progress (seen around the logo).
 </ProjectImagesBlock>
 
 ## Resulting Design
