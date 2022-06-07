@@ -3,7 +3,6 @@ import ProjectImagesBlock from "src/components/ProjectImagesBlock";
 import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
-
 import image1 from "./assets/post/check ins 2.png";
 import image2 from "./assets/post/Sarah and Maddie's Garden (empty).png";
 import image3 from "./assets/post/image2.jpg";
@@ -57,9 +56,6 @@ import pathPhotoRei from "./assets/team/Rei.jpg";
 ]} />
 
 ## Problem and Design Overview
-Maintaining friendships can be hard, especially for college students who have so many things going on in their life. Switching classes every quarter allows them to make lots of new connections, but they lose many at the same time as it is difficult to keep checking in with specific friends. It becomes even harder once students graduate and meet up less frequently, leading to a decline in lasting friendships.
-
-
 
 <ProjectImagesBlock
     images={[
@@ -74,7 +70,9 @@ Maintaining friendships can be hard, especially for college students who have so
     direction="row"
     width={6}
 >
-    Having a lasting friendship is very important for one’s mental health and sense of belonging to society. Sprout supports users in developing and maintaining long-term relationships as an app that reminds people to check in with friends and keep records of the meetings with them. A virtual garden will promote combined effort between friends, while also flourishing more and more as the friendship cultivates.
+Maintaining friendships can be hard, especially for college students who have so many things going on in their life. Switching classes every quarter allows them to make lots of new connections, but they lose many at the same time as it is difficult to keep checking in with specific friends. It becomes even harder once students graduate and meet up less frequently, leading to a decline in lasting friendships.
+
+Having a lasting friendship is very important for one’s mental health and sense of belonging to society. Sprout supports users in developing and maintaining long-term relationships as an app that reminds people to check in with friends and keep records of the meetings with them. A virtual garden will promote combined effort between friends, while also flourishing more and more as the friendship cultivates.
 </ProjectImagesBlock>
 
 ## Design Research Process and Key Insights
@@ -82,20 +80,22 @@ Maintaining friendships can be hard, especially for college students who have so
 For our design research, we interviewed four UW students to learn more about how they maintain long-term friendships. We used semi-structured interviews conducted over Zoom, giving us flexibility to guide the interview in different directions depending on the participant’s responses. Our participants were four UW students: one undeclared freshman, one sophomore studying computer science, one sophomore studying psychology, and one junior studying creative writing. We chose these participants because they had all undergone the transition of entering college and navigating maintaining and/or losing friendships. Overall, we sought to better understand how their friendships are maintained, strengthened, and at times, lost.
 
 ## Maintaining Friendships through Consistent Effort:
+
 In the relationships that participants had maintained for a long time, they noted that even if they were not talking or seeing each other on a daily basis, they would still make effort to periodically interact in some fashion, such as through video call or over text. The sophomore computer science student mentioned that he tends to text his long-term friends monthly and ask how they are doing, allow the conversation to end naturally, then repeats this check-in again. With these long-term friendships, participants were comfortable not seeing or interacting with them constantly, since they knew they would be able to pick up where they left off when they did meet up again. Instead, small consistent efforts, such as a quick “How are you?” text helped participants maintain these connections even during life transitions.
 
 ## Seeking But Challenged by Reconnection:
+
 Many participants mentioned there were past friends who they would be interested in reconnecting with. However, they mentioned various reasons ultimately holding them back. For example, the first-year UW student mentioned that despite wanting to reconnect with a father-figure-like high school teacher, he withheld due to feeling that his teacher was too busy and/or didn’t want to reconnect. Others also noted feeling awkward and not knowing how to naturally rekindle a relationship. The creative writing junior recalled a time where she reconnected with an elementary school friend over a shared love of boba, which was a natural way to respark the friendship.
 
 ## The Value of Demonstrated Reciprocity:
+
 All of our participants shared a desire to feel as if their efforts to maintain a friendship were being reciprocated. For example, both second-year UW students mentioned that if they reached out multiple times to a friend and did not receive the same level of effort or any response at all, this would lead to losing touch and the end of that friendship. Meanwhile, for the junior studying creative writing, she noted that despite being bad at texting, she still continues to reach out to some friends because she recognizes their efforts to reach out to her. Thus, a mutual feeling of wanting and putting in effort to maintain a friendship helped our participants have these long-term friendships.
 
 ## Iterative Design Process and Key Insights
 
-
 <ProjectImageBlock
     image={{src: image3}}
-    caption="Sprout paper prototype, including animations such as dropdowns"
+    caption="Sprout paper prototype, including animations such as dropdowns."
     width={8}
 >
     For this project, we used heuristic evaluation and usability testing to iterate our design to completion. In the heuristic evaluation, we tested our paper prototype with people from our class to see if we could find any big level design issues before going into usability testing. We did usability testing with both people in class and outside of our class to get perspectives from both people with design knowledge and people who were our target audience. This helped us find issues both with the design as a whole and also with confusion over terms and flow, as we will discuss below.
@@ -112,21 +112,20 @@ All of our participants shared a desire to feel as if their efforts to maintain 
             src: image5,
         }
     ]}
-    caption="Original homepage buttons compared to new buttons with added images for clarity"
+    caption="Original homepage buttons compared to new buttons with added images for clarity."
     direction="row"
     width={8}
 >
-    Our app has the ability to track how much a person checks in with their friends through the Check In function as well as tracking times that the person meets up with their friends through the Events function. However, we realized through our target audience usability tester that this terminology was confusing- when they went to log that they met up for boba with Sarah, they went through the Check In function instead of logging it as an Event and went all the way through logging the Check In before realizing that this was not the intended way to log that event.
-</ProjectImagesBlock>
+Our app has the ability to track how much a person checks in with their friends through the Check In function as well as tracking times that the person meets up with their friends through the Events function. However, we realized through our target audience usability tester that this terminology was confusing- when they went to log that they met up for boba with Sarah, they went through the Check In function instead of logging it as an Event and went all the way through logging the Check In before realizing that this was not the intended way to log that event.
 
 So, we added some icons on the home screen to make this terminology more clear. The Check In button now has speech bubbles to indicate that the check ins are more about verbal or text-based check ins and the Event button now has two people on it to indicate it’s more likely to be a meet up directly with the person or an activity. For consistency, we also added a flower icon to the gardens.
+</ProjectImagesBlock>
 
 ### Inaccessible Color Scheme:
 
-
 <ProjectImageBlock
     image={{src: image6}}
-    caption="An example of a red-yellow apple for added color clarity"
+    caption="An example of a red-yellow apple for added color clarity."
     width={8}
 >
     We also noted that the color scheme included both green and red, which are two colors that are not conducive to those with color blindness or color deficiency. In the paper prototype, this was not as apparent, because although we were using an apple tree (green and red), it was not in color so it did not immediately stand out. However, in the digital prototype, we were able to accommodate for this by making the apples a mix of red and yellow colors so they were more visible and bolding the outlines.
@@ -143,22 +142,18 @@ So, we added some icons on the home screen to make this terminology more clear. 
             src: image8,
         }
     ]}
-    caption="Before and after: added an extra Add Event shortcut button"
+    caption="Before and after: added an extra Add Event shortcut button."
     direction="row"
     width={8}
 >
-    One issue that was uncovered from our heuristic evaluations was that there was a lack of shortcuts for more experienced people–they still had to go all the way through the Gardens screens, picking a garden before they could add an event. Since this is one of the primary functionalities of the app, we wanted to make it so this can be done from the home page.
-</ProjectImagesBlock>
+One issue that was uncovered from our heuristic evaluations was that there was a lack of shortcuts for more experienced people–they still had to go all the way through the Gardens screens, picking a garden before they could add an event. Since this is one of the primary functionalities of the app, we wanted to make it so this can be done from the home page.
 
 So, we added an Add Event button to our homepage for easier access for more experienced people.
-
+</ProjectImagesBlock>
 
 ## Resulting Design
 
 ### Remembering to Check In On Friends:
-In our final design, we had the Check-Ins path accomplish our first task, which was to remember to check in on friends.
-
-
 
 <ProjectImagesBlock
     images={[
@@ -176,7 +171,9 @@ In our final design, we had the Check-Ins path accomplish our first task, which 
     direction="row"
     width={8}
 >
-    From the home screen, a person can tap the Check-Ins button to view their check-ins, then tap each check-in to view the status of the relationship, and how long it has been since a check-in has occurred:
+In our final design, we had the Check-Ins path accomplish our first task, which was to remember to check in on friends.
+
+From the home screen, a person can tap the Check-Ins button to view their check-ins, then tap each check-in to view the status of the relationship, and how long it has been since a check-in has occurred:
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
@@ -198,13 +195,10 @@ In our final design, we had the Check-Ins path accomplish our first task, which 
     direction="row"
     width={8}
 >
-    People can add check-ins from the status screen, and base the check-in off of recent life updates or just any other thing. This will update the status and make the flower happy again:
+People can add check-ins from the status screen, and base the check-in off of recent life updates or just any other thing. This will update the status and make the flower happy again:
 </ProjectImagesBlock>
 
 ### Deepening an Existing Relationship:
-For our second task, which was deepening an existing relationship, people can go down the gardens route, or add an event using the shortcut straight from the homepage.
-
-
 
 <ProjectImagesBlock
     images={[
@@ -222,8 +216,9 @@ For our second task, which was deepening an existing relationship, people can go
     direction="row"
     width={8}
 >
-    Using the Add Event shortcut, the people will get prompted with a popup asking which garden the event is with, and whether it is a new or existing event:
+For our second task, which was deepening an existing relationship, people can go down the gardens route, or add an event using the shortcut straight from the homepage.
 
+Using the Add Event shortcut, the people will get prompted with a popup asking which garden the event is with, and whether it is a new or existing event:
 </ProjectImagesBlock>
 
 <ProjectImagesBlock
@@ -245,16 +240,15 @@ For our second task, which was deepening an existing relationship, people can go
     direction="row"
     width={8}
 >
-    After this, the person is brought to the garden, and can specify details about the event (plant), like what activity it was, and what category it was:
-
+After this, the person is brought to the garden, and can specify details about the event (plant), like what activity it was, and what category it was:
 </ProjectImagesBlock>
 
 <ProjectImageBlock
     image={{src: image23}}
     caption="New event has been logged as an apple in the tree, and similar events will be logged as another apple in the same tree"
-    width={4}
+    width={8}
 >
-    Once the event is inputted, the garden is updated with the new (or existing) event plant!
+Once the event is inputted, the garden is updated with the new (or existing) event plant!
 </ProjectImageBlock>
 
 
