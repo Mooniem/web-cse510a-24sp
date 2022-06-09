@@ -3,32 +3,7 @@ import ProjectImagesBlock from "src/components/ProjectImagesBlock";
 import ProjectSubtitle from "src/components/ProjectSubtitle";
 import TeamMemberGallery from "src/components/TeamMemberGallery";
 
-import image1 from "./assets/post/PaperPrototype1.jpg";
-import image2 from "./assets/post/PaperPrototype2.jpg";
-import image3 from "./assets/post/PaperPrototype3.jpg";
-import image4 from "./assets/post/PaperPrototype4.jpg";
-import image5 from "./assets/post/PaperPrototype5.jpg";
-import image6 from "./assets/post/PaperPrototype6.jpg";
-
-import task1Step1Image1 from "./assets/post/splash.png";
-import task1Step1Image2 from "./assets/post/login.png";
-
-import task1Step2Image1 from "./assets/post/present.png";
-import task1Step2Image2 from "./assets/post/welcome.png";
-import task1Step2Image3 from "./assets/post/viewpreview.png";
-import task1Step2Image4 from "./assets/post/edit_clark.png";
-
-import task1Step3Image1 from "./assets/post/stop.png";
-// TODO: I understand image missing.
-import task1Step3Image2 from "./assets/post/dont_understand.png";
-import task1Step3Image3 from "./assets/post/ask_question.png";
-import task1Step3Image4 from "./assets/post/submitted_question.png";
-import task1Step3Image5 from "./assets/post/view_clark.png";
-
-import task1Step4Image1 from "./assets/post/end_recording.png";
-import task1Step4Image2 from "./assets/post/end_presentation.png";
-import task2Step2Image1 from "./assets/post/view_recordings.png";
-
+import IterativeDesignProcessAndKeyInsights from "./assets/post/IterativeDesignProcessAndKeyInsights.jpg";
 
 import pathPhotoAnna from "./assets/team/anna.jpg";
 import pathPhotoDonavan from "./assets/team/donavan.jpg";
@@ -36,6 +11,16 @@ import pathPhotoJesse from "./assets/team/jesse.jpg";
 import pathPhotoJudy from "./assets/team/judy.jpg";
 import pathPhotoYunwei from "./assets/team/yunwei.jpg";
 
+import ResultingDesign from "./assets/post/ResultingDesign.png";
+
+import Task1Step1 from "./assets/post/Task1Step1.png";
+import Task1Step2 from "./assets/post/Task1Step2.png";
+import Task1Step3 from "./assets/post/Task1Step3.png";
+import Task1Step4 from "./assets/post/Task1Step4.png";
+import Task1Step5 from "./assets/post/Task1Step5.png";
+
+import Task2Step1 from "./assets/post/Task2Step1.png";
+import Task2Step2 from "./assets/post/Task2Step2.png";
 
 # Clark
 
@@ -88,9 +73,7 @@ One insight from our interviews that we hadn’t focused on previously was the s
 
 <ProjectImagesBlock
     images={[
-        {src: image1},
-        {src: image2},
-        {src: image3},
+        {src: IterativeDesignProcessAndKeyInsights},
     ]}
     direction="column"
     width={6}
@@ -122,77 +105,108 @@ As we worked on our paper prototype, we referenced commonly used apps and interf
 </ProjectImageBlock>
 
 ## Resulting Design
-Some critical aspects of our designs are in our audience UI and presenter app. The presenter’s goal is to record and save a presentation, and look back at the recording and interest levels. We implemented a QR code and unique url for the presenter to give to the audience to sign in to the feedback platform. For the audience, they can submit questions and indicate interest with a toggle. In the recording, the presenter can see timestamps of how the interest levels progressed, as well as the time questions come in.
-
-### Task 1: Getting feedback during the presentation
 
 <ProjectImagesBlock
     images={[
-        {src: task1Step1Image1},
-        {src: task1Step1Image2},
+        {src: ResultingDesign},
     ]}
     direction="row"
     width={8}
 >
+
+Our design has three components: the presenter app, the audience app, and the Clark screen. The presenter’s goal is to record and save a presentation, and look back at the recording and interest levels. The presenter app is for the presenter to start presentations, edit Clark screens, and review recordings afterwards. The audience app is the platform for audience to submit questions, indicate confusion, and give feedback. The Clark screen sits on the podium. Its display is customizable and can show information such as audience questions.
+</ProjectImagesBlock>
+
+### Task 1: Getting feedback during the presentation
+
+
 #### Step 1:
+
+<ProjectImagesBlock
+    images={[
+        {src: Task1Step1},
+    ]}
+    direction="row"
+    width={8}
+>
 
 The presenter logs in/sign up through the app.
 </ProjectImagesBlock>
 
+
+#### Step 2:
+
 <ProjectImagesBlock
     images={[
-        {src: task1Step2Image1},
-        {src: task1Step2Image2},
-        {src: task1Step2Image3},
-        {src: task1Step2Image4},
+        {src: Task1Step2},
     ]}
     direction="row"
     width={8}
 >
-#### Step 2:
 
-The presenter shares a QR code (img 1) with the audience so they can access the presentation feedback platform (img 2) on their phone. The presenter clicks Test Audio/Video to access a preview (img 3). The presenter clicks on Edit Clark to add/remove widgets from Clark (img 4, img 5). The presenter clicks Start to start presentation and recording.
+The presenter shares a QR code with the audience so they can access the presentation feedback platform on their phone. The presenter clicks Test Audio/Video to access a preview. The presenter clicks on Edit Clark to add/remove widgets from Clark. The presenter clicks Start to start presentation and recording.
 </ProjectImagesBlock>
+
+
+#### Step 3:
 
 <ProjectImagesBlock
     images={[
-        {src: task1Step3Image1},
-        {src: task1Step3Image2},
-        {src: task1Step3Image3},
-        {src: task1Step3Image4},
-        {src: task1Step3Image5},
+        {src: Task1Step3},
     ]}
     direction="column"
     width={8}
 >
-#### Step 3:
 
-Once presentation starts, the presenter app shows Stop button to stop presentation (img 1). The audience platform allows submissions for questions (img 2, img 4). Upon submitting a question, a check mark indicates the question submitted successfully (img 5). The question shows up on Clark (img 8). The audience also has the option to look at other questions that have been submitted and upvote the ones they agree with (img 6, img 7). To express general confusion not tied to a question, the audience also has a toggle to indicate confusion (img 2, img 3).
+The audience platform allows submissions for questions. Upon submitting a question, a check mark indicates the question submitted successfully. The audience also has the option to look at other questions that have been submitted and upvote the ones they agree with. To express general confusion not tied to a question, the audience also has a toggle to indicate confusion.
 </ProjectImagesBlock>
+
+
+
+#### Step 4:
 
 <ProjectImagesBlock
     images={[
-        {src: task1Step4Image1},
-        {src: task1Step4Image2},
+        {src: Task1Step4},
     ]}
     direction="row"
     width={8}
 >
-#### Step 4:
 
-The presenter ends the recording and saves it with a particular name (with a character limit) (img 1). The screens for each audience member that joined displays a thank you page (img 2).
+The submitted questions will show up on the Clark screen for the presenter to read.
+</ProjectImagesBlock>
+
+
+#### Step 5:
+
+<ProjectImagesBlock
+    images={[
+        {src: Task1Step5},
+    ]}
+    direction="row"
+    width={8}
+>
+
+The presenter ends the recording and saves it with a particular name (with a character limit). The screens for each audience member that joined displays a thank you page.
 </ProjectImagesBlock>
 
 ### Task 2: Accessing the interest / confusion level of the audience after the presentation
 
+
 #### Step 1:
 
-The presenter logs in/sign up through the app.
+<ProjectImageBlock image={{src: Task2Step1}} width={8}>
 
-<ProjectImageBlock image={{src: task2Step2Image1}} width={8}>
+The presenter logs in/sign up through the app.
+</ProjectImageBlock>
+
+
 #### Step 2:
+
+<ProjectImageBlock image={{src: Task2Step2}} width={8}>
 
 The presenter heads to the recordings tab and selects the recording they wish to view (img 1), and uses the slider to find where the audience asked the most questions and where a large portion of the audience understands or doesn’t understand the content (img 2).
 
 One area that was fleshed out thoroughly during usability testing was our option to edit Clark’s display screen. For instance in initial tests, it was not clear to a participant that they could edit Clark’s screen by going to settings and appearances, or when they got there what to do. Because the presenter’s ability to customize Clark to best suit their needs is important to us, we added an additional button on the home screen that directly goes to the edit clark screen. We also added text instructing the participant to move widgets to the representation of Clark’s screen. Some participants wanted a higher level of customization to be able to drag individual components to specific locations, while others did not mind the default layout of Clark, so we also included the option of presets.
 </ProjectImageBlock>
+ 
