@@ -1,6 +1,6 @@
-# web-cse440-22sp
+# web-cse510-24sp
 
-Course website for Spring 2022 offering of CSE 440.
+Course website for Spring 2024 offering of CSE 510.
 
 ## Installation of System Dependencies
 
