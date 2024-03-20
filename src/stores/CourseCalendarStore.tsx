@@ -5,25 +5,25 @@ import { DateTime } from 'luxon';
 
 type TimeAndLocation = string;
 
-const LECTURE_TIME_AND_LOCATION: TimeAndLocation = '10:00 - 11:20 | NAN 181';
-const SECTION_TIME_AND_LOCATIONS: TimeAndLocation[] = [
-    '10:30 - 11:20 | MGH 058',
-    '11:30 - 12:20 | MGH 058',
-    '12:30 - 1:20 | MGH 058',
-    '1:30 - 2:20 | MGH 058',
-]
+const LECTURE_TIME_AND_LOCATION: TimeAndLocation = '06:30 - 09:20 | CSE2 G10';
+// const SECTION_TIME_AND_LOCATIONS: TimeAndLocation[] = [
+//     '10:30 - 11:20 | MGH 058',
+//     '11:30 - 12:20 | MGH 058',
+//     '12:30 - 1:20 | MGH 058',
+//     '1:30 - 2:20 | MGH 058',
+// ]
 const SECTION_TIME_AND_LOCATIONS_WITHOUT_D: TimeAndLocation[] = [
     '10:30 - 11:20 | MGH 058',
     '11:30 - 12:20 | MGH 058',
     '12:30 - 1:20 | MGH 058',
 ]
-const SECTION_TIME_AND_LOCATIONS_RESEARCH_SYMPOSIUM: TimeAndLocation[] = [
-    '10:30 - 11:20 | MGH 058',
-    '11:30 - 12:20 | MGH 058',
-    '12:30 - 1:20 | DEN 111',
-    '1:30 - 2:20 | DEN 110',
-]
-const EXAM_REVIEW_TIME_AND_LOCATION: TimeAndLocation = '6:00 - 6:50 | Zoom';
+// const SECTION_TIME_AND_LOCATIONS_RESEARCH_SYMPOSIUM: TimeAndLocation[] = [
+//     '10:30 - 11:20 | MGH 058',
+//     '11:30 - 12:20 | MGH 058',
+//     '12:30 - 1:20 | DEN 111',
+//     '1:30 - 2:20 | DEN 110',
+// ]
+// const EXAM_REVIEW_TIME_AND_LOCATION: TimeAndLocation = '6:00 - 6:50 | Zoom';
 const POSTER_SESSION_TIME_AND_LOCATION: TimeAndLocation = '11:00 - 12:00 | CSE Atrium';
 
 const OFFICE_HOUR_QISHENG_TIME_AND_LOCATION: TimeAndLocation = '11:30 - 12:30 | CSE 3rd Floor Breakout';
@@ -108,8 +108,8 @@ export class CourseCalendarStore {
      * Start and end dates for the course.
      */
     datesOfInstruction = {
-        start: DateTime.fromFormat('Mon 2022-03-28', 'EEE yyyy-MM-dd'),  // Should be a Monday
-        end:   DateTime.fromFormat('Fri 2022-06-10', 'EEE yyyy-MM-dd')   // Should be a Friday
+        start: DateTime.fromFormat('Mon 2024-03-25', 'EEE yyyy-MM-dd'),  // Should be a Monday
+        end:   DateTime.fromFormat('Fri 2024-05-24', 'EEE yyyy-MM-dd')   // Should be a Friday
     };
 
     /**
@@ -153,293 +153,202 @@ export class CourseCalendarStore {
         //
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-03-29'),
+            date: DateTime.fromISO('2024-03-28'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Introduction and Overview',
-            slides: 'https://canvas.uw.edu/files/90269755/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=73caeacf-f221-4959-bc78-ae68011874d7',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-03-31'),
+            date: DateTime.fromISO('2024-04-04'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Design Diamond',
-            slides: 'https://canvas.uw.edu/files/90287283/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5d87db58-194d-40c9-a9e4-ae69015c8bba',
+            title: 'Framing the problem',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-04-05'),
+            date: DateTime.fromISO('2024-04-11'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Design Research',
-            slides: 'https://canvas.uw.edu/files/90477964/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=31bef616-e417-4038-96ec-ae6e01472a01',
+            title: 'Exploring the solution space',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-04-12'),
+            date: DateTime.fromISO('2024-04-18'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Design of Everyday Things',
+            title: 'Finding a good solution',
             slides: 'https://canvas.uw.edu/files/90865835/',
             video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aacc0966-8de9-4e87-99ca-ae750145f644',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-04-14'),
+            date: DateTime.fromISO('2024-04-25'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Design of Everyday Things',
-            slides: 'https://canvas.uw.edu/files/90865835/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=98048542-47fc-47bb-af48-ae770141c8d5',
+            title: 'Finding a good solution',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-04-19'),
+            date: DateTime.fromISO('2024-05-02'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Task Analysis',
-            slides: 'https://canvas.uw.edu/files/91098921/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=218aab5f-7e6c-48e7-bb73-ae7d012cc673',
+            title: 'Refining the solution',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-04-21'),
+            date: DateTime.fromISO('2024-05-09'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Models and Human Performance',
-            slides: 'https://canvas.uw.edu/files/91192666/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a2421f5-305e-4789-8129-ae7e01437b20',
+            title: 'Refining the solution',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-04-26'),
+            date: DateTime.fromISO('2024-05-16'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Storyboarding, Paper Prototyping, and Testing',
-            slides: 'https://canvas.uw.edu/files/91400789/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fb1d746a-a127-453a-9a57-ae6600d820ba',
+            title: 'Refining the solution',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
-            date: DateTime.fromISO('2022-05-03'),
+            date: DateTime.fromISO('2024-05-23'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Effective Presentations',
-            slides: 'https://canvas.uw.edu/files/91705969/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bd7a4526-a43a-4e22-a690-ae8b00f782f9',
+            title: 'Evaluating the solution',
+            slides: 'NA',
+            video: 'NA',
         },
-        {
-            type: 'lecture',
-            date: DateTime.fromISO('2022-05-10'),
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Inspection',
-            slides: 'https://canvas.uw.edu/files/91968017/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2169ac31-bf8d-4cb4-a2fe-ae930042d617',
-        },
-        {
-            type: 'lecture',
-            date: DateTime.fromISO('2022-05-12'),
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Patterns and Interface Implementation',
-            slides: 'https://canvas.uw.edu/files/92049795/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4753b05f-53dc-41dc-b9c0-ae93016b9c49',
-        },
-        {
-            type: 'lecture',
-            date: DateTime.fromISO('2022-05-19'),
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Designing for Diverse Needs',
-            slides: 'https://canvas.uw.edu/files/92303593/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=78506a13-5404-4aa0-bc0b-ae6600d82f45',
-        },
-        {
-            type: 'lecture',
-            date: DateTime.fromISO('2022-05-24'),
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'History',
-            slides: 'https://canvas.uw.edu/files/92480229',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=85e919e8-7d61-4cc1-8d15-ae6600d83140'
-        },
-
         //
-        // Studio Calendar Items
+        // Group Assignments Calendar Items (mark studie as group assignment)
         //
-        {
-            type: 'studio',
-            date: DateTime.fromISO('2022-04-07'),
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Introduction to Critique',
-            slides: 'https://canvas.uw.edu/files/90565435/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8cb846a3-0342-49be-a159-ae71001d75be',
-        },
-        {
-            type: 'studio',
-            date: DateTime.fromISO('2022-04-28'),
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Studio',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7f5351c4-0251-442c-abbb-ae8b00f135e0',
-        },
-        {
-            type: 'studio',
-            dates: [
-                DateTime.fromISO('2022-04-01'),
-                DateTime.fromISO('2022-04-08'),
-                DateTime.fromISO('2022-04-15'),
-                DateTime.fromISO('2022-04-22'),
-                DateTime.fromISO('2022-04-29'),
-                DateTime.fromISO('2022-05-13'),
-            ],
-            timeAndLocations: SECTION_TIME_AND_LOCATIONS,
-            title: 'Studio',
-        },
-        {
-            type: 'studio',
-            dates: [
-                DateTime.fromISO('2022-05-20'),
-            ],
-            timeAndLocations: SECTION_TIME_AND_LOCATIONS_RESEARCH_SYMPOSIUM,
-            title: 'Studio',
-        },
-        {
-            type: 'studio',
-            dates: [
-                DateTime.fromISO('2022-05-31'),
-                DateTime.fromISO('2022-06-02'),
-            ],
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-            title: 'Studio',
-        },
+        // {
+        //     type: 'studio',
+        //     date: DateTime.fromISO('2024-04-04'),
+        //     timeAndLocation: LECTURE_TIME_AND_LOCATION,
+        //     title: 'Introduction to Critique',
+        //     slides: 'https://canvas.uw.edu/files/90565435/',
+        //     video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8cb846a3-0342-49be-a159-ae71001d75be',
+        // },
+        // {
+        //     type: 'studio',
+        //     date: DateTime.fromISO('2024-04-11'),
+        //     timeAndLocation: LECTURE_TIME_AND_LOCATION,
+        //     title: 'Studio',
+        //     video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7f5351c4-0251-442c-abbb-ae8b00f135e0',
+        // },
+        // // {
+        //     type: 'studio',
+        //     dates: [
+        //         DateTime.fromISO('2024-04-04'),
+        //         DateTime.fromISO('2024-04-11'),
+        //         DateTime.fromISO('2024-04-18'),
+        //         DateTime.fromISO('2024-04-25'),
+        //         DateTime.fromISO('2024-05-02'),
+        //         DateTime.fromISO('2024-05-09'),
+        //         DateTime.fromISO('2024-05-16'),
+        //         DateTime.fromISO('2024-05-23'),
+        //     ],
+        //     timeAndLocations: SECTION_TIME_AND_LOCATIONS,
+        //     title: 'Studio',
+        // },
+        // {
+        //     type: 'studio',
+        //     dates: [
+        //         DateTime.fromISO('2024-05-20'),
+        //     ],
+        //     timeAndLocations: SECTION_TIME_AND_LOCATIONS_RESEARCH_SYMPOSIUM,
+        //     title: 'Studio',
+        // },
+        // {
+        //     type: 'studio',
+        //     dates: [
+        //         DateTime.fromISO('2024-05-31'),
+        //         DateTime.fromISO('2024-06-02'),
+        //     ],
+        //     timeAndLocation: LECTURE_TIME_AND_LOCATION,
+        //     title: 'Studio',
+        // },
 
         //
         // Exam Review Calendar Items
         //
-        {
-            type: 'studio',
-            dates: [
-                DateTime.fromISO('2022-05-16'),
-            ],
-            timeAndLocation: EXAM_REVIEW_TIME_AND_LOCATION,
-            title: 'Exam Q&A',
-            slides: 'https://canvas.uw.edu/files/92053501/',
-        },
+        // {
+        //     type: 'studio',
+        //     dates: [
+        //         DateTime.fromISO('2024-05-16'),
+        //     ],
+        //     timeAndLocation: EXAM_REVIEW_TIME_AND_LOCATION,
+        //     title: 'Exam Q&A',
+        //     slides: 'https://canvas.uw.edu/files/92053501/',
+        // },
 
         //
         // Assignment Calendar Items
         //
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-03-31'),
-            title: '0 - Introduction Slide',
+            date: DateTime.fromISO('2024-04-04'),
+            title: 'GA1 - Project proposal ',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-03-31'),
-            title: '1a - Individual Brainstorm',
+            date: DateTime.fromISO('2024-04-11'),
+            title: 'GA2 - Sketches',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-06'),
-            title: '1b - Group Proposals',
+            date: DateTime.fromISO('2024-04-18'),
+            title: 'GA3 - Personas and updated project proposal',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-07'),
-            title: '1b_rev - Group Proposals',
+            date: DateTime.fromISO('2024-04-25'),
+            title: 'GA4 - Unintended consequences',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-11'),
-            title: '1c - Finalized Proposal',
+            date: DateTime.fromISO('2024-05-02'),
+            title: 'GA5 - Bad design hunt',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-12'),
-            title: '2a - Project Ideation',
+            date: DateTime.fromISO('2024-05-09'),
+            title: 'GA6 - Paper prototype and evaluation ',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-14'),
-            title: '2b - Design Research Plan',
+            date: DateTime.fromISO('2024-05-16'),
+            title: 'GA7 - Initial high-fidelity prototype',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-18'),
-            title: '2c - Design Research Check-In',
+            date: DateTime.fromISO('2024-05-23'),
+            title: 'GA8 - Final high-fidelity prototype',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-21'),
-            title: '2d - Design Research Review',
+            date: DateTime.fromISO('2024-03-28'),
+            title: 'IA1 - Intro and motivation ',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-25'),
-            title: '2e - Task Review',
+            date: DateTime.fromISO('2024-04-18'),
+            title: 'IA2 - Design process',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-27'),
-            title: '2f - Design Check-In',
+            date: DateTime.fromISO('2024-05-09'),
+            title: 'IA3 - Design critique',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2022-04-28'),
-            title: '2f_rev - Design Check-In',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-02'),
-            title: '2g - Design Review',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-04'),
-            title: '2p - Presentation',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-09'),
-            title: '3a - Paper Prototype',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-10'),
-            title: '3b - Heuristic Evaluation',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-12'),
-            title: '3c - Usability Testing Check-In',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-19'),
-            title: '3d - Usability Testing Review',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-23'),
-            title: '3e - Digital Mockup',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-25'),
-            title: '3p - Presentation',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-30'),
-            title: '4web - Web Post',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-05-31'),
-            title: '4web_final - Web Post',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-06-01'),
-            title: '4poster - Poster and Pitch',
-        },
-        {
-            type: 'assignment',
-            date: DateTime.fromISO('2022-06-02'),
-            title: '4poster_final - Poster and Pitch',
+            date: DateTime.fromISO('2024-05-23'),
+            title: 'IA4 - Testing',
         },
 
         //
@@ -448,14 +357,14 @@ export class CourseCalendarStore {
         {
             type: 'officehour',
             dates: [
-                DateTime.fromISO('2022-03-31'),
-                DateTime.fromISO('2022-04-07'),
-                DateTime.fromISO('2022-04-14'),
-                DateTime.fromISO('2022-04-21'),
-                DateTime.fromISO('2022-04-28'),
-                DateTime.fromISO('2022-05-12'),
-                DateTime.fromISO('2022-05-19'),
-                DateTime.fromISO('2022-05-26'),
+                DateTime.fromISO('2024-03-31'),
+                DateTime.fromISO('2024-04-07'),
+                DateTime.fromISO('2024-04-14'),
+                DateTime.fromISO('2024-04-21'),
+                DateTime.fromISO('2024-04-28'),
+                DateTime.fromISO('2024-05-12'),
+                DateTime.fromISO('2024-05-19'),
+                DateTime.fromISO('2024-05-26'),
             ],
             title: 'Office Hour - Qisheng',
             timeAndLocation: OFFICE_HOUR_QISHENG_TIME_AND_LOCATION,
@@ -463,15 +372,15 @@ export class CourseCalendarStore {
         {
             type: 'officehour',
             dates: [
-                DateTime.fromISO('2022-03-30'),
-                DateTime.fromISO('2022-04-06'),
-                DateTime.fromISO('2022-04-13'),
-                DateTime.fromISO('2022-04-20'),
-                DateTime.fromISO('2022-04-27'),
-                DateTime.fromISO('2022-05-11'),
-                DateTime.fromISO('2022-05-18'),
-                DateTime.fromISO('2022-05-25'),
-                DateTime.fromISO('2022-06-01'),
+                DateTime.fromISO('2024-03-30'),
+                DateTime.fromISO('2024-04-06'),
+                DateTime.fromISO('2024-04-13'),
+                DateTime.fromISO('2024-04-20'),
+                DateTime.fromISO('2024-04-27'),
+                DateTime.fromISO('2024-05-11'),
+                DateTime.fromISO('2024-05-18'),
+                DateTime.fromISO('2024-05-25'),
+                DateTime.fromISO('2024-06-01'),
             ],
             title: 'Office Hour - Jesse',
             timeAndLocation: OFFICE_HOUR_JESSE_TIME_AND_LOCATION,
@@ -480,49 +389,49 @@ export class CourseCalendarStore {
         //
         // Away Calendar Items
         //
-        {
-            type: 'away',
-            dates: [
-                DateTime.fromISO('2022-04-27'),
-                DateTime.fromISO('2022-04-28'),
-                DateTime.fromISO('2022-04-29'),
-            ],
-            title: 'James Away',
-        },
-        {
-            type: 'away',
-            dates: [
-                DateTime.fromISO('2022-05-02'),
-                DateTime.fromISO('2022-05-03'),
-                DateTime.fromISO('2022-05-04'),
-                DateTime.fromISO('2022-05-05'),
-                DateTime.fromISO('2022-05-06'),
-                DateTime.fromISO('2022-05-31'),
-            ],
-            title: 'Jesse Away',
-        },
-        {
-            type: 'away',
-            dates: [
-                DateTime.fromISO('2022-05-02'),
-                DateTime.fromISO('2022-05-03'),
-                DateTime.fromISO('2022-05-04'),
-                DateTime.fromISO('2022-05-05'),
-                DateTime.fromISO('2022-06-02'),
-                DateTime.fromISO('2022-06-03'),
-            ],
-            title: 'Qisheng Away',
-        },
-        {
-            type: 'away',
-            dates: [
-                DateTime.fromISO('2022-05-02'),
-                DateTime.fromISO('2022-05-03'),
-                DateTime.fromISO('2022-05-04'),
-                DateTime.fromISO('2022-05-27'),
-            ],
-            title: 'Anant Away',
-        },
+        // {
+        //     type: 'away',
+        //     dates: [
+        //         DateTime.fromISO('2024-04-27'),
+        //         DateTime.fromISO('2024-04-28'),
+        //         DateTime.fromISO('2024-04-29'),
+        //     ],
+        //     title: 'James Away',
+        // },
+        // {
+        //     type: 'away',
+        //     dates: [
+        //         DateTime.fromISO('2024-05-02'),
+        //         DateTime.fromISO('2024-05-03'),
+        //         DateTime.fromISO('2024-05-04'),
+        //         DateTime.fromISO('2024-05-05'),
+        //         DateTime.fromISO('2024-05-06'),
+        //         DateTime.fromISO('2024-05-31'),
+        //     ],
+        //     title: 'Jesse Away',
+        // },
+        // {
+        //     type: 'away',
+        //     dates: [
+        //         DateTime.fromISO('2024-05-02'),
+        //         DateTime.fromISO('2024-05-03'),
+        //         DateTime.fromISO('2024-05-04'),
+        //         DateTime.fromISO('2024-05-05'),
+        //         DateTime.fromISO('2024-06-02'),
+        //         DateTime.fromISO('2024-06-03'),
+        //     ],
+        //     title: 'Qisheng Away',
+        // },
+        // {
+        //     type: 'away',
+        //     dates: [
+        //         DateTime.fromISO('2024-05-02'),
+        //         DateTime.fromISO('2024-05-03'),
+        //         DateTime.fromISO('2024-05-04'),
+        //         DateTime.fromISO('2024-05-27'),
+        //     ],
+        //     title: 'Anant Away',
+        // },
 
         //
         // Holiday Calendar Items
@@ -530,7 +439,7 @@ export class CourseCalendarStore {
         {
             type: 'holiday',
             title: 'Memorial Day',
-            date: DateTime.fromISO('2022-05-30')
+            date: DateTime.fromISO('2024-05-30')
         },
 
         //
@@ -539,37 +448,37 @@ export class CourseCalendarStore {
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2022-05-05'),
+            date: DateTime.fromISO('2024-05-05'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
         },
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2022-05-06'),
+            date: DateTime.fromISO('2024-05-06'),
             timeAndLocations: SECTION_TIME_AND_LOCATIONS_WITHOUT_D,
         },
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2022-05-26'),
+            date: DateTime.fromISO('2024-05-26'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
         },
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2022-05-27'),
+            date: DateTime.fromISO('2024-05-27'),
             timeAndLocations: SECTION_TIME_AND_LOCATIONS_WITHOUT_D,
         },
-        {
-            type: 'event',
-            title: 'Exam',
-            date: DateTime.fromISO('2022-05-17'),
-            timeAndLocation: LECTURE_TIME_AND_LOCATION,
-        },
+        // {
+        //     type: 'event',
+        //     title: 'Exam',
+        //     date: DateTime.fromISO('2024-05-17'),
+        //     timeAndLocation: LECTURE_TIME_AND_LOCATION,
+        // },
         {
             type: 'event',
             title: 'Poster Session',
-            date: DateTime.fromISO('2022-06-06'),
+            date: DateTime.fromISO('2024-06-06'),
             timeAndLocation: POSTER_SESSION_TIME_AND_LOCATION,
         },
 

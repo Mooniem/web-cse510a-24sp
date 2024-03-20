@@ -49,7 +49,7 @@ import Assignment1 from "src/content/assignments/assignment1/Assignment1.mdx"
 import Assignment2 from "src/content/assignments/assignment2/Assignment2.mdx"
 import Assignment3 from "src/content/assignments/assignment3/Assignment3.mdx"
 import Assignment4 from "src/content/assignments/assignment4/Assignment4.mdx"
-
+import GD1 from "src/content/assignments/groupAssignment1/GA1.mdx"
 export const App: React.FunctionComponent = () => {
 
     const [menuAnchorEl, setMenuAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -77,7 +77,7 @@ export const App: React.FunctionComponent = () => {
                             role="navigation"
                             aria-label="Primary"
                         >
-                            <NavButton to="/" match="never">CSE 440 - Introduction to HCI - Spring 2022</NavButton>
+                            <NavButton to="/" match="never">CSE P510 - Introduction to HCI - Spring 2024</NavButton>
                             <Box flexGrow={1}/>
                             <NavButton to="/projects">Projects</NavButton>
                             <NavButton to="/assignments">Assignments</NavButton>
@@ -195,6 +195,7 @@ export const App: React.FunctionComponent = () => {
                             <Route path="assignment2" element={<Assignment2/>} />
                             <Route path="assignment3" element={<Assignment3/>} />
                             <Route path="assignment4" element={<Assignment4/>} />
+                            <Route path="groupAssignment1" element={<GD1/>} />
                         </Route>
                         <Route path="/calendar" element={<Calendar/>} />
                     </Routes>

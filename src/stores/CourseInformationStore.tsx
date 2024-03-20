@@ -22,10 +22,10 @@ export class CourseInformationStore {
     //
 
     // Link to course Canvas
-    linkCanvas: link = 'https://canvas.uw.edu/courses/1545349';
+    linkCanvas: link = 'https://canvas.uw.edu/courses/1718510';
 
     // Link to course GitHub
-    linkGitHub: link = 'https://github.com/uwcse440/web-cse440-22sp';
+    linkGitHub: link = 'https://github.com/Mooniem/web-cse510a-24sp';
 
     // Link to university syllabus policies and guidelines
     linkUniversitySyllabusGuidelines: link = 'https://registrar.washington.edu/staffandfaculty/syllabus-guidelines/';
