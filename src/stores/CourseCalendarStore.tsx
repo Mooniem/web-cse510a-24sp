@@ -292,42 +292,42 @@ export class CourseCalendarStore {
         //
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-04-04'),
+            date: DateTime.fromISO('2024-04-08'),
             title: 'GA1 - Project proposal ',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-04-11'),
+            date: DateTime.fromISO('2024-04-15'),
             title: 'GA2 - Sketches',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-04-18'),
+            date: DateTime.fromISO('2024-04-22'),
             title: 'GA3 - Personas and updated project proposal',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-04-25'),
+            date: DateTime.fromISO('2024-04-29'),
             title: 'GA4 - Unintended consequences',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-05-02'),
+            date: DateTime.fromISO('2024-05-06'),
             title: 'GA5 - Bad design hunt',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-05-09'),
+            date: DateTime.fromISO('2024-05-13'),
             title: 'GA6 - Paper prototype and evaluation ',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-05-16'),
+            date: DateTime.fromISO('2024-05-20'),
             title: 'GA7 - Initial high-fidelity prototype',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-05-23'),
+            date: DateTime.fromISO('2024-05-27'),
             title: 'GA8 - Final high-fidelity prototype',
         },
         {
