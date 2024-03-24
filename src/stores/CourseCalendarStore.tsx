@@ -130,7 +130,7 @@ export class CourseCalendarStore {
                 )
                 // Keep only weekdays
                 .filter(
-                    date => ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(date.weekdayShort)
+                    date => ['Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat','Sun'].includes(date.weekdayShort)
                 )
             )
             // Convert each list of dates into a CalendarWeek
@@ -332,59 +332,59 @@ export class CourseCalendarStore {
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-03-28'),
+            date: DateTime.fromISO('2024-03-31'),
             title: 'IA1 - Intro and motivation ',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-04-18'),
+            date: DateTime.fromISO('2024-04-24'),
             title: 'IA2 - Design process',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-05-09'),
+            date: DateTime.fromISO('2024-05-15'),
             title: 'IA3 - Design critique',
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-05-23'),
+            date: DateTime.fromISO('2024-05-29'),
             title: 'IA4 - Testing',
         },
 
         //
         // Office Hour Calendar Items
         //
-        {
-            type: 'officehour',
-            dates: [
-                DateTime.fromISO('2024-03-31'),
-                DateTime.fromISO('2024-04-07'),
-                DateTime.fromISO('2024-04-14'),
-                DateTime.fromISO('2024-04-21'),
-                DateTime.fromISO('2024-04-28'),
-                DateTime.fromISO('2024-05-12'),
-                DateTime.fromISO('2024-05-19'),
-                DateTime.fromISO('2024-05-26'),
-            ],
-            title: 'Office Hour - Qisheng',
-            timeAndLocation: OFFICE_HOUR_QISHENG_TIME_AND_LOCATION,
-        },
-        {
-            type: 'officehour',
-            dates: [
-                DateTime.fromISO('2024-03-30'),
-                DateTime.fromISO('2024-04-06'),
-                DateTime.fromISO('2024-04-13'),
-                DateTime.fromISO('2024-04-20'),
-                DateTime.fromISO('2024-04-27'),
-                DateTime.fromISO('2024-05-11'),
-                DateTime.fromISO('2024-05-18'),
-                DateTime.fromISO('2024-05-25'),
-                DateTime.fromISO('2024-06-01'),
-            ],
-            title: 'Office Hour - Jesse',
-            timeAndLocation: OFFICE_HOUR_JESSE_TIME_AND_LOCATION,
-        },
+        // {
+        //     type: 'officehour',
+        //     dates: [
+        //         DateTime.fromISO('2024-03-31'),
+        //         DateTime.fromISO('2024-04-07'),
+        //         DateTime.fromISO('2024-04-14'),
+        //         DateTime.fromISO('2024-04-21'),
+        //         DateTime.fromISO('2024-04-28'),
+        //         DateTime.fromISO('2024-05-12'),
+        //         DateTime.fromISO('2024-05-19'),
+        //         DateTime.fromISO('2024-05-26'),
+        //     ],
+        //     title: 'Office Hour - Qisheng',
+        //     timeAndLocation: OFFICE_HOUR_QISHENG_TIME_AND_LOCATION,
+        // },
+        // {
+        //     type: 'officehour',
+        //     dates: [
+        //         DateTime.fromISO('2024-03-30'),
+        //         DateTime.fromISO('2024-04-06'),
+        //         DateTime.fromISO('2024-04-13'),
+        //         DateTime.fromISO('2024-04-20'),
+        //         DateTime.fromISO('2024-04-27'),
+        //         DateTime.fromISO('2024-05-11'),
+        //         DateTime.fromISO('2024-05-18'),
+        //         DateTime.fromISO('2024-05-25'),
+        //         DateTime.fromISO('2024-06-01'),
+        //     ],
+        //     title: 'Office Hour - Jesse',
+        //     timeAndLocation: OFFICE_HOUR_JESSE_TIME_AND_LOCATION,
+        // },
 
         //
         // Away Calendar Items
@@ -439,7 +439,7 @@ export class CourseCalendarStore {
         {
             type: 'holiday',
             title: 'Memorial Day',
-            date: DateTime.fromISO('2024-05-30')
+            date: DateTime.fromISO('2023-05-27')
         },
 
         //
@@ -448,25 +448,25 @@ export class CourseCalendarStore {
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2024-05-05'),
+            date: DateTime.fromISO('2023-05-05'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
         },
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2024-05-06'),
+            date: DateTime.fromISO('2023-05-06'),
             timeAndLocations: SECTION_TIME_AND_LOCATIONS_WITHOUT_D,
         },
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2024-05-26'),
+            date: DateTime.fromISO('2023-05-26'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
         },
         {
             type: 'event',
             title: 'Presentations',
-            date: DateTime.fromISO('2024-05-27'),
+            date: DateTime.fromISO('2023-05-27'),
             timeAndLocations: SECTION_TIME_AND_LOCATIONS_WITHOUT_D,
         },
         // {
@@ -478,7 +478,7 @@ export class CourseCalendarStore {
         {
             type: 'event',
             title: 'Poster Session',
-            date: DateTime.fromISO('2024-06-06'),
+            date: DateTime.fromISO('2023-06-06'),
             timeAndLocation: POSTER_SESSION_TIME_AND_LOCATION,
         },
 

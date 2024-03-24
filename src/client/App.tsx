@@ -44,19 +44,19 @@ import ProjectStackBased from "src/projects/stackbased/project_post.mdx";
 import ProjectWasteWizard from "src/projects/wastewizard/project_post.mdx";
 
 import AssignmentsOverviewWrapper from "src/content/assignments/OverviewWrapper.mdx"
-import Assignment0 from "src/content/assignments/assignment0/Assignment0.mdx"
-import Assignment1 from "src/content/assignments/assignment1/Assignment1.mdx"
-import Assignment2 from "src/content/assignments/assignment2/Assignment2.mdx"
-import Assignment3 from "src/content/assignments/assignment3/Assignment3.mdx"
-import Assignment4 from "src/content/assignments/assignment4/Assignment4.mdx"
-import GD1 from "src/content/assignments/groupAssignment1/GA1.mdx"
-import GD2 from "src/content/assignments/groupAssignment2/GA2.mdx"
-import GD3 from "src/content/assignments/groupAssignment3/GA3.mdx"
-import GD4 from "src/content/assignments/groupAssignment4/GA4.mdx"
-import GD5 from "src/content/assignments/groupAssignment5/GA5.mdx"
-import GD6 from "src/content/assignments/groupAssignment6/GA6.mdx"
-import GD7 from "src/content/assignments/groupAssignment7/GA7.mdx"
-import GD8 from "src/content/assignments/groupAssignment8/GA8.mdx"
+// import Assignment0 from "src/content/assignments/assignment0/Assignment0.mdx"
+// import Assignment1 from "src/content/assignments/assignment1/Assignment1.mdx"
+// import Assignment2 from "src/content/assignments/assignment2/Assignment2.mdx"
+// import Assignment3 from "src/content/assignments/assignment3/Assignment3.mdx"
+// import Assignment4 from "src/content/assignments/assignment4/Assignment4.mdx"
+// import GD1 from "src/content/assignments/groupAssignment1/GA1.mdx"
+// import GD2 from "src/content/assignments/groupAssignment2/GA2.mdx"
+// import GD3 from "src/content/assignments/groupAssignment3/GA3.mdx"
+// import GD4 from "src/content/assignments/groupAssignment4/GA4.mdx"
+// import GD5 from "src/content/assignments/groupAssignment5/GA5.mdx"
+// import GD6 from "src/content/assignments/groupAssignment6/GA6.mdx"
+// import GD7 from "src/content/assignments/groupAssignment7/GA7.mdx"
+// import GD8 from "src/content/assignments/groupAssignment8/GA8.mdx"
 
 export const App: React.FunctionComponent = () => {
 
@@ -198,19 +198,19 @@ export const App: React.FunctionComponent = () => {
                         <Route path="/projects/wastewizard" element={<ProjectWasteWizard/>} />
                         <Route path="/assignments" element={<Assignments/>}>
                             <Route path="" element={<AssignmentsOverviewWrapper/>} />
-                            <Route path="assignment0" element={<Assignment0/>} />
+                            {/* <Route path="assignment0" element={<Assignment0/>} />
                             <Route path="assignment1" element={<Assignment1/>} />
                             <Route path="assignment2" element={<Assignment2/>} />
                             <Route path="assignment3" element={<Assignment3/>} />
-                            <Route path="assignment4" element={<Assignment4/>} />
-                            <Route path="groupAssignment1" element={<GD1/>} />
+                            <Route path="assignment4" element={<Assignment4/>} /> */}
+                            {/* <Route path="groupAssignment1" element={<GD1/>} />
                             <Route path="groupAssignment2" element={<GD2/>} />
                             <Route path="groupAssignment3" element={<GD3/>} />
                             <Route path="groupAssignment4" element={<GD4/>} />
                             <Route path="groupAssignment5" element={<GD5/>} />
                             <Route path="groupAssignment6" element={<GD6/>} />
                             <Route path="groupAssignment7" element={<GD7/>} />
-                            <Route path="groupAssignment8" element={<GD8/>} />
+                            <Route path="groupAssignment8" element={<GD8/>} /> */}
                         </Route>
                         <Route path="/calendar" element={<Calendar/>} />
                     </Routes>
