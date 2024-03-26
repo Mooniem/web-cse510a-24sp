@@ -26,8 +26,8 @@ const SECTION_TIME_AND_LOCATIONS_WITHOUT_D: TimeAndLocation[] = [
 // const EXAM_REVIEW_TIME_AND_LOCATION: TimeAndLocation = '6:00 - 6:50 | Zoom';
 const POSTER_SESSION_TIME_AND_LOCATION: TimeAndLocation = '11:00 - 12:00 | CSE Atrium';
 
-const OFFICE_HOUR_QISHENG_TIME_AND_LOCATION: TimeAndLocation = '11:30 - 12:30 | CSE 3rd Floor Breakout';
-const OFFICE_HOUR_JESSE_TIME_AND_LOCATION: TimeAndLocation = '4:00 - 5:00 | Zoom';
+// const OFFICE_HOUR_QISHENG_TIME_AND_LOCATION: TimeAndLocation = '11:30 - 12:30 | CSE 3rd Floor Breakout';
+// const OFFICE_HOUR_JESSE_TIME_AND_LOCATION: TimeAndLocation = '4:00 - 5:00 | Zoom';
 
 export type CalendarDate = {
     date: DateTime
@@ -58,6 +58,7 @@ export type BaseCalendarItemTimeAndLocation = {
 export type AssignmentCalendarItem = {
     type: 'assignment',
     title: string,
+    link?: link,
 } & BaseCalendarItemDates;
 
 export type AwayCalendarItem = {
@@ -109,7 +110,7 @@ export class CourseCalendarStore {
      */
     datesOfInstruction = {
         start: DateTime.fromFormat('Mon 2024-03-25', 'EEE yyyy-MM-dd'),  // Should be a Monday
-        end:   DateTime.fromFormat('Fri 2024-05-24', 'EEE yyyy-MM-dd')   // Should be a Friday
+        end:   DateTime.fromFormat('Fri 2024-05-31', 'EEE yyyy-MM-dd')   // Should be a Friday
     };
 
     /**
@@ -130,7 +131,7 @@ export class CourseCalendarStore {
                 )
                 // Keep only weekdays
                 .filter(
-                    date => ['Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat','Sun'].includes(date.weekdayShort)
+                    date => ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(date.weekdayShort)
                 )
             )
             // Convert each list of dates into a CalendarWeek
@@ -294,6 +295,7 @@ export class CourseCalendarStore {
             type: 'assignment',
             date: DateTime.fromISO('2024-04-08'),
             title: 'GA1 - Project proposal ',
+            link:'https://www.katelynmei.com',
         },
         {
             type: 'assignment',
@@ -332,7 +334,7 @@ export class CourseCalendarStore {
         },
         {
             type: 'assignment',
-            date: DateTime.fromISO('2024-03-31'),
+            date: DateTime.fromISO('2024-04-03'),
             title: 'IA1 - Intro and motivation ',
         },
         {

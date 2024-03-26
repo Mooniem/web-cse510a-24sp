@@ -87,7 +87,7 @@ export const App: React.FunctionComponent = () => {
                         >
                             <NavButton to="/" match="never">CSE P510 - Introduction to HCI - Spring 2024</NavButton>
                             <Box flexGrow={1}/>
-                            <NavButton to="/projects">Projects</NavButton>
+                            {/* <NavButton to="/projects">Projects</NavButton> */}
                             <NavButton to="/assignments">Assignments</NavButton>
                             <NavButton to="/calendar">Calendar</NavButton>
                         </Box>
