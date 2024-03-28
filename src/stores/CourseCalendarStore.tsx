@@ -181,8 +181,8 @@ export class CourseCalendarStore {
             date: DateTime.fromISO('2024-04-18'),
             timeAndLocation: LECTURE_TIME_AND_LOCATION,
             title: 'Finding a good solution',
-            slides: 'https://canvas.uw.edu/files/90865835/',
-            video: 'https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aacc0966-8de9-4e87-99ca-ae750145f644',
+            slides: 'NA',
+            video: 'NA',
         },
         {
             type: 'lecture',
@@ -226,7 +226,7 @@ export class CourseCalendarStore {
         },
         //
         // Group Assignments Calendar Items (mark studie as group assignment)
-        //
+        
         // {
         //     type: 'studio',
         //     date: DateTime.fromISO('2024-04-04'),
@@ -294,63 +294,74 @@ export class CourseCalendarStore {
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-04-08'),
-            title: 'GA1 - Project proposal ',
-            link:'https://www.katelynmei.com',
+            title: 'GA1 - Project proposal',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9186901/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-04-15'),
             title: 'GA2 - Sketches',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9215698/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-04-22'),
             title: 'GA3 - Personas and updated project proposal',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9215737/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-04-29'),
             title: 'GA4 - Unintended consequences',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9215740/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-05-06'),
             title: 'GA5 - Bad design hunt',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9215843/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-05-13'),
             title: 'GA6 - Paper prototype and evaluation ',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9215883/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-05-20'),
             title: 'GA7 - Initial high-fidelity prototype',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9215912/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-05-27'),
             title: 'GA8 - Final high-fidelity prototype',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9215913/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-04-03'),
             title: 'IA1 - Intro and motivation ',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9186373/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-04-24'),
             title: 'IA2 - Design process',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9216432/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-05-15'),
             title: 'IA3 - Design critique',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9216433/',
         },
         {
             type: 'assignment',
             date: DateTime.fromISO('2024-05-29'),
             title: 'IA4 - Testing',
+            link:'https://canvas.uw.edu/courses/1718510/assignments/9216434/',
         },
 
         //

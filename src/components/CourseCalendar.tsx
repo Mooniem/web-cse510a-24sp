@@ -84,7 +84,13 @@ function renderAssignmentCalendarItems(calendarDate: CalendarDate) {
                                 padding: "4px",
                             }}
                         >
-                            {calendarItem.title}
+                            {calendarItem.title}<br />
+                            {calendarItem.link && (
+                             <React.Fragment>
+                                [<a href={calendarItem.link}>link</a>]
+                             </React.Fragment>
+                            )}  
+                           
                         </Box>
                     )
                 )
